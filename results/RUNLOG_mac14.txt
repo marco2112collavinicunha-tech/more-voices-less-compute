@@ -1,0 +1,752 @@
+### run 14 started qua 21 out 2026 08:30:19 -03
+
+=== 2026-10-21 08:30:19 START demo-M04
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 46641.45it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Model: XLSR-53 truncated at layer 12, 164 M parameters, loaded in 3.3 s
+TORGO speaker M04 (dysarthria). Classifier trained only on other speakers' recordings of the same 23 words. Replaying 62 test recordings.
+
+[Session1/0078.wav]  heard: air                          conf 0.96 |   141 ms |  54.0 GFLOP ≈ 15.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0218.wav]  heard: air                          conf 1.00 |    44 ms |  16.0 GFLOP ≈  4.6 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0076.wav]  heard: yes                          conf 0.76 |    74 ms |  40.0 GFLOP ≈ 11.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'air')
+[Session2/0097.wav]  heard: air                          conf 1.00 |    45 ms |  16.3 GFLOP ≈  4.6 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0233.wav]  heard: bit                          conf 0.89 |    31 ms |  11.1 GFLOP ≈  3.2 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'bat')
+[Session2/0122.wav]  heard: bat                          conf 0.68 |    25 ms |   7.9 GFLOP ≈  2.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0079.wav]  heard: beat                         conf 0.80 |    63 ms |  43.4 GFLOP ≈ 12.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0112.wav]  heard: bit                          conf 0.83 |    46 ms |  30.7 GFLOP ≈  8.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'beat')
+[Session2/0066.wav]  heard: beat                         conf 0.90 |    71 ms |  51.6 GFLOP ≈ 14.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0297.wav]  heard: bit                          conf 1.00 |    37 ms |  14.5 GFLOP ≈  4.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0054.wav]  heard: bit                          conf 1.00 |    33 ms |  15.4 GFLOP ≈  4.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0061.wav]  heard: chair                        conf 0.92 |    60 ms |  49.5 GFLOP ≈ 14.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0059.wav]  heard: (not sure: 'yes'? please repeat) conf 0.48 |    56 ms |  41.4 GFLOP ≈ 11.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'chair')
+[Session2/0119.wav]  heard: yes                          conf 1.00 |    33 ms |  15.0 GFLOP ≈  4.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'chair')
+[Session1/0075.wav]  heard: feed                         conf 0.86 |    54 ms |  40.4 GFLOP ≈ 11.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0079.wav]  heard: (not sure: 'sip'? please repeat) conf 0.39 |    81 ms |  70.3 GFLOP ≈ 20.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feed')
+[Session2/0049.wav]  heard: (not sure: 'feed'? please repeat) conf 0.26 |    47 ms |  34.2 GFLOP ≈  9.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0050.wav]  heard: (not sure: 'sip'? please repeat) conf 0.39 |    50 ms |  40.1 GFLOP ≈ 11.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feed')
+[Session1/0101.wav]  heard: beat                         conf 0.91 |    48 ms |  35.5 GFLOP ≈ 10.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feet')
+[Session2/0012.wav]  heard: feet                         conf 0.59 |    60 ms |  48.9 GFLOP ≈ 13.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0070.wav]  heard: beat                         conf 0.81 |    35 ms |  18.0 GFLOP ≈  5.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feet')
+[Session2/0142.wav]  heard: slip                         conf 0.74 |    57 ms |  41.9 GFLOP ≈ 11.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'floor')
+[Session2/0072.wav]  heard: floor                        conf 0.83 |    38 ms |  24.9 GFLOP ≈  7.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0102.wav]  heard: no                           conf 0.69 |    35 ms |  17.0 GFLOP ≈  4.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'horn')
+[Session2/0101.wav]  heard: (not sure: 'horn'? please repeat) conf 0.22 |    70 ms |  55.9 GFLOP ≈ 15.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0013.wav]  heard: knew                         conf 0.68 |    45 ms |  31.0 GFLOP ≈  8.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0210.wav]  heard: know                         conf 0.85 |    36 ms |  22.3 GFLOP ≈  6.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'knew')
+[Session2/0036.wav]  heard: knew                         conf 1.00 |    34 ms |  17.2 GFLOP ≈  4.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0117.wav]  heard: knew                         conf 0.99 |    26 ms |  12.6 GFLOP ≈  3.6 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0125.wav]  heard: no                           conf 0.69 |    57 ms |  42.0 GFLOP ≈ 12.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'know')
+[Session2/0267.wav]  heard: no                           conf 0.78 |    35 ms |  14.7 GFLOP ≈  4.2 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'know')
+[Session2/0123.wav]  heard: no                           conf 1.00 |    24 ms |   8.9 GFLOP ≈  2.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0188.wav]  heard: no                           conf 0.91 |    44 ms |  27.0 GFLOP ≈  7.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0030.wav]  heard: beat                         conf 0.83 |    48 ms |  34.4 GFLOP ≈  9.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'park')
+[Session2/0294.wav]  heard: park                         conf 0.78 |    45 ms |  31.2 GFLOP ≈  8.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0111.wav]  heard: sip                          conf 0.56 |    59 ms |  50.1 GFLOP ≈ 14.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'pat')
+[Session2/0262.wav]  heard: (not sure: 'sip'? please repeat) conf 0.44 |    33 ms |  14.2 GFLOP ≈  4.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'pat')
+[Session2/0223.wav]  heard: rocks                        conf 0.69 |    38 ms |  15.0 GFLOP ≈  4.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0224.wav]  heard: (not sure: 'rocks'? please repeat) conf 0.35 |    55 ms |  41.6 GFLOP ≈ 11.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0162.wav]  heard: sip                          conf 0.74 |    34 ms |  17.4 GFLOP ≈  5.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'sigh')
+[Session2/0200.wav]  heard: (not sure: 'sigh'? please repeat) conf 0.49 |    39 ms |  23.9 GFLOP ≈  6.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0056.wav]  heard: slip                         conf 0.54 |    82 ms |  62.3 GFLOP ≈ 17.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'sip')
+[Session1/0015.wav]  heard: slip                         conf 0.62 |    70 ms |  53.0 GFLOP ≈ 15.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'sip')
+[Session2/0035.wav]  heard: sip                          conf 0.98 |    49 ms |  34.6 GFLOP ≈  9.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0037.wav]  heard: sip                          conf 0.97 |    51 ms |  34.6 GFLOP ≈  9.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0056.wav]  heard: sip                          conf 0.98 |    34 ms |  13.6 GFLOP ≈  3.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0171.wav]  heard: slip                         conf 1.00 |    35 ms |  16.9 GFLOP ≈  4.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0009.wav]  heard: sip                          conf 0.76 |    46 ms |  28.7 GFLOP ≈  8.2 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'slip')
+[Session2/0204.wav]  heard: slip                         conf 0.99 |    47 ms |  33.5 GFLOP ≈  9.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0116.wav]  heard: (not sure: 'sip'? please repeat) conf 0.19 |    61 ms |  49.3 GFLOP ≈ 14.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'storm')
+[Session2/0126.wav]  heard: (not sure: 'storm'? please repeat) conf 0.47 |    39 ms |  25.8 GFLOP ≈  7.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0017.wav]  heard: (not sure: 'sip'? please repeat) conf 0.35 |    49 ms |  35.3 GFLOP ≈ 10.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'storm')
+[Session1/0097.wav]  heard: (not sure: 'warm'? please repeat) conf 0.34 |    89 ms |  72.0 GFLOP ≈ 20.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'swarm')
+[Session2/0023.wav]  heard: sip                          conf 0.74 |    48 ms |  33.1 GFLOP ≈  9.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'swarm')
+[Session2/0087.wav]  heard: (not sure: 'swarm'? please repeat) conf 0.38 |    38 ms |  23.7 GFLOP ≈  6.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0048.wav]  heard: (not sure: 'air'? please repeat) conf 0.37 |    59 ms |  44.0 GFLOP ≈ 12.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'warm')
+[Session2/0121.wav]  heard: warm                         conf 0.99 |    38 ms |  21.1 GFLOP ≈  6.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0090.wav]  heard: (not sure: 'no'? please repeat) conf 0.44 |    64 ms |  48.3 GFLOP ≈ 13.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'warm')
+[Session2/0151.wav]  heard: we're                        conf 0.86 |    48 ms |  30.5 GFLOP ≈  8.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0149.wav]  heard: we're                        conf 0.81 |    66 ms |  39.7 GFLOP ≈ 11.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0021.wav]  heard: yes                          conf 0.94 |    42 ms |  24.8 GFLOP ≈  7.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0272.wav]  heard: yes                          conf 0.74 |    41 ms |  26.2 GFLOP ≈  7.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+
+Accuracy 56.5% (UAR 57.0%), median latency 46 ms, estimated energy 567 J in total vs 20,533 J for Whisper-medium.
+=== 2026-10-21 08:30:31 END demo-M04 (exit 0)
+
+=== 2026-10-21 08:30:31 START demo-F03
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 49871.69it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Model: XLSR-53 truncated at layer 12, 164 M parameters, loaded in 2.8 s
+TORGO speaker F03 (dysarthria). Classifier trained only on other speakers' recordings of the same 21 words. Replaying 51 test recordings.
+
+[Session1/0201.wav]  heard: air                          conf 1.00 |    53 ms |  28.0 GFLOP ≈  8.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0108.wav]  heard: air                          conf 1.00 |    39 ms |  23.9 GFLOP ≈  6.8 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0039.wav]  heard: chair                        conf 0.89 |    76 ms |  49.1 GFLOP ≈ 14.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0060.wav]  heard: chair                        conf 0.99 |    54 ms |  36.2 GFLOP ≈ 10.3 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0155.wav]  heard: fork                         conf 0.98 |    61 ms |  42.9 GFLOP ≈ 12.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0142.wav]  heard: fork                         conf 0.96 |    40 ms |  24.8 GFLOP ≈  7.1 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0096.wav]  heard: four                         conf 1.00 |    49 ms |  35.6 GFLOP ≈ 10.1 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0109.wav]  heard: four                         conf 1.00 |    51 ms |  29.1 GFLOP ≈  8.3 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0114.wav]  heard: goat                         conf 0.58 |    48 ms |  34.7 GFLOP ≈  9.9 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0113.wav]  heard: goat                         conf 0.79 |    47 ms |  35.8 GFLOP ≈ 10.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0081.wav]  heard: him                          conf 0.98 |    58 ms |  39.8 GFLOP ≈ 11.4 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0208.wav]  heard: him                          conf 1.00 |    44 ms |  26.6 GFLOP ≈  7.6 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0013.wav]  heard: knew                         conf 1.00 |    38 ms |  23.5 GFLOP ≈  6.7 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0192.wav]  heard: knew                         conf 0.78 |    38 ms |  24.5 GFLOP ≈  7.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0163.wav]  heard: knot                         conf 0.97 |    40 ms |  26.9 GFLOP ≈  7.7 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0028.wav]  heard: knot                         conf 0.93 |    58 ms |  42.2 GFLOP ≈ 12.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0095.wav]  heard: leak                         conf 0.73 |   106 ms |  88.4 GFLOP ≈ 25.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0077.wav]  heard: leak                         conf 0.99 |    38 ms |  26.5 GFLOP ≈  7.6 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0170.wav]  heard: nice                         conf 0.50 |    38 ms |  25.6 GFLOP ≈  7.3 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'leak')
+[Session3/0110.wav]  heard: nice                         conf 0.98 |    48 ms |  37.8 GFLOP ≈ 10.8 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0043.wav]  heard: nice                         conf 0.72 |    43 ms |  27.7 GFLOP ≈  7.9 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0046.wav]  heard: (not sure: 'yes'? please repeat) conf 0.44 |    46 ms |  35.7 GFLOP ≈ 10.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'nice')
+[Session2/0100.wav]  heard: no                           conf 0.51 |    46 ms |  34.0 GFLOP ≈  9.7 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0200.wav]  heard: no                           conf 1.00 |    43 ms |  27.3 GFLOP ≈  7.8 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0104.wav]  heard: rock                         conf 0.82 |    46 ms |  34.0 GFLOP ≈  9.7 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0004.wav]  heard: rock                         conf 0.69 |    48 ms |  38.9 GFLOP ≈ 11.1 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0128.wav]  heard: rock                         conf 1.00 |    44 ms |  30.2 GFLOP ≈  8.6 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0203.wav]  heard: sheet                        conf 0.60 |    56 ms |  41.3 GFLOP ≈ 11.8 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0069.wav]  heard: sheet                        conf 0.83 |    47 ms |  31.5 GFLOP ≈  9.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0148.wav]  heard: him                          conf 0.51 |    34 ms |  18.3 GFLOP ≈  5.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'shoot')
+[Session3/0149.wav]  heard: sip                          conf 0.58 |    62 ms |  43.6 GFLOP ≈ 12.4 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'shoot')
+[Session3/0054.wav]  heard: shoot                        conf 1.00 |    56 ms |  29.3 GFLOP ≈  8.4 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0026.wav]  heard: side                         conf 0.99 |    48 ms |  34.9 GFLOP ≈  9.9 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0196.wav]  heard: side                         conf 0.64 |    48 ms |  37.2 GFLOP ≈ 10.6 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0146.wav]  heard: four                         conf 0.98 |    34 ms |  16.8 GFLOP ≈  4.8 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'sigh')
+[Session1/0193.wav]  heard: sigh                         conf 0.99 |    43 ms |  29.6 GFLOP ≈  8.4 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0119.wav]  heard: sigh                         conf 0.99 |    46 ms |  36.7 GFLOP ≈ 10.5 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0014.wav]  heard: sip                          conf 1.00 |    62 ms |  50.8 GFLOP ≈ 14.5 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0113.wav]  heard: sip                          conf 0.83 |    44 ms |  31.7 GFLOP ≈  9.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0161.wav]  heard: sip                          conf 0.91 |    37 ms |  26.9 GFLOP ≈  7.7 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0086.wav]  heard: sip                          conf 0.98 |    46 ms |  35.6 GFLOP ≈ 10.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0042.wav]  heard: sip                          conf 0.84 |   125 ms |  95.6 GFLOP ≈ 27.3 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'slip')
+[Session2/0041.wav]  heard: sip                          conf 0.74 |    58 ms |  45.5 GFLOP ≈ 13.0 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'slip')
+[Session2/0123.wav]  heard: slip                         conf 0.52 |   125 ms | 106.4 GFLOP ≈ 30.3 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  wrong (said 'spit')
+[Session3/0039.wav]  heard: spit                         conf 0.98 |    50 ms |  39.3 GFLOP ≈ 11.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0189.wav]  heard: spit                         conf 0.84 |    48 ms |  30.5 GFLOP ≈  8.7 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0057.wav]  heard: write                        conf 0.99 |    45 ms |  28.6 GFLOP ≈  8.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0012.wav]  heard: write                        conf 0.88 |    58 ms |  35.8 GFLOP ≈ 10.2 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0049.wav]  heard: yes                          conf 1.00 |    63 ms |  28.3 GFLOP ≈  8.1 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0059.wav]  heard: yes                          conf 0.80 |   102 ms |  77.0 GFLOP ≈ 21.9 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+[Session3/0146.wav]  heard: yes                          conf 1.00 |    41 ms |  26.7 GFLOP ≈  7.6 J (Whisper-medium: 1,154 GFLOP ≈ 329 J; J estimated for a Raspberry Pi 4)  OK
+
+Accuracy 84.3% (UAR 85.7%), median latency 48 ms, estimated energy 544 J in total vs 16,772 J for Whisper-medium.
+=== 2026-10-21 08:30:40 END demo-F03 (exit 0)
+
+=== 2026-10-21 08:30:40 START demo-M04-int8
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 49293.91it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+/Users/marco/Documents/more-voices/demo/live_demo.py:67: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model = torch.ao.quantization.quantize_dynamic(model, {nn.Linear}, dtype=torch.qint8)
+/Users/marco/Documents/more-voices/.venv/lib/python3.12/site-packages/torch/ao/nn/quantized/modules/utils.py:72: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:116.)
+  qweight = torch.quantize_per_tensor(
+[W1021 08:30:45.450685000 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+Model: XLSR-53 truncated at layer 12 (8-bit), 13 M parameters, loaded in 2.9 s
+TORGO speaker M04 (dysarthria). Classifier trained only on other speakers' recordings of the same 23 words. Replaying 62 test recordings.
+
+[Session1/0078.wav]  heard: air                          conf 0.93 |   250 ms |  54.0 GFLOP ≈ 15.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0218.wav]  heard: air                          conf 1.00 |    46 ms |  16.0 GFLOP ≈  4.6 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0076.wav]  heard: yes                          conf 0.82 |    93 ms |  40.0 GFLOP ≈ 11.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'air')
+[Session2/0097.wav]  heard: air                          conf 1.00 |    46 ms |  16.3 GFLOP ≈  4.6 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0233.wav]  heard: bit                          conf 0.85 |    33 ms |  11.1 GFLOP ≈  3.2 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'bat')
+[Session2/0122.wav]  heard: (not sure: 'bat'? please repeat) conf 0.47 |    26 ms |   7.9 GFLOP ≈  2.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0079.wav]  heard: beat                         conf 0.76 |   105 ms |  43.4 GFLOP ≈ 12.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0112.wav]  heard: bit                          conf 0.87 |    84 ms |  30.7 GFLOP ≈  8.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'beat')
+[Session2/0066.wav]  heard: beat                         conf 0.80 |   130 ms |  51.6 GFLOP ≈ 14.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0297.wav]  heard: bit                          conf 1.00 |    42 ms |  14.5 GFLOP ≈  4.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0054.wav]  heard: bit                          conf 1.00 |    42 ms |  15.4 GFLOP ≈  4.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0061.wav]  heard: chair                        conf 0.85 |   111 ms |  49.5 GFLOP ≈ 14.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0059.wav]  heard: yes                          conf 0.51 |    97 ms |  41.4 GFLOP ≈ 11.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'chair')
+[Session2/0119.wav]  heard: yes                          conf 1.00 |    42 ms |  15.0 GFLOP ≈  4.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'chair')
+[Session1/0075.wav]  heard: feed                         conf 0.84 |    96 ms |  40.4 GFLOP ≈ 11.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0079.wav]  heard: (not sure: 'sip'? please repeat) conf 0.35 |   164 ms |  70.3 GFLOP ≈ 20.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feed')
+[Session2/0049.wav]  heard: (not sure: 'feed'? please repeat) conf 0.22 |    80 ms |  34.2 GFLOP ≈  9.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0050.wav]  heard: (not sure: 'sip'? please repeat) conf 0.35 |   101 ms |  40.1 GFLOP ≈ 11.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feed')
+[Session1/0101.wav]  heard: beat                         conf 0.88 |    85 ms |  35.5 GFLOP ≈ 10.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feet')
+[Session2/0012.wav]  heard: feet                         conf 0.71 |   110 ms |  48.9 GFLOP ≈ 13.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0070.wav]  heard: beat                         conf 0.57 |    47 ms |  18.0 GFLOP ≈  5.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'feet')
+[Session2/0142.wav]  heard: slip                         conf 0.66 |    93 ms |  41.9 GFLOP ≈ 11.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'floor')
+[Session2/0072.wav]  heard: floor                        conf 0.88 |    60 ms |  24.9 GFLOP ≈  7.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0102.wav]  heard: no                           conf 0.66 |    47 ms |  17.0 GFLOP ≈  4.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'horn')
+[Session2/0101.wav]  heard: (not sure: 'horn'? please repeat) conf 0.26 |   122 ms |  55.9 GFLOP ≈ 15.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0013.wav]  heard: (not sure: 'knew'? please repeat) conf 0.45 |    73 ms |  31.0 GFLOP ≈  8.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0210.wav]  heard: know                         conf 0.84 |    55 ms |  22.3 GFLOP ≈  6.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'knew')
+[Session2/0036.wav]  heard: knew                         conf 1.00 |    47 ms |  17.2 GFLOP ≈  4.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0117.wav]  heard: knew                         conf 0.98 |    33 ms |  12.6 GFLOP ≈  3.6 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0125.wav]  heard: no                           conf 0.74 |    96 ms |  42.0 GFLOP ≈ 12.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'know')
+[Session2/0267.wav]  heard: no                           conf 0.81 |    41 ms |  14.7 GFLOP ≈  4.2 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'know')
+[Session2/0123.wav]  heard: no                           conf 1.00 |    34 ms |   8.9 GFLOP ≈  2.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0188.wav]  heard: no                           conf 0.94 |    75 ms |  27.0 GFLOP ≈  7.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0030.wav]  heard: beat                         conf 0.69 |    92 ms |  34.4 GFLOP ≈  9.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'park')
+[Session2/0294.wav]  heard: park                         conf 0.83 |    74 ms |  31.2 GFLOP ≈  8.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0111.wav]  heard: sip                          conf 0.58 |   109 ms |  50.1 GFLOP ≈ 14.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'pat')
+[Session2/0262.wav]  heard: (not sure: 'sip'? please repeat) conf 0.47 |    41 ms |  14.2 GFLOP ≈  4.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'pat')
+[Session2/0223.wav]  heard: rocks                        conf 0.64 |    41 ms |  15.0 GFLOP ≈  4.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0224.wav]  heard: (not sure: 'rocks'? please repeat) conf 0.27 |    95 ms |  41.6 GFLOP ≈ 11.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0162.wav]  heard: sip                          conf 0.69 |    47 ms |  17.4 GFLOP ≈  5.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'sigh')
+[Session2/0200.wav]  heard: sigh                         conf 0.56 |    59 ms |  23.9 GFLOP ≈  6.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0056.wav]  heard: (not sure: 'slip'? please repeat) conf 0.50 |   140 ms |  62.3 GFLOP ≈ 17.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'sip')
+[Session1/0015.wav]  heard: (not sure: 'sip'? please repeat) conf 0.45 |   118 ms |  53.0 GFLOP ≈ 15.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0035.wav]  heard: sip                          conf 0.98 |    88 ms |  34.6 GFLOP ≈  9.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0037.wav]  heard: sip                          conf 0.96 |    90 ms |  34.6 GFLOP ≈  9.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0056.wav]  heard: sip                          conf 0.98 |    42 ms |  13.6 GFLOP ≈  3.9 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0171.wav]  heard: slip                         conf 1.00 |    42 ms |  16.9 GFLOP ≈  4.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0009.wav]  heard: sip                          conf 0.76 |    67 ms |  28.7 GFLOP ≈  8.2 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'slip')
+[Session2/0204.wav]  heard: slip                         conf 0.99 |    76 ms |  33.5 GFLOP ≈  9.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0116.wav]  heard: (not sure: 'no'? please repeat) conf 0.24 |   107 ms |  49.3 GFLOP ≈ 14.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'storm')
+[Session2/0126.wav]  heard: (not sure: 'storm'? please repeat) conf 0.42 |    60 ms |  25.8 GFLOP ≈  7.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0017.wav]  heard: (not sure: 'storm'? please repeat) conf 0.35 |    80 ms |  35.3 GFLOP ≈ 10.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0097.wav]  heard: (not sure: 'warm'? please repeat) conf 0.42 |   162 ms |  72.0 GFLOP ≈ 20.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'swarm')
+[Session2/0023.wav]  heard: sip                          conf 0.76 |    73 ms |  33.1 GFLOP ≈  9.4 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'swarm')
+[Session2/0087.wav]  heard: (not sure: 'swarm'? please repeat) conf 0.36 |    63 ms |  23.7 GFLOP ≈  6.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session1/0048.wav]  heard: (not sure: 'air'? please repeat) conf 0.38 |   116 ms |  44.0 GFLOP ≈ 12.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'warm')
+[Session2/0121.wav]  heard: warm                         conf 0.99 |    60 ms |  21.1 GFLOP ≈  6.0 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0090.wav]  heard: (not sure: 'no'? please repeat) conf 0.42 |   115 ms |  48.3 GFLOP ≈ 13.8 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  wrong (said 'warm')
+[Session2/0151.wav]  heard: we're                        conf 0.83 |    75 ms |  30.5 GFLOP ≈  8.7 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0149.wav]  heard: we're                        conf 0.85 |    91 ms |  39.7 GFLOP ≈ 11.3 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0021.wav]  heard: yes                          conf 0.97 |    62 ms |  24.8 GFLOP ≈  7.1 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+[Session2/0272.wav]  heard: yes                          conf 0.85 |    62 ms |  26.2 GFLOP ≈  7.5 J (Whisper-medium: 1,162 GFLOP ≈ 331 J; J estimated for a Raspberry Pi 4)  OK
+
+Accuracy 59.7% (UAR 59.3%), median latency 75 ms, estimated energy 567 J in total vs 20,533 J for Whisper-medium.
+=== 2026-10-21 08:30:51 END demo-M04-int8 (exit 0)
+
+=== 2026-10-21 08:30:51 START whisper-tiny
+
+Loading weights:   0%|          | 0/167 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 167/167 [00:00<00:00, 14818.98it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+F03 done
+F04 done
+FC02 done
+FC03 done
+M02 done
+M03 done
+M04 done
+M05 done
+MC01 done
+MC02 done
+MC03 done
+MC04 done
+=== 2026-10-21 08:40:20 END whisper-tiny (exit 0)
+
+=== 2026-10-21 08:40:20 START whisper-base
+
+Loading weights:   0%|          | 0/245 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 245/245 [00:00<00:00, 19277.46it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+F03 done
+F04 done
+FC02 done
+FC03 done
+M02 done
+M03 done
+M04 done
+M05 done
+MC01 done
+MC02 done
+MC03 done
+MC04 done
+=== 2026-10-21 08:57:28 END whisper-base (exit 0)
+
+=== 2026-10-21 08:57:28 START whisper-embed-tiny
+
+Loading weights:   0%|          | 0/167 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 167/167 [00:00<00:00, 8717.47it/s]
+tiny 0 / 6216
+tiny 200 / 6216
+tiny 400 / 6216
+tiny 600 / 6216
+tiny 800 / 6216
+tiny 1000 / 6216
+tiny 1200 / 6216
+tiny 1400 / 6216
+tiny 1600 / 6216
+tiny 1800 / 6216
+tiny 2000 / 6216
+tiny 2200 / 6216
+tiny 2400 / 6216
+tiny 2600 / 6216
+tiny 2800 / 6216
+tiny 3000 / 6216
+tiny 3200 / 6216
+tiny 3400 / 6216
+tiny 3600 / 6216
+tiny 3800 / 6216
+tiny 4000 / 6216
+tiny 4200 / 6216
+tiny 4400 / 6216
+tiny 4600 / 6216
+tiny 4800 / 6216
+tiny 5000 / 6216
+tiny 5200 / 6216
+tiny 5400 / 6216
+tiny 5600 / 6216
+tiny 5800 / 6216
+tiny 6000 / 6216
+tiny 6200 / 6216
+done data/embeddings/torgo_whisper_tiny (6216, 384)
+=== 2026-10-21 09:01:53 END whisper-embed-tiny (exit 0)
+
+=== 2026-10-21 09:01:53 START whisper-embed-base
+
+Loading weights:   0%|          | 0/245 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 245/245 [00:00<00:00, 10421.53it/s]
+base 0 / 6216
+base 200 / 6216
+base 400 / 6216
+base 600 / 6216
+base 800 / 6216
+base 1000 / 6216
+base 1200 / 6216
+base 1400 / 6216
+base 1600 / 6216
+base 1800 / 6216
+base 2000 / 6216
+base 2200 / 6216
+base 2400 / 6216
+base 2600 / 6216
+base 2800 / 6216
+base 3000 / 6216
+base 3200 / 6216
+base 3400 / 6216
+base 3600 / 6216
+base 3800 / 6216
+base 4000 / 6216
+base 4200 / 6216
+base 4400 / 6216
+base 4600 / 6216
+base 4800 / 6216
+base 5000 / 6216
+base 5200 / 6216
+base 5400 / 6216
+base 5600 / 6216
+base 5800 / 6216
+base 6000 / 6216
+base 6200 / 6216
+done data/embeddings/torgo_whisper_base (6216, 512)
+=== 2026-10-21 09:11:11 END whisper-embed-base (exit 0)
+
+=== 2026-10-21 09:11:11 START whisper-embed-medium
+
+Loading weights:   0%|          | 0/947 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 947/947 [00:00<00:00, 10659.38it/s]
+medium 0 / 6216
+medium 200 / 6216
+medium 400 / 6216
+medium 600 / 6216
+medium 800 / 6216
+medium 1000 / 6216
+medium 1200 / 6216
+medium 1400 / 6216
+medium 1600 / 6216
+medium 1800 / 6216
+medium 2000 / 6216
+medium 2200 / 6216
+medium 2400 / 6216
+medium 2600 / 6216
+medium 2800 / 6216
+medium 3000 / 6216
+medium 3200 / 6216
+medium 3400 / 6216
+medium 3600 / 6216
+medium 3800 / 6216
+medium 4000 / 6216
+medium 4200 / 6216
+medium 4400 / 6216
+medium 4600 / 6216
+medium 4800 / 6216
+medium 5000 / 6216
+medium 5200 / 6216
+medium 5400 / 6216
+medium 5600 / 6216
+medium 5800 / 6216
+medium 6000 / 6216
+medium 6200 / 6216
+done data/embeddings/torgo_whisper_medium (6216, 1024)
+=== 2026-10-21 11:44:47 END whisper-embed-medium (exit 0)
+
+=== 2026-10-21 11:44:47 START shared-ft-F03
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 26718.54it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### F03: 684 training recordings from other speakers, 21 words, 51 test
+  F03 shared-FT epoch 1/5 317s
+F03 shared-FT 1 uar=0.817
+  F03 shared-FT epoch 2/5 655s
+  F03 shared-FT epoch 3/5 1034s
+F03 shared-FT 3 uar=0.913
+  F03 shared-FT epoch 4/5 1396s
+  F03 shared-FT epoch 5/5 1754s
+F03 shared-FT 5 uar=0.885
+=== 2026-10-21 12:14:37 END shared-ft-F03 (exit 0)
+
+=== 2026-10-21 12:14:37 START shared-ft-F04
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 24744.81it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### F04: 551 training recordings from other speakers, 15 words, 36 test
+  F04 shared-FT epoch 1/5 285s
+F04 shared-FT 1 uar=1.000
+  F04 shared-FT epoch 2/5 559s
+  F04 shared-FT epoch 3/5 815s
+F04 shared-FT 3 uar=1.000
+  F04 shared-FT epoch 4/5 1181s
+  F04 shared-FT epoch 5/5 1362s
+F04 shared-FT 5 uar=1.000
+=== 2026-10-21 12:38:33 END shared-ft-F04 (exit 0)
+
+=== 2026-10-21 12:38:33 START shared-ft-M02
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 57116.92it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### M02: 433 training recordings from other speakers, 11 words, 25 test
+  M02 shared-FT epoch 1/5 128s
+M02 shared-FT 1 uar=0.667
+  M02 shared-FT epoch 2/5 257s
+  M02 shared-FT epoch 3/5 385s
+M02 shared-FT 3 uar=0.818
+  M02 shared-FT epoch 4/5 517s
+  M02 shared-FT epoch 5/5 639s
+M02 shared-FT 5 uar=0.773
+=== 2026-10-21 12:49:23 END shared-ft-M02 (exit 0)
+
+=== 2026-10-21 12:49:23 START shared-ft-M03
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 61805.86it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### M03: 438 training recordings from other speakers, 11 words, 23 test
+  M03 shared-FT epoch 1/5 128s
+M03 shared-FT 1 uar=0.773
+  M03 shared-FT epoch 2/5 264s
+  M03 shared-FT epoch 3/5 391s
+M03 shared-FT 3 uar=0.864
+  M03 shared-FT epoch 4/5 515s
+  M03 shared-FT epoch 5/5 637s
+M03 shared-FT 5 uar=0.818
+=== 2026-10-21 13:00:10 END shared-ft-M03 (exit 0)
+
+=== 2026-10-21 13:00:10 START shared-ft-M04
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 54834.30it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### M04: 695 training recordings from other speakers, 23 words, 62 test
+  M04 shared-FT epoch 1/5 200s
+M04 shared-FT 1 uar=0.610
+  M04 shared-FT epoch 2/5 404s
+  M04 shared-FT epoch 3/5 604s
+M04 shared-FT 3 uar=0.815
+  M04 shared-FT epoch 4/5 809s
+  M04 shared-FT epoch 5/5 1021s
+M04 shared-FT 5 uar=0.727
+=== 2026-10-21 13:17:36 END shared-ft-M04 (exit 0)
+
+=== 2026-10-21 13:17:36 START shared-ft-M05
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 82694.65it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### M05: 529 training recordings from other speakers, 15 words, 37 test
+  M05 shared-FT epoch 1/5 191s
+M05 shared-FT 1 uar=0.744
+  M05 shared-FT epoch 2/5 411s
+  M05 shared-FT epoch 3/5 638s
+M05 shared-FT 3 uar=0.856
+  M05 shared-FT epoch 4/5 838s
+  M05 shared-FT epoch 5/5 1073s
+M05 shared-FT 5 uar=0.867
+=== 2026-10-21 13:35:49 END shared-ft-M05 (exit 0)
+
+=== 2026-10-21 13:35:49 START shared-ft-FC02
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 45439.28it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.weight           | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### FC02: 2082 training recordings from other speakers, 95 words, 238 test
+  FC02 shared-FT epoch 1/5 641s
+FC02 shared-FT 1 uar=0.901
+  FC02 shared-FT epoch 2/5 1342s
+  FC02 shared-FT epoch 3/5 2019s
+FC02 shared-FT 3 uar=0.913
+  FC02 shared-FT epoch 4/5 2668s
+  FC02 shared-FT epoch 5/5 3269s
+FC02 shared-FT 5 uar=0.903
+=== 2026-10-21 14:31:20 END shared-ft-FC02 (exit 0)
+
+=== 2026-10-21 14:31:20 START shared-ft-FC03
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 39983.65it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### FC03: 1838 training recordings from other speakers, 76 words, 184 test
+  FC03 shared-FT epoch 1/5 567s
+FC03 shared-FT 1 uar=0.853
+  FC03 shared-FT epoch 2/5 1058s
+  FC03 shared-FT epoch 3/5 1571s
+FC03 shared-FT 3 uar=0.959
+  FC03 shared-FT epoch 4/5 2070s
+  FC03 shared-FT epoch 5/5 2579s
+FC03 shared-FT 5 uar=0.958
+=== 2026-10-21 15:14:58 END shared-ft-FC03 (exit 0)
+
+=== 2026-10-21 15:14:58 START shared-ft-MC01
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 55388.54it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### MC01: 1919 training recordings from other speakers, 86 words, 216 test
+  MC01 shared-FT epoch 1/5 493s
+MC01 shared-FT 1 uar=0.895
+  MC01 shared-FT epoch 2/5 989s
+  MC01 shared-FT epoch 3/5 1540s
+MC01 shared-FT 3 uar=0.960
+  MC01 shared-FT epoch 4/5 2100s
+  MC01 shared-FT epoch 5/5 2658s
+MC01 shared-FT 5 uar=0.929
+=== 2026-10-21 16:00:11 END shared-ft-MC01 (exit 0)
+
+=== 2026-10-21 16:00:11 START shared-ft-MC02
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 51207.76it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### MC02: 1008 training recordings from other speakers, 33 words, 74 test
+  MC02 shared-FT epoch 1/5 298s
+MC02 shared-FT 1 uar=0.939
+  MC02 shared-FT epoch 2/5 588s
+  MC02 shared-FT epoch 3/5 903s
+MC02 shared-FT 3 uar=0.985
+  MC02 shared-FT epoch 4/5 1207s
+  MC02 shared-FT epoch 5/5 1540s
+MC02 shared-FT 5 uar=0.985
+=== 2026-10-21 16:26:19 END shared-ft-MC02 (exit 0)
+
+=== 2026-10-21 16:26:19 START shared-ft-MC03
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 48213.02it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### MC03: 1626 training recordings from other speakers, 63 words, 155 test
+  MC03 shared-FT epoch 1/5 544s
+MC03 shared-FT 1 uar=0.890
+  MC03 shared-FT epoch 2/5 1072s
+  MC03 shared-FT epoch 3/5 1725s
+MC03 shared-FT 3 uar=0.911
+  MC03 shared-FT epoch 4/5 2367s
+  MC03 shared-FT epoch 5/5 3145s
+MC03 shared-FT 5 uar=0.932
+=== 2026-10-21 17:19:14 END shared-ft-MC03 (exit 0)
+
+=== 2026-10-21 17:19:14 START shared-ft-MC04
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 58986.11it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.weight             | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+### MC04: 1886 training recordings from other speakers, 82 words, 199 test
+  MC04 shared-FT epoch 1/5 923s
+MC04 shared-FT 1 uar=0.828
+  MC04 shared-FT epoch 2/5 1743s
+  MC04 shared-FT epoch 3/5 2497s
+MC04 shared-FT 3 uar=0.921
+  MC04 shared-FT epoch 4/5 3066s
+  MC04 shared-FT epoch 5/5 3642s
+MC04 shared-FT 5 uar=0.933
+=== 2026-10-21 18:20:27 END shared-ft-MC04 (exit 0)
+### run 14 finished qua 21 out 2026 18:20:27 -03

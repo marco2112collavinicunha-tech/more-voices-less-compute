@@ -1,0 +1,473 @@
+{
+  "corpus": "torgo",
+  "k": 1,
+  "j_per_gflop": 0.285,
+  "xlsr_linear_fit": {
+    "12": {
+      "intercept_flops": -311437311.99997205,
+      "flops_per_second": 20899430400.0,
+      "max_rel_residual": 8.603367430223269e-16
+    },
+    "18": {
+      "intercept_flops": -462432255.99999326,
+      "flops_per_second": 28449177600.000004,
+      "max_rel_residual": 3.684169684143657e-16
+    },
+    "24": {
+      "intercept_flops": -613427199.9999954,
+      "flops_per_second": 35998924800.00001,
+      "max_rel_residual": 4.2873842358877855e-16
+    }
+  },
+  "whisper": {
+    "encoder_flops": 916977888000,
+    "free_flops": 1078514045696,
+    "per_candidate_flops": 4054312960,
+    "oneoff_flops": 151805806592,
+    "per_token_flops": 810862592,
+    "tokens_per_candidate": 5,
+    "check_forced12_model": 1205008610048,
+    "check_forced12_measured": 1205008610048
+  },
+  "finetune_flops_per_2p2s_clip": {
+    "full": 256148328448,
+    "top4": 171644637184,
+    "lora": 161186664448,
+    "full_L12": 155645710336
+  },
+  "speakers": {
+    "F03": {
+      "group": "dysarthric",
+      "n_items": 21,
+      "n_train": 21,
+      "n_test": 51,
+      "mean_s_train": 1.626931547619048,
+      "mean_s_test": 1.8045857843137252,
+      "n_other_recordings": 684,
+      "shared_oneoff_embed_flops": 24689951802163.223,
+      "per_recognition_flops": {
+        "L12": 37403377688.09414,
+        "L18": 50876549216.37648,
+        "L24": 64349720744.65884,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1153924266752
+      },
+      "per_user_flops": {
+        "frozen_L12": 707500611993.6007,
+        "frozen_L24": 1217041543987.2007,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 707500611993.6007,
+        "finetune_full_ep10": 39779326022093.97,
+        "finetune_full_ep30": 119337978066281.9,
+        "finetune_top4_ep10": 26656070815908.08,
+        "finetune_top4_ep30": 79968212447724.22,
+        "finetune_lora_ep10": 25031968447112.15,
+        "finetune_lora_ep30": 75095905341336.44,
+        "finetune_full_L12_ep10": 24171469292461.387,
+        "finetune_full_L12_ep30": 72514407877384.16
+      }
+    },
+    "F04": {
+      "group": "dysarthric",
+      "n_items": 15,
+      "n_train": 15,
+      "n_test": 36,
+      "mean_s_train": 1.3463166666666668,
+      "mean_s_test": 1.9977951388888888,
+      "n_other_recordings": 551,
+      "shared_oneoff_embed_flops": 19814917809356.816,
+      "per_recognition_flops": {
+        "L12": 41441343146.666695,
+        "L18": 56373196458.66668,
+        "L24": 71305049770.66669,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1129598388992
+      },
+      "per_user_flops": {
+        "frozen_L12": 417387212390.40045,
+        "frozen_L24": 717787878604.8003,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 417387212390.40045,
+        "finetune_full_ep10": 23512961163296.582,
+        "finetune_full_ep30": 70538883489889.75,
+        "finetune_top4_ep10": 15756002439870.836,
+        "finetune_top4_ep30": 47268007319612.51,
+        "finetune_lora_ep10": 14796019963005.674,
+        "finetune_lora_ep30": 44388059889017.02,
+        "finetune_full_L12_ep10": 14287391858217.89,
+        "finetune_full_L12_ep30": 42862175574653.67
+      }
+    },
+    "FC02": {
+      "group": "control",
+      "n_items": 95,
+      "n_train": 95,
+      "n_test": 238,
+      "mean_s_train": 1.7869342105263155,
+      "mean_s_test": 1.8641730567226893,
+      "n_other_recordings": 2082,
+      "shared_oneoff_embed_flops": 72252401984716.86,
+      "per_recognition_flops": {
+        "L12": 38648717740.53113,
+        "L18": 52571758111.83868,
+        "L24": 66494798483.14625,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1453943425792
+      },
+      "per_user_flops": {
+        "frozen_L12": 3518274635776.0024,
+        "frozen_L24": 6052856891392.001,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 3518274635776.0024,
+        "finetune_full_ep10": 197651909326917.78,
+        "finetune_full_ep30": 592955727980753.4,
+        "finetune_top4_ep10": 132446268420724.33,
+        "finetune_top4_ep30": 397338805262173.0,
+        "finetune_lora_ep10": 124376575788008.7,
+        "finetune_lora_ep30": 373129727364026.1,
+        "finetune_full_L12_ep10": 120101005588642.88,
+        "finetune_full_L12_ep30": 360303016765928.7
+      }
+    },
+    "FC03": {
+      "group": "control",
+      "n_items": 76,
+      "n_train": 76,
+      "n_test": 184,
+      "mean_s_train": 1.9383207236842106,
+      "mean_s_test": 1.6434103260869568,
+      "n_other_recordings": 1838,
+      "shared_oneoff_embed_flops": 65215402173644.86,
+      "per_recognition_flops": {
+        "L12": 34034902416.695686,
+        "L18": 46291239980.52176,
+        "L24": 58547577544.347855,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1376911479552
+      },
+      "per_user_flops": {
+        "frozen_L12": 3055075492659.2026,
+        "frozen_L24": 5256466642534.4,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 3055075492659.2026,
+        "finetune_full_ep10": 171517357345249.72,
+        "finetune_full_ep30": 514552072035749.2,
+        "finetune_top4_ep10": 114933541634492.5,
+        "finetune_top4_ep30": 344800624903477.5,
+        "finetune_lora_ep10": 107930865264377.02,
+        "finetune_lora_ep30": 323792595793131.06,
+        "finetune_full_L12_ep10": 104220632946173.67,
+        "finetune_full_L12_ep30": 312661898838521.0
+      }
+    },
+    "M02": {
+      "group": "dysarthric",
+      "n_items": 11,
+      "n_train": 11,
+      "n_test": 25,
+      "mean_s_train": 1.1012784090909091,
+      "mean_s_test": 1.7152024999999997,
+      "n_other_recordings": 433,
+      "shared_oneoff_embed_flops": 15826723178086.412,
+      "per_recognition_flops": {
+        "L12": 35535317958.65603,
+        "L18": 48333668286.464005,
+        "L24": 61132018614.27201,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1113381137152
+      },
+      "per_user_flops": {
+        "frozen_L12": 249751195648.0003,
+        "frozen_L24": 429345525760.0002,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 249751195648.0003,
+        "finetune_full_ep10": 14104531182225.453,
+        "finetune_full_ep30": 42313593546676.36,
+        "finetune_top4_ep10": 9451426648349.09,
+        "finetune_top4_ep30": 28354279945047.27,
+        "finetune_lora_ep10": 8875569669498.182,
+        "finetune_lora_ep30": 26626709008494.543,
+        "finetune_full_L12_ep10": 8570463013032.727,
+        "finetune_full_L12_ep30": 25711389039098.18
+      }
+    },
+    "M03": {
+      "group": "dysarthric",
+      "n_items": 11,
+      "n_train": 11,
+      "n_test": 23,
+      "mean_s_train": 0.8018863636363637,
+      "mean_s_test": 0.7631875,
+      "n_other_recordings": 438,
+      "shared_oneoff_embed_flops": 16855407331737.613,
+      "per_recognition_flops": {
+        "L12": 15638746726.400028,
+        "L18": 21249624473.60001,
+        "L24": 26860502220.80001,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1113381137152
+      },
+      "per_user_flops": {
+        "frozen_L12": 180922840268.80032,
+        "frozen_L24": 310789816729.60016,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 180922840268.80032,
+        "finetune_full_ep10": 10270092582534.98,
+        "finetune_full_ep30": 30810277747604.945,
+        "finetune_top4_ep10": 6881974697458.036,
+        "finetune_top4_ep30": 20645924092374.105,
+        "finetune_lora_ep10": 6462669411044.072,
+        "finetune_lora_ep30": 19388008233132.22,
+        "finetune_full_L12_ep10": 6240508633846.69,
+        "finetune_full_L12_ep30": 18721525901540.074
+      }
+    },
+    "M04": {
+      "group": "dysarthric",
+      "n_items": 23,
+      "n_train": 23,
+      "n_test": 62,
+      "mean_s_train": 2.2023097826086953,
+      "mean_s_test": 1.5493578629032259,
+      "n_other_recordings": 695,
+      "shared_oneoff_embed_flops": 25739145397043.22,
+      "per_recognition_flops": {
+        "L12": 32069259508.438736,
+        "L18": 43615524751.69034,
+        "L24": 55161789994.941956,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1162032892672
+      },
+      "per_user_flops": {
+        "frozen_L12": 1051458402304.0006,
+        "frozen_L24": 1809349212160.0,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 1051458402304.0006,
+        "finetune_full_ep10": 58975969542807.26,
+        "finetune_full_ep30": 176927908628421.78,
+        "finetune_top4_ep10": 39519714831185.445,
+        "finetune_top4_ep30": 118559144493556.33,
+        "finetune_lora_ep10": 37111855739170.9,
+        "finetune_lora_ep30": 111335567217512.7,
+        "finetune_full_L12_ep10": 35836098278923.625,
+        "finetune_full_L12_ep30": 107508294836770.89
+      }
+    },
+    "M05": {
+      "group": "dysarthric",
+      "n_items": 15,
+      "n_train": 15,
+      "n_test": 37,
+      "mean_s_train": 2.421870833333334,
+      "mean_s_test": 1.9165692567567567,
+      "n_other_recordings": 529,
+      "shared_oneoff_embed_flops": 19358631521484.816,
+      "per_recognition_flops": {
+        "L12": 39743768476.3676,
+        "L18": 54062386912.17299,
+        "L24": 68381005347.9784,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1129598388992
+      },
+      "per_user_flops": {
+        "frozen_L12": 754564254105.6007,
+        "frozen_L24": 1298569782067.2007,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 754564254105.6007,
+        "finetune_full_ep10": 42297147659679.43,
+        "finetune_full_ep30": 126891442979038.28,
+        "finetune_top4_ep10": 28343259579137.17,
+        "finetune_top4_ep30": 85029778737411.52,
+        "finetune_lora_ep10": 26616360091970.332,
+        "finetune_lora_ep30": 79849080275911.0,
+        "finetune_full_L12_ep10": 25701395877014.113,
+        "finetune_full_L12_ep30": 77104187631042.36
+      }
+    },
+    "MC01": {
+      "group": "control",
+      "n_items": 86,
+      "n_train": 86,
+      "n_test": 216,
+      "mean_s_train": 2.528486191860465,
+      "mean_s_test": 2.2752245370370368,
+      "n_other_recordings": 1919,
+      "shared_oneoff_embed_flops": 63502052997529.65,
+      "per_recognition_flops": {
+        "L12": 47239459544.1778,
+        "L18": 64265834678.04446,
+        "L24": 81292209811.91112,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1417454609152
+      },
+      "per_user_flops": {
+        "frozen_L12": 4517793613004.803,
+        "frozen_L24": 7775204708761.601,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 4517793613004.803,
+        "finetune_full_ep10": 253179118150936.4,
+        "finetune_full_ep30": 759537354452809.1,
+        "finetune_top4_ep10": 169654973510415.1,
+        "finetune_top4_ep30": 508964920531245.3,
+        "finetune_lora_ep10": 159318227098718.22,
+        "finetune_lora_ep30": 477954681296154.7,
+        "finetune_full_L12_ep10": 153841502404511.38,
+        "finetune_full_L12_ep30": 461524507213534.2
+      }
+    },
+    "MC02": {
+      "group": "control",
+      "n_items": 33,
+      "n_train": 33,
+      "n_test": 74,
+      "mean_s_train": 2.543570075757576,
+      "mean_s_test": 2.018046452702703,
+      "n_other_recordings": 1008,
+      "shared_oneoff_embed_flops": 35147823684403.23,
+      "per_recognition_flops": {
+        "L12": 41864584070.22706,
+        "L18": 56949329681.98921,
+        "L24": 72034075293.75137,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1202576022272
+      },
+      "per_user_flops": {
+        "frozen_L12": 1743975038976.0012,
+        "frozen_L24": 3001427902464.0015,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 1743975038976.0012,
+        "finetune_full_ep10": 97729683479348.38,
+        "finetune_full_ep30": 293189050438045.06,
+        "finetune_top4_ep10": 65488524420823.27,
+        "finetune_top4_ep30": 196465573262469.84,
+        "finetune_lora_ep10": 61498436445166.55,
+        "finetune_lora_ep30": 184495309335499.66,
+        "finetune_full_L12_ep10": 59384365684602.18,
+        "finetune_full_L12_ep30": 178153097053806.56
+      }
+    },
+    "MC03": {
+      "group": "control",
+      "n_items": 63,
+      "n_train": 63,
+      "n_test": 155,
+      "mean_s_train": 1.6424474206349207,
+      "mean_s_test": 1.2682016129032259,
+      "n_other_recordings": 1626,
+      "shared_oneoff_embed_flops": 59184484383129.65,
+      "per_recognition_flops": {
+        "L12": 26193254030.03874,
+        "L18": 35616860662.09034,
+        "L24": 45040467294.14195,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1324205411072
+      },
+      "per_user_flops": {
+        "frozen_L12": 2142931029196.8018,
+        "frozen_L24": 3686313580953.601,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 2142931029196.8018,
+        "finetune_full_ep10": 120476091661999.7,
+        "finetune_full_ep30": 361428274985999.1,
+        "finetune_top4_ep10": 80730860778848.58,
+        "finetune_top4_ep30": 242192582336545.72,
+        "finetune_lora_ep10": 75812086998145.17,
+        "finetune_lora_ep30": 227436260994435.47,
+        "finetune_full_L12_ep10": 73205970067627.05,
+        "finetune_full_L12_ep30": 219617910202881.16
+      }
+    },
+    "MC04": {
+      "group": "control",
+      "n_items": 82,
+      "n_train": 82,
+      "n_test": 199,
+      "mean_s_train": 1.0776913109756097,
+      "mean_s_test": 1.134334484924623,
+      "n_other_recordings": 1886,
+      "shared_oneoff_embed_flops": 69619490138521.65,
+      "per_recognition_flops": {
+        "L12": 23395507306.002037,
+        "L18": 31808450963.425137,
+        "L24": 40221394620.84826,
+        "whisper_free": 1078514045696,
+        "whisper_forced": 1401237357312
+      },
+      "per_user_flops": {
+        "frozen_L12": 1821359173222.402,
+        "frozen_L24": 3130948703436.801,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 1821359173222.402,
+        "finetune_full_ep10": 102890926758752.56,
+        "finetune_full_ep30": 308672780276257.7,
+        "finetune_top4_ep10": 68947066334718.83,
+        "finetune_top4_ep30": 206841199004156.47,
+        "finetune_lora_ep10": 64746256150461.66,
+        "finetune_lora_ep30": 194238768451384.97,
+        "finetune_full_L12_ep10": 62520538312809.88,
+        "finetune_full_L12_ep30": 187561614938429.66
+      }
+    }
+  },
+  "group_means": {
+    "control": {
+      "n_speakers": 6,
+      "mean_s_test": 1.7005650783962054,
+      "mean_n_items": 72.5,
+      "per_recognition_flops": {
+        "L12": 35229404184.61207,
+        "L18": 47917245679.65159,
+        "L24": 60605087174.69114,
+        "whisper_free": 1078514045696.0,
+        "whisper_forced": 1362721384192.0
+      },
+      "per_user_flops": {
+        "frozen_L12": 2799901497139.2026,
+        "frozen_L24": 4817203071590.401,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 2799901497139.2026,
+        "finetune_full_ep10": 157240847787200.75,
+        "finetune_full_ep30": 471722543361602.2,
+        "finetune_top4_ep10": 105366872516670.44,
+        "finetune_top4_ep30": 316100617550011.3,
+        "finetune_lora_ep10": 98947074624146.23,
+        "finetune_lora_ep30": 296841223872438.7,
+        "finetune_full_L12_ep10": 95545669167394.52,
+        "finetune_full_L12_ep30": 286637007502183.56
+      }
+    },
+    "dysarthric": {
+      "n_speakers": 6,
+      "mean_s_test": 1.6244496738104328,
+      "mean_n_items": 16.0,
+      "per_recognition_flops": {
+        "L12": 33638635584.10387,
+        "L18": 45751825016.49508,
+        "L24": 57865014448.886314,
+        "whisper_free": 1078514045696.0,
+        "whisper_forced": 1133652701952.0
+      },
+      "per_user_flops": {
+        "frozen_L12": 560264086118.4005,
+        "frozen_L24": 963813959884.8004,
+        "shared_L12": 0.0,
+        "xpl_shared_own_L12": 560264086118.4005,
+        "finetune_full_ep10": 31490004692106.28,
+        "finetune_full_ep30": 94470014076318.83,
+        "finetune_top4_ep10": 21101408168651.44,
+        "finetune_top4_ep30": 63304224505954.32,
+        "finetune_lora_ep10": 19815740553633.55,
+        "finetune_lora_ep30": 59447221660900.66,
+        "finetune_full_L12_ep10": 19134554492249.402,
+        "finetune_full_L12_ep30": 57403663476748.22
+      }
+    }
+  },
+  "shared_fit_seconds_largest": {
+    "speaker": "FC02",
+    "n_recordings": 2082,
+    "n_items": 95,
+    "seconds": 12.177247275000127,
+    "machine": "cloud VM, 2 CPU threads"
+  }
+}

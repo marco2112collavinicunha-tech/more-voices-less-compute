@@ -1,0 +1,21 @@
+{
+  "unit": "gCO2e per kWh of electricity generated (lifecycle)",
+  "year": 2025,
+  "source": "Ember (2026); Energy Institute Statistical Review of World Energy (2026), via Our World in Data, 'Carbon intensity of electricity generation' (https://ourworldindata.org/grapher/carbon-intensity-electricity). Retrieved 2026-10-14.",
+  "note": "Values marked carried_from_2024 are the 2024 value repeated by OWID for 2025.",
+  "founding_members": {
+    "Brazil": 109.95,
+    "Russia": 449.73,
+    "India": 670.13,
+    "China": 525.34,
+    "South Africa": 699.29
+  },
+  "other_members": {
+    "Egypt": 563.23,
+    "Ethiopia": 23.08,
+    "Iran": 659.53,
+    "United Arab Emirates": 467.51,
+    "Indonesia": 680.25
+  },
+  "carried_from_2024": ["United Arab Emirates", "Indonesia"]
+}

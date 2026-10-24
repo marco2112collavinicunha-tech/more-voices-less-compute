@@ -1,0 +1,58 @@
+{
+  "clip_s": 2.2,
+  "energy_mode": "estimated from computation at 0.285 J/GFLOP (published measurement, low-cost ARM board)",
+  "inference_flops": {
+    "xlsr_L24": 78584207360,
+    "xlsr_L18": 62125758464,
+    "xlsr_L12": 45667309568,
+    "xlsr_L12_int8": 45667309568,
+    "whisper_free": 1078514045696,
+    "whisper_forced12": 1205008610048,
+    "whisper_encoder_only": 916977888000,
+    "predict_1nn": 294912,
+    "predict_logreg": 24576
+  },
+  "inference_flops_ratio_vs_whisper_free": {
+    "xlsr_L24": 0.07286340653012735,
+    "xlsr_L18": 0.057603105598785447,
+    "xlsr_L12": 0.042342804667443536,
+    "xlsr_L12_int8": 0.042342804667443536,
+    "whisper_free": 1.0,
+    "whisper_forced12": 1.1172859684644803,
+    "whisper_encoder_only": 0.8502234084566275
+  },
+  "layer12_vs_layer24_flops": 0.5811257898014383,
+  "layer18_vs_layer24_flops": 0.7905628949007192,
+  "personalisation_flops": {
+    "Generic: Whisper-medium, free transcription": 0,
+    "Generic: Whisper-medium, forced choice (12)": 0,
+    "Per-speaker fine-tuning, all layers (10 ep)": 245902395310080,
+    "Per-speaker fine-tuning, top 4 layers (10 ep)": 164778851696640,
+    "Per-speaker fine-tuning, LoRA (10 ep)": 154739197870080,
+    "Per-speaker fine-tuning, all layers of a model cut at layer 12 (10 ep)": 149419881922560,
+    "Per-speaker fine-tuning, all layers (30 ep)": 737707185930240,
+    "Per-speaker fine-tuning, top 4 layers (30 ep)": 494336555089920,
+    "Per-speaker fine-tuning, LoRA (30 ep)": 464217593610240,
+    "Per-speaker fine-tuning, all layers of a model cut at layer 12 (30 ep)": 448259645767680,
+    "Personalized (protocol), full 24-layer pass": 7544083906560,
+    "Personalized, truncated at layer 18": 5964072812544,
+    "Personalized, truncated at layer 12 (1-NN)": 4384061718528,
+    "Personalized, layer 12, int8 (fidelity pending)": 4384061718528
+  },
+  "per_user_storage_bytes": {
+    "Generic: Whisper-medium, free transcription": 0,
+    "Generic: Whisper-medium, forced choice (12)": 0,
+    "Per-speaker fine-tuning, all layers (10 ep)": 1261799472,
+    "Per-speaker fine-tuning, top 4 layers (10 ep)": 201596976,
+    "Per-speaker fine-tuning, LoRA (10 ep)": 3194928,
+    "Per-speaker fine-tuning, all layers of a model cut at layer 12 (10 ep)": 657172528,
+    "Per-speaker fine-tuning, all layers (30 ep)": 1261799472,
+    "Per-speaker fine-tuning, top 4 layers (30 ep)": 201596976,
+    "Per-speaker fine-tuning, LoRA (30 ep)": 3194928,
+    "Per-speaker fine-tuning, all layers of a model cut at layer 12 (30 ep)": 657172528,
+    "Personalized (protocol), full 24-layer pass": 57392,
+    "Personalized, truncated at layer 18": 57392,
+    "Personalized, truncated at layer 12 (1-NN)": 401408,
+    "Personalized, layer 12, int8 (fidelity pending)": 401408
+  }
+}

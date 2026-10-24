@@ -1,0 +1,3 @@
+corpus,speaker,group,item,utt_id,path,session,samples_after_trim
+torgo,F03,dysarthric,no,F03/Session1/0118,data/torgo/F03/Session1/wav_headMic/0118.wav,Session1,3099276
+torgo,M01,dysarthric,hill,M01/Session2_3/0180,data/torgo/M01/Session2_3/wav_headMic/0180.wav,Session2_3,2757391

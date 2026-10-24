@@ -1,0 +1,337 @@
+{
+  "note": "exploratory design analyses, analysis C",
+  "flop_model_check_L18": 1.0,
+  "groups": {
+    "control": {
+      "whisper_forced_uar": 91.82962026579365,
+      "whisper_scoring": "mean",
+      "whisper_gflop": 1362.7213841920002,
+      "layers": {
+        "1": {
+          "uar": 43.92,
+          "gflop": 11.97
+        },
+        "2": {
+          "uar": 46.91,
+          "gflop": 14.08
+        },
+        "3": {
+          "uar": 49.36,
+          "gflop": 16.2
+        },
+        "4": {
+          "uar": 56.81,
+          "gflop": 18.31
+        },
+        "5": {
+          "uar": 65.58,
+          "gflop": 20.43
+        },
+        "6": {
+          "uar": 74.92,
+          "gflop": 22.54
+        },
+        "7": {
+          "uar": 77.33,
+          "gflop": 24.66
+        },
+        "8": {
+          "uar": 81.88,
+          "gflop": 26.77
+        },
+        "9": {
+          "uar": 85.34,
+          "gflop": 28.89
+        },
+        "10": {
+          "uar": 87.56,
+          "gflop": 31.0
+        },
+        "11": {
+          "uar": 89.01,
+          "gflop": 33.11
+        },
+        "12": {
+          "uar": 89.41,
+          "gflop": 35.23
+        },
+        "13": {
+          "uar": 88.23,
+          "gflop": 37.34
+        },
+        "14": {
+          "uar": 88.38,
+          "gflop": 39.46
+        },
+        "15": {
+          "uar": 87.72,
+          "gflop": 41.57
+        },
+        "16": {
+          "uar": 87.36,
+          "gflop": 43.69
+        },
+        "17": {
+          "uar": 86.91,
+          "gflop": 45.8
+        },
+        "18": {
+          "uar": 82.79,
+          "gflop": 47.92
+        },
+        "19": {
+          "uar": 76.2,
+          "gflop": 50.03
+        },
+        "20": {
+          "uar": 69.69,
+          "gflop": 52.15
+        },
+        "21": {
+          "uar": 67.27,
+          "gflop": 54.26
+        },
+        "22": {
+          "uar": 33.86,
+          "gflop": 56.38
+        },
+        "23": {
+          "uar": 34.5,
+          "gflop": 58.49
+        },
+        "24": {
+          "uar": 34.84,
+          "gflop": 60.61
+        }
+      },
+      "best_layer": 12,
+      "best_layer_uar": 89.40638369166794,
+      "cheapest_layer_matching_whisper": null,
+      "cheapest_layer_uar": null,
+      "cheapest_layer_gflop": null,
+      "cheapest_layer_ratio_whisper": null,
+      "cheapest_layer_n_speakers_not_below_whisper": null,
+      "n_speakers": 6,
+      "accuracy_coverage": [
+        {
+          "coverage": 1.0,
+          "accuracy": 89.11819887429644,
+          "threshold": 0.12179027497768402
+        },
+        {
+          "coverage": 0.9,
+          "accuracy": 93.0135557872784,
+          "threshold": 0.43735596537590027
+        },
+        {
+          "coverage": 0.8,
+          "accuracy": 96.13130128956624,
+          "threshold": 0.620413064956665
+        },
+        {
+          "coverage": 0.7,
+          "accuracy": 97.98927613941018,
+          "threshold": 0.7847689986228943
+        },
+        {
+          "coverage": 0.6,
+          "accuracy": 98.28125,
+          "threshold": 0.8779909014701843
+        },
+        {
+          "coverage": 0.5,
+          "accuracy": 99.06191369606003,
+          "threshold": 0.9347367286682129
+        }
+      ],
+      "other_speakers_curve": {},
+      "int8_shared_uar": 87.86133145119894,
+      "fp_shared_uar": 89.40638369166794,
+      "int8_max_abs_diff_points": 5.303030303030298
+    },
+    "dysarthric": {
+      "whisper_forced_uar": 75.28880941924422,
+      "whisper_scoring": "mean",
+      "whisper_gflop": 1133.6527019520001,
+      "layers": {
+        "1": {
+          "uar": 59.61,
+          "gflop": 11.43
+        },
+        "2": {
+          "uar": 59.7,
+          "gflop": 13.45
+        },
+        "3": {
+          "uar": 63.17,
+          "gflop": 15.47
+        },
+        "4": {
+          "uar": 67.27,
+          "gflop": 17.49
+        },
+        "5": {
+          "uar": 70.96,
+          "gflop": 19.51
+        },
+        "6": {
+          "uar": 73.42,
+          "gflop": 21.53
+        },
+        "7": {
+          "uar": 77.33,
+          "gflop": 23.54
+        },
+        "8": {
+          "uar": 75.12,
+          "gflop": 25.56
+        },
+        "9": {
+          "uar": 81.65,
+          "gflop": 27.58
+        },
+        "10": {
+          "uar": 77.9,
+          "gflop": 29.6
+        },
+        "11": {
+          "uar": 80.38,
+          "gflop": 31.62
+        },
+        "12": {
+          "uar": 80.46,
+          "gflop": 33.64
+        },
+        "13": {
+          "uar": 81.17,
+          "gflop": 35.66
+        },
+        "14": {
+          "uar": 81.81,
+          "gflop": 37.68
+        },
+        "15": {
+          "uar": 79.03,
+          "gflop": 39.7
+        },
+        "16": {
+          "uar": 77.69,
+          "gflop": 41.71
+        },
+        "17": {
+          "uar": 77.14,
+          "gflop": 43.73
+        },
+        "18": {
+          "uar": 74.92,
+          "gflop": 45.75
+        },
+        "19": {
+          "uar": 76.32,
+          "gflop": 47.77
+        },
+        "20": {
+          "uar": 74.68,
+          "gflop": 49.79
+        },
+        "21": {
+          "uar": 72.84,
+          "gflop": 51.81
+        },
+        "22": {
+          "uar": 47.97,
+          "gflop": 53.83
+        },
+        "23": {
+          "uar": 47.63,
+          "gflop": 55.85
+        },
+        "24": {
+          "uar": 48.11,
+          "gflop": 57.87
+        }
+      },
+      "best_layer": 14,
+      "best_layer_uar": 81.8073593073593,
+      "cheapest_layer_matching_whisper": 7,
+      "cheapest_layer_uar": 77.33337515946211,
+      "cheapest_layer_gflop": 23.544311057111187,
+      "cheapest_layer_ratio_whisper": 48.14975045148319,
+      "cheapest_layer_n_speakers_not_below_whisper": 5,
+      "n_speakers": 6,
+      "accuracy_coverage": [
+        {
+          "coverage": 1.0,
+          "accuracy": 77.77777777777779,
+          "threshold": 0.1512223333120346
+        },
+        {
+          "coverage": 0.9,
+          "accuracy": 80.56872037914692,
+          "threshold": 0.48132047057151794
+        },
+        {
+          "coverage": 0.8,
+          "accuracy": 84.49197860962568,
+          "threshold": 0.6875400543212891
+        },
+        {
+          "coverage": 0.7,
+          "accuracy": 87.8048780487805,
+          "threshold": 0.8063098788261414
+        },
+        {
+          "coverage": 0.6,
+          "accuracy": 92.14285714285714,
+          "threshold": 0.9001969695091248
+        },
+        {
+          "coverage": 0.5,
+          "accuracy": 94.01709401709401,
+          "threshold": 0.9561282992362976
+        }
+      ],
+      "other_speakers_curve": {
+        "1": 41.45,
+        "2": 56.58,
+        "3": 66.82,
+        "4": 70.41,
+        "6": 74.77,
+        "8": 77.14,
+        "11": 80.46
+      },
+      "int8_shared_uar": 79.41527071961855,
+      "fp_shared_uar": 80.46196959240439,
+      "int8_max_abs_diff_points": 5.555555555555558
+    }
+  },
+  "energy_anchors_config": {
+    "_comment": "Published measurements used to turn computation (FLOPs) into energy until a hardware meter is used. Each anchor gives joules per GFLOP for a class of device. Values marked derived are computed in pipeline/s03c_energy.py from the cited figures; the derivation is printed in results.",
+    "anchors": {
+      "low_cost_arm_board": {
+        "label": "low-cost ARM board (Raspberry Pi 4, 4 x Cortex-A72)",
+        "source": "Gondi (2022), Wav2Vec2.0 on the Edge: Performance Evaluation, arXiv:2202.05993",
+        "reported": {
+          "energy_mWh_per_10s_utterance_unquantised": 11,
+          "added_power_W_4_cores": 2.9,
+          "idle_power_W": 3.1,
+          "model": "wav2vec 2.0 Base (95 M parameters), PyTorch, CPU"
+        },
+        "flops_reference": "wav2vec 2.0 Base on 10 s of audio, counted with the same FLOP counter as this study (results/s03c/energy_anchors.json)",
+        "note": "11 mWh matches added power x inference time (2.9 W x RTF 1.36 x 10 s = 39 J), so it is the energy caused by the workload, idle excluded."
+      },
+      "apple_laptop_cpu": {
+        "label": "Apple Silicon laptop CPU (M1 to M2, all performance cores)",
+        "source": "Notebookcheck (2022), Apple M2 SoC analysis: Cinebench R23 multi-core package power",
+        "reported": {
+          "package_power_W_multi_core_low": 13.2,
+          "package_power_W_multi_core_high": 21.2,
+          "low_device": "MacBook Air M1 (2020)",
+          "high_device": "MacBook Air M2 (2022)"
+        },
+        "throughput_reference": "XLSR-53 forward pass measured on the author's MacBook Pro, Apple Silicon cores, 4 threads (results/s03c/apple_throughput.json)",
+        "note": "Package power under an all-core benchmark is an upper-range figure for a 4-thread inference load; the resulting energy is a bracket, not a measurement."
+      }
+    }
+  }
+}

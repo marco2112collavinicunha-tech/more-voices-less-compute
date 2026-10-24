@@ -1,0 +1,83 @@
+{
+  "env": {
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "torch": "2.14.1",
+    "threads": 4,
+    "pretrained": true,
+    "energy_meter": "none",
+    "timestamp": "2026-10-14T14:45:56"
+  },
+  "rows": [
+    {
+      "system": "finetune_top",
+      "clip_s": 2.2,
+      "trainable_params": 50399244,
+      "flops_per_clip": 171644637184,
+      "flops_per_epoch": 16477885169664,
+      "s_per_clip": 0.5099905834940728,
+      "s_per_epoch": 48.95909601543099,
+      "joules_per_epoch": null,
+      "per_user_model_bytes_fp32": 201596976,
+      "reps": 8,
+      "median_s": 0.5099905834940728,
+      "mean_s": 0.5178306146262912,
+      "stdev_s": 0.026166437842070053,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "finetune_full",
+      "clip_s": 2.2,
+      "trainable_params": 311239692,
+      "flops_per_clip": 256148328448,
+      "flops_per_epoch": 24590239531008,
+      "s_per_clip": 6.2617177910287865,
+      "s_per_epoch": 601.1249079387635,
+      "joules_per_epoch": null,
+      "per_user_model_bytes_fp32": 1261803568,
+      "reps": 3,
+      "median_s": 6.2617177910287865,
+      "mean_s": 5.29566987468085,
+      "stdev_s": 2.035264552499803,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "finetune_lora",
+      "clip_s": 2.2,
+      "trainable_params": 798732,
+      "flops_per_clip": 161186664448,
+      "flops_per_epoch": 15473919787008,
+      "s_per_clip": 0.7808908749721013,
+      "s_per_epoch": 74.96552399732172,
+      "joules_per_epoch": null,
+      "per_user_model_bytes_fp32": 3194928,
+      "reps": 5,
+      "median_s": 0.7808908749721013,
+      "mean_s": 0.8107060249894857,
+      "stdev_s": 0.23120933245421196,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "finetune_full_L12",
+      "clip_s": 2.2,
+      "trainable_params": 160082956,
+      "flops_per_clip": 155645710336,
+      "flops_per_epoch": 14941988192256,
+      "s_per_clip": 5.356775082997046,
+      "s_per_epoch": 514.2504079677165,
+      "joules_per_epoch": null,
+      "per_user_model_bytes_fp32": 657172528,
+      "reps": 3,
+      "median_s": 5.356775082997046,
+      "mean_s": 4.972217416313167,
+      "stdev_s": 0.8183600547250353,
+      "joules_per_call": null,
+      "energy_source": "none"
+    }
+  ],
+  "n_train_clips": 96
+}

@@ -1,0 +1,62 @@
+### energy measurement (run 15) started qui 22 out 2026 15:45:30 -03
+Digite a senha do Mac (não aparece enquanto digita):
+Now drawing from 'Battery Power'
+ -InternalBattery-0 (id=22085731)	85%; discharging; 3:01 remaining present: true
+meter=powermetrics idle_w=2.5149636363636363 threads=4
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 30509.29it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+/Users/marco/Documents/more-voices/pipeline/s03_cost.py:85: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  variants["xlsr_L12_int8"] = torch.ao.quantization.quantize_dynamic(
+/Users/marco/Documents/more-voices/.venv/lib/python3.12/site-packages/torch/ao/nn/quantized/modules/utils.py:72: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:116.)
+  qweight = torch.quantize_per_tensor(
+[W1022 15:49:19.573000000 qlinear_dynamic.cpp:251] Warning: Currently, qnnpack incorrectly ignores reduce_range when it is set to true; this may change in a future release. (function operator())
+{"system": "xlsr_L24", "audio_s": 1.6, "flops": 56984852480, "median_s": 0.1453143539838493, "joules_per_call": 0.5828721585366015}
+{"system": "xlsr_L24", "audio_s": 2.2, "flops": 78584207360, "median_s": 0.16939679207280278, "joules_per_call": 0.3323584250170229}
+{"system": "xlsr_L18", "audio_s": 1.6, "flops": 45056251904, "median_s": 0.10876995848957449, "joules_per_call": 0.22547536709725619}
+{"system": "xlsr_L18", "audio_s": 2.2, "flops": 62125758464, "median_s": 0.13434937491547316, "joules_per_call": 0.2470746253506549}
+{"system": "xlsr_L12", "audio_s": 1.6, "flops": 33127651328, "median_s": 0.07814258337020874, "joules_per_call": 0.1138349667247995}
+{"system": "xlsr_L12", "audio_s": 2.2, "flops": 45667309568, "median_s": 0.09810529148671776, "joules_per_call": 0.1632135076502756}
+{"system": "xlsr_L12_int8", "audio_s": 1.6, "flops": null, "median_s": 0.1370194584596902, "joules_per_call": 0.4661196879001288}
+{"system": "xlsr_L12_int8", "audio_s": 2.2, "flops": null, "median_s": 0.18673574994318187, "joules_per_call": 0.6413664477081601}
+[saved] results/s03_mac_measured/compute_xlsr.json
+fit_1nn 0.984 ms
+fit_logreg 5.273 ms
+fit_protocol_selection 29.178 ms
+predict_1nn 0.462 ms
+predict_logreg 0.142 ms
+[saved] results/s03_mac_measured/compute_heads.json
+
+Loading weights:   0%|          | 0/947 [00:00<?, ?it/s]
+Loading weights:  68%|██████▊   | 642/947 [00:00<00:00, 6418.28it/s]
+Loading weights: 100%|██████████| 947/947 [00:00<00:00, 6546.94it/s]
+{"system": "whisper_encoder_only", "audio_s": 1.6, "flops": 916977888000, "median_s": 1.5089883335167542, "joules_per_call": 5.017466017588334}
+{"system": "whisper_free", "audio_s": 1.6, "flops": 1075270595328, "median_s": 12.129135083872825, "joules_per_call": 9.378529895961805}
+{"system": "whisper_forced12", "audio_s": 1.6, "flops": 1166087205632, "median_s": 9.227314665913582, "joules_per_call": 5.726878771100473}
+{"system": "whisper_encoder_only", "audio_s": 2.2, "flops": 916977888000, "median_s": 1.502591875148937, "joules_per_call": 5.135708168212507}
+{"system": "whisper_free", "audio_s": 2.2, "flops": 1075270595328, "median_s": 10.05490466649644, "joules_per_call": 1.8810632381351198}
+{"system": "whisper_forced12", "audio_s": 2.2, "flops": 1166087205632, "median_s": 9.78227897908073, "joules_per_call": 3.0904048581944714}
+[saved] results/s03_mac_measured/compute_whisper.json
+### energy measurement finished qui 22 out 2026 15:55:56 -03
+/Users/marco/Documents/more-voices/run_mac15.command: line 17: 71225 Terminated: 15          ( while true; do
+    sudo -n true; sleep 50;
+done )
+Pode fechar esta janela.

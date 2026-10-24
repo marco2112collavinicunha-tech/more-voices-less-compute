@@ -1,0 +1,38 @@
+{
+  "pretrained": true,
+  "truncation": {
+    "layer_12": {
+      "max_abs_diff": 0.0,
+      "pooled_cosine": 1.0,
+      "identical": true
+    },
+    "layer_18": {
+      "max_abs_diff": 0.0,
+      "pooled_cosine": 0.9999999403953552,
+      "identical": true
+    }
+  },
+  "whisper_input_shape_by_audio_seconds": {
+    "1.5": [
+      1,
+      80,
+      3000
+    ],
+    "2.2": [
+      1,
+      80,
+      3000
+    ],
+    "5.0": [
+      1,
+      80,
+      3000
+    ],
+    "29.0": [
+      1,
+      80,
+      3000
+    ]
+  },
+  "whisper_always_3000_frames": true
+}

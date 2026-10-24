@@ -1,0 +1,197 @@
+{
+  "corpus": "torgo",
+  "n_recordings": 6791,
+  "n_speakers": 15,
+  "groups": {
+    "dysarthric": 2398,
+    "control": 4393
+  },
+  "per_speaker": {
+    "F01": {
+      "group": "dysarthric",
+      "n_recordings": 94,
+      "n_items": 78,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "F03": {
+      "group": "dysarthric",
+      "n_recordings": 414,
+      "n_items": 297,
+      "eligible_items_by_k": {
+        "1": 22,
+        "2": 10,
+        "4": 1,
+        "8": 1
+      }
+    },
+    "F04": {
+      "group": "dysarthric",
+      "n_recordings": 327,
+      "n_items": 254,
+      "eligible_items_by_k": {
+        "1": 16,
+        "2": 6,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "FC01": {
+      "group": "control",
+      "n_recordings": 122,
+      "n_items": 105,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "FC02": {
+      "group": "control",
+      "n_recordings": 904,
+      "n_items": 596,
+      "eligible_items_by_k": {
+        "1": 96,
+        "2": 33,
+        "4": 5,
+        "8": 0
+      }
+    },
+    "FC03": {
+      "group": "control",
+      "n_recordings": 706,
+      "n_items": 454,
+      "eligible_items_by_k": {
+        "1": 77,
+        "2": 25,
+        "4": 2,
+        "8": 1
+      }
+    },
+    "M01": {
+      "group": "dysarthric",
+      "n_recordings": 281,
+      "n_items": 234,
+      "eligible_items_by_k": {
+        "1": 9,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "M02": {
+      "group": "dysarthric",
+      "n_recordings": 298,
+      "n_items": 244,
+      "eligible_items_by_k": {
+        "1": 12,
+        "2": 4,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "M03": {
+      "group": "dysarthric",
+      "n_recordings": 310,
+      "n_items": 255,
+      "eligible_items_by_k": {
+        "1": 12,
+        "2": 2,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "M04": {
+      "group": "dysarthric",
+      "n_recordings": 300,
+      "n_items": 165,
+      "eligible_items_by_k": {
+        "1": 24,
+        "2": 12,
+        "4": 1,
+        "8": 0
+      }
+    },
+    "M05": {
+      "group": "dysarthric",
+      "n_recordings": 374,
+      "n_items": 286,
+      "eligible_items_by_k": {
+        "1": 17,
+        "2": 8,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "MC01": {
+      "group": "control",
+      "n_recordings": 786,
+      "n_items": 509,
+      "eligible_items_by_k": {
+        "1": 86,
+        "2": 31,
+        "4": 3,
+        "8": 0
+      }
+    },
+    "MC02": {
+      "group": "control",
+      "n_recordings": 501,
+      "n_items": 372,
+      "eligible_items_by_k": {
+        "1": 33,
+        "2": 7,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "MC03": {
+      "group": "control",
+      "n_recordings": 645,
+      "n_items": 438,
+      "eligible_items_by_k": {
+        "1": 63,
+        "2": 21,
+        "4": 1,
+        "8": 0
+      }
+    },
+    "MC04": {
+      "group": "control",
+      "n_recordings": 729,
+      "n_items": 466,
+      "eligible_items_by_k": {
+        "1": 83,
+        "2": 27,
+        "4": 1,
+        "8": 0
+      }
+    }
+  },
+  "primary_k": 1,
+  "speakers_included": [
+    "F03",
+    "F04",
+    "FC02",
+    "FC03",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "MC01",
+    "MC02",
+    "MC03",
+    "MC04"
+  ],
+  "speakers_excluded": [
+    "F01",
+    "FC01",
+    "M01"
+  ],
+  "rule": "largest k in k_values such that every speaker of the corpus keeps >= min_items_per_speaker items with >= k + min_test_per_item productions; decided by s01 from counts only, before any model runs"
+}

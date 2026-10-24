@@ -1,0 +1,287 @@
+{
+  "corpus": "torgo",
+  "k": 1,
+  "speakers": {
+    "F03": {
+      "group": "dysarthric",
+      "n_test": 51,
+      "n_same_session": 21,
+      "all": {
+        "frozen_L12_1nn": 0.2738095238095238,
+        "shared_L12_logreg": 0.8571428571428571,
+        "xpl_shared_own_L12_logreg": 0.8730158730158729,
+        "whisper_forced_mean": 0.7341269841269841
+      },
+      "n_items_cross": 17,
+      "cross_session": {
+        "frozen_L12_1nn": 0.029411764705882353,
+        "shared_L12_logreg": 0.8431372549019607,
+        "xpl_shared_own_L12_logreg": 0.8431372549019607,
+        "whisper_forced_mean": 0.6568627450980392
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.6153846153846154,
+        "shared_L12_logreg": 0.8589743589743589,
+        "xpl_shared_own_L12_logreg": 0.8846153846153846,
+        "whisper_forced_mean": 0.8461538461538461
+      }
+    },
+    "F04": {
+      "group": "dysarthric",
+      "n_test": 36,
+      "n_same_session": 26,
+      "all": {
+        "frozen_L12_1nn": 0.3555555555555555,
+        "shared_L12_logreg": 0.9444444444444444,
+        "xpl_shared_own_L12_logreg": 0.9111111111111111,
+        "whisper_forced_mean": 0.8833333333333333
+      },
+      "n_items_cross": 6,
+      "cross_session": {
+        "frozen_L12_1nn": 0.0,
+        "shared_L12_logreg": 0.9166666666666666,
+        "xpl_shared_own_L12_logreg": 0.6666666666666666,
+        "whisper_forced_mean": 0.9166666666666666
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.5277777777777778,
+        "shared_L12_logreg": 0.9583333333333334,
+        "xpl_shared_own_L12_logreg": 1.0,
+        "whisper_forced_mean": 0.8958333333333334
+      }
+    },
+    "FC02": {
+      "group": "control",
+      "n_test": 238,
+      "n_same_session": 150,
+      "all": {
+        "frozen_L12_1nn": 0.3771929824561403,
+        "shared_L12_logreg": 0.8508771929824562,
+        "xpl_shared_own_L12_logreg": 0.9219298245614033,
+        "whisper_forced_mean": 0.9299999999999999
+      },
+      "n_items_cross": 40,
+      "cross_session": {
+        "frozen_L12_1nn": 0.0,
+        "shared_L12_logreg": 0.9229166666666666,
+        "xpl_shared_own_L12_logreg": 0.9104166666666667,
+        "whisper_forced_mean": 0.95625
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.5518264840182648,
+        "shared_L12_logreg": 0.7990867579908675,
+        "xpl_shared_own_L12_logreg": 0.9018264840182648,
+        "whisper_forced_mean": 0.9063926940639269
+      }
+    },
+    "FC03": {
+      "group": "control",
+      "n_test": 184,
+      "n_same_session": 65,
+      "all": {
+        "frozen_L12_1nn": 0.5239035087719298,
+        "shared_L12_logreg": 0.9671052631578947,
+        "xpl_shared_own_L12_logreg": 0.982456140350877,
+        "whisper_forced_mean": 0.9407894736842105
+      },
+      "n_items_cross": 60,
+      "cross_session": {
+        "frozen_L12_1nn": 0.4,
+        "shared_L12_logreg": 0.9638888888888888,
+        "xpl_shared_own_L12_logreg": 0.9833333333333333,
+        "whisper_forced_mean": 0.9833333333333333
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.6916666666666667,
+        "shared_L12_logreg": 0.9875,
+        "xpl_shared_own_L12_logreg": 0.9875,
+        "whisper_forced_mean": 0.8875
+      }
+    },
+    "M02": {
+      "group": "dysarthric",
+      "n_test": 25,
+      "n_same_session": 15,
+      "all": {
+        "frozen_L12_1nn": 0.3939393939393939,
+        "shared_L12_logreg": 0.6818181818181818,
+        "xpl_shared_own_L12_logreg": 0.7575757575757575,
+        "whisper_forced_mean": 0.7121212121212122
+      },
+      "n_items_cross": 6,
+      "cross_session": {
+        "frozen_L12_1nn": 0.25,
+        "shared_L12_logreg": 0.8333333333333334,
+        "xpl_shared_own_L12_logreg": 0.8333333333333334,
+        "whisper_forced_mean": 0.6666666666666666
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.5,
+        "shared_L12_logreg": 0.6875,
+        "xpl_shared_own_L12_logreg": 0.7916666666666666,
+        "whisper_forced_mean": 0.8125
+      }
+    },
+    "M03": {
+      "group": "dysarthric",
+      "n_test": 23,
+      "n_same_session": 23,
+      "all": {
+        "frozen_L12_1nn": 0.7727272727272727,
+        "shared_L12_logreg": 0.8636363636363636,
+        "xpl_shared_own_L12_logreg": 0.8636363636363636,
+        "whisper_forced_mean": 0.8181818181818182
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.7727272727272727,
+        "shared_L12_logreg": 0.8636363636363636,
+        "xpl_shared_own_L12_logreg": 0.8636363636363636,
+        "whisper_forced_mean": 0.8181818181818182
+      }
+    },
+    "M04": {
+      "group": "dysarthric",
+      "n_test": 62,
+      "n_same_session": 17,
+      "all": {
+        "frozen_L12_1nn": 0.19130434782608696,
+        "shared_L12_logreg": 0.5695652173913043,
+        "xpl_shared_own_L12_logreg": 0.6666666666666666,
+        "whisper_forced_mean": 0.5695652173913043
+      },
+      "n_items_cross": 20,
+      "cross_session": {
+        "frozen_L12_1nn": 0.041666666666666664,
+        "shared_L12_logreg": 0.5416666666666666,
+        "xpl_shared_own_L12_logreg": 0.625,
+        "whisper_forced_mean": 0.6
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.5384615384615384,
+        "shared_L12_logreg": 0.5769230769230769,
+        "xpl_shared_own_L12_logreg": 0.6923076923076923,
+        "whisper_forced_mean": 0.38461538461538464
+      }
+    },
+    "M05": {
+      "group": "dysarthric",
+      "n_test": 37,
+      "n_same_session": 25,
+      "all": {
+        "frozen_L12_1nn": 0.6555555555555556,
+        "shared_L12_logreg": 0.9111111111111111,
+        "xpl_shared_own_L12_logreg": 0.9111111111111111,
+        "whisper_forced_mean": 0.8
+      },
+      "n_items_cross": 7,
+      "cross_session": {
+        "frozen_L12_1nn": 0.5714285714285714,
+        "shared_L12_logreg": 0.8809523809523808,
+        "xpl_shared_own_L12_logreg": 0.8809523809523808,
+        "whisper_forced_mean": 0.9285714285714286
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.7307692307692307,
+        "shared_L12_logreg": 0.8974358974358974,
+        "xpl_shared_own_L12_logreg": 0.8974358974358974,
+        "whisper_forced_mean": 0.6538461538461539
+      }
+    },
+    "MC01": {
+      "group": "control",
+      "n_test": 216,
+      "n_same_session": 76,
+      "all": {
+        "frozen_L12_1nn": 0.2705426356589147,
+        "shared_L12_logreg": 0.8445736434108526,
+        "xpl_shared_own_L12_logreg": 0.9127906976744186,
+        "whisper_forced_mean": 0.9282945736434108
+      },
+      "n_items_cross": 65,
+      "cross_session": {
+        "frozen_L12_1nn": 0.11025641025641027,
+        "shared_L12_logreg": 0.9243589743589744,
+        "xpl_shared_own_L12_logreg": 0.9256410256410257,
+        "whisper_forced_mean": 0.9538461538461539
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.5018939393939393,
+        "shared_L12_logreg": 0.7840909090909091,
+        "xpl_shared_own_L12_logreg": 0.9015151515151515,
+        "whisper_forced_mean": 0.8844696969696969
+      }
+    },
+    "MC02": {
+      "group": "control",
+      "n_test": 74,
+      "n_same_session": 36,
+      "all": {
+        "frozen_L12_1nn": 0.2550505050505051,
+        "shared_L12_logreg": 0.914141414141414,
+        "xpl_shared_own_L12_logreg": 0.9393939393939394,
+        "whisper_forced_mean": 0.8939393939393939
+      },
+      "n_items_cross": 25,
+      "cross_session": {
+        "frozen_L12_1nn": 0.04,
+        "shared_L12_logreg": 0.92,
+        "xpl_shared_own_L12_logreg": 0.9,
+        "whisper_forced_mean": 0.94
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.5,
+        "shared_L12_logreg": 0.9166666666666665,
+        "xpl_shared_own_L12_logreg": 0.9772727272727273,
+        "whisper_forced_mean": 0.9090909090909091
+      }
+    },
+    "MC03": {
+      "group": "control",
+      "n_test": 155,
+      "n_same_session": 81,
+      "all": {
+        "frozen_L12_1nn": 0.27380952380952384,
+        "shared_L12_logreg": 0.9187830687830688,
+        "xpl_shared_own_L12_logreg": 0.9465608465608466,
+        "whisper_forced_mean": 0.9214285714285714
+      },
+      "n_items_cross": 45,
+      "cross_session": {
+        "frozen_L12_1nn": 0.07777777777777778,
+        "shared_L12_logreg": 0.9666666666666667,
+        "xpl_shared_own_L12_logreg": 0.9666666666666667,
+        "whisper_forced_mean": 0.9481481481481481
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.44384057971014496,
+        "shared_L12_logreg": 0.8514492753623187,
+        "xpl_shared_own_L12_logreg": 0.9329710144927535,
+        "whisper_forced_mean": 0.8858695652173914
+      }
+    },
+    "MC04": {
+      "group": "control",
+      "n_test": 199,
+      "n_same_session": 110,
+      "all": {
+        "frozen_L12_1nn": 0.3855691056910569,
+        "shared_L12_logreg": 0.8689024390243902,
+        "xpl_shared_own_L12_logreg": 0.904471544715447,
+        "whisper_forced_mean": 0.8953252032520324
+      },
+      "n_items_cross": 52,
+      "cross_session": {
+        "frozen_L12_1nn": 0.02564102564102564,
+        "shared_L12_logreg": 0.8205128205128206,
+        "xpl_shared_own_L12_logreg": 0.8301282051282051,
+        "whisper_forced_mean": 0.8717948717948717
+      },
+      "same_session": {
+        "frozen_L12_1nn": 0.657103825136612,
+        "shared_L12_logreg": 0.9180327868852459,
+        "xpl_shared_own_L12_logreg": 0.9754098360655737,
+        "whisper_forced_mean": 0.9371584699453551
+      }
+    }
+  }
+}

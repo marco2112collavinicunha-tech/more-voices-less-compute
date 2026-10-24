@@ -1,0 +1,68 @@
+{
+  "env": {
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "torch": "2.14.1",
+    "threads": 4,
+    "pretrained": true,
+    "energy_meter": "none",
+    "timestamp": "2026-10-14T14:42:47"
+  },
+  "rows": [
+    {
+      "system": "fit_1nn",
+      "flops": null,
+      "reps": 200,
+      "median_s": 0.0009799794934224337,
+      "mean_s": 0.0009850820479914545,
+      "stdev_s": 3.33735950218597e-05,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "fit_logreg",
+      "flops": null,
+      "reps": 200,
+      "median_s": 0.005281603982439265,
+      "mean_s": 0.005298194838396739,
+      "stdev_s": 7.572086131026164e-05,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "fit_protocol_selection",
+      "flops": null,
+      "reps": 66,
+      "median_s": 0.030391375010367483,
+      "mean_s": 0.03049116667578787,
+      "stdev_s": 0.00039730278035025505,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "predict_1nn",
+      "flops": 294912,
+      "reps": 200,
+      "median_s": 0.0006202295189723372,
+      "mean_s": 0.0006303164997370913,
+      "stdev_s": 4.9216102963841945e-05,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "predict_logreg",
+      "flops": 24576,
+      "reps": 200,
+      "median_s": 0.0001387294614687562,
+      "mean_s": 0.00014073169935727492,
+      "stdev_s": 1.2050503420496712e-05,
+      "joules_per_call": null,
+      "energy_source": "none"
+    }
+  ],
+  "storage_bytes_per_user": {
+    "1nn": 401408,
+    "logreg": 57392
+  }
+}

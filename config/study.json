@@ -1,0 +1,180 @@
+{
+  "_comment": "Pre-registered parameters. Frozen on 2026-10-14 before any accuracy result exists. Changing any value after s05/s06/s07 have produced accuracy is a protocol deviation and must be logged in results/DEVIATIONS.md.",
+  "frozen_on": "2026-10-14",
+  "seed": 20261014,
+  "audio": {
+    "sample_rate": 16000,
+    "trim_db_below_peak": 30,
+    "peak_normalise": true
+  },
+  "encoder": {
+    "checkpoint": "facebook/wav2vec2-large-xlsr-53",
+    "layer_convention": "hidden_states[L] = raw output of transformer layer L (no final LayerNorm), transformers>=5",
+    "layers_swept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "pooling": "mean over time"
+  },
+  "personalisation": {
+    "k_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "n_draws": 5,
+    "min_test_per_item": 2,
+    "min_items_per_speaker": 10,
+    "classifiers": [
+      "1nn",
+      "logreg"
+    ],
+    "primary_system": "frozen XLSR-53, layer 12, 1-NN",
+    "primary_k_rule": "largest k in k_values such that every speaker of the corpus keeps >= min_items_per_speaker items with >= k + min_test_per_item productions; decided by s01 from counts only, before any model runs",
+    "split_rule": "per item: shuffle with the seed, then stable-sort by session; first k = train, rest = test"
+  },
+  "finetune": {
+    "modes": [
+      "full",
+      "top4",
+      "lora",
+      "full_L12"
+    ],
+    "eval_at_epochs": [
+      10,
+      30
+    ],
+    "lr_encoder": 3e-05,
+    "lr_head": 0.001,
+    "batch_size": 8,
+    "weight_decay": 0.01,
+    "n_draws": 1,
+    "freeze_feature_encoder": true,
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "targets": "q_proj, v_proj of all 24 attention layers",
+      "lr": 0.0001
+    }
+  },
+  "whisper": {
+    "checkpoint": "openai/whisper-medium",
+    "decoding": "greedy",
+    "max_new_tokens": 40,
+    "match_rule": "closest item by difflib SequenceMatcher ratio on lower-case, accent-free text",
+    "forced_choice_score": [
+      "sum_logprob",
+      "mean_logprob"
+    ],
+    "max_utts_per_speaker": 60
+  },
+  "hypotheses": {
+    "H1_min_ratio": 10,
+    "H2b_min_ratio": 10,
+    "H4_equivalence_margin_uar_points": 5,
+    "H4_alpha": 0.05,
+    "H4_primary_comparison": "frozen layer 12 1-NN vs fine-tune all layers at 10 epochs, primary k, per speaker, dysarthric and control separately (TORGO)"
+  },
+  "lifecycle": {
+    "clip_s": 2.2,
+    "uses_per_day": [
+      20,
+      100
+    ],
+    "users": [
+      1000,
+      10000,
+      100000
+    ],
+    "assumed_power_w_if_unmetered": 10
+  },
+  "corpora": {
+    "torgo": {
+      "root": "data/torgo",
+      "dysarthric": [
+        "F01",
+        "F03",
+        "F04",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05"
+      ],
+      "control": [
+        "FC01",
+        "FC02",
+        "FC03",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "mic_preference": [
+        "wav_headMic",
+        "wav_arrayMic"
+      ],
+      "items": "single-word prompts only (one token of letters, no brackets, no file paths)"
+    },
+    "speech_commands": {
+      "root": "data/speech_commands_v0.02",
+      "max_speakers": 50
+    },
+    "fsc": {
+      "root": "data/fluent_speech_commands_dataset",
+      "item": "action|object|location intent"
+    }
+  },
+  "amendments": [
+    {
+      "date": "2026-10-14",
+      "before_any_accuracy": true,
+      "changes": [
+        "fine-tuning baselines extended from [full, top4] to [full, top4, lora, full_L12] after an adversarial review argued the comparison needed a parameter-efficient baseline and a fine-tuned model truncated at the same layer",
+        "splits are session-aware: within each item, training recordings are taken from the earliest sessions and test recordings from later ones, to limit same-session leakage",
+        "accuracy-vs-cost comparisons recompute cost for each corpus's recording lengths and training-set size"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "before_any_accuracy": true,
+      "changes": [
+        "recordings shorter than 0.1 s after trimming are excluded (s01b), after one crashed the embedding stage",
+        "Whisper-medium baseline capped at 60 test recordings per speaker (was 200) because forced choice over up to 95 candidates took ~12 s per recording; Whisper is a secondary comparison and its partial output was not inspected",
+        "run order changed: fine-tuning (primary H4 comparison) runs before the Whisper baselines"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "before_any_accuracy": false,
+      "note": "after frozen-system accuracy existed (s05, first s08) but before it was inspected, and before any fine-tuning or Whisper accuracy",
+      "changes": [
+        "recordings longer than 30 s after trimming are excluded (s01b --max-seconds 30): one 194 s TORGO file in speaker F03 made fine-tuning impossible (9.5 GiB buffer); s05 re-run on the new manifest",
+        "s07 resumable; a fine-tuning run that fails (e.g. out of memory) is logged in results/s07/<corpus>_finetune_failures.csv and retried once, never silently dropped"
+      ]
+    }
+  ]
+}

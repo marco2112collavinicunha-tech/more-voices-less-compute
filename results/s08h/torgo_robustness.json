@@ -1,0 +1,143 @@
+{
+  "note": "exploratory robustness checks, analysis C (draw-0 split)",
+  "groups": {
+    "control": {
+      "whisper_scoring": "whisper_forced_mean",
+      "n_speakers": 6,
+      "mean_diff_points": -2.423236574125705,
+      "per_speaker_diff_points": {
+        "FC02": -7.91,
+        "FC03": 2.63,
+        "MC01": -8.37,
+        "MC02": 2.02,
+        "MC03": -0.26,
+        "MC04": -2.64
+      },
+      "n_shared_better": 2,
+      "signflip_exact_p_two_sided": 0.28125,
+      "n_sign_patterns": 64,
+      "hier_bootstrap_ci95": [
+        -6.282748250688472,
+        1.5393905929941647
+      ],
+      "hier_bootstrap_ci90": [
+        -5.787818924656628,
+        1.0220078648842983
+      ],
+      "hier_bootstrap_p_le0": 0.871,
+      "gee": {
+        "log_odds_ratio": -0.3582797021466099,
+        "odds_ratio": 0.6988775701096533,
+        "or_ci95": [
+          0.49090925988782474,
+          0.9949493682681443
+        ],
+        "p": 0.046800961928501625,
+        "n_recordings": 1066,
+        "accuracy_shared": 0.8911819887429644,
+        "accuracy_whisper": 0.9212007504690432
+      },
+      "loo_mean_diff_points": {
+        "FC02": -1.3254277485999721,
+        "FC03": -3.4341996784245294,
+        "MC01": -1.233465284299682,
+        "MC02": -3.311924292991249,
+        "MC03": -2.854973836040795,
+        "MC04": -2.3794286043980035
+      },
+      "loo_min": -3.4341996784245294,
+      "loo_max": -1.233465284299682,
+      "whisper_mean_uar": 91.82962026579365,
+      "variants_mean_uar": {
+        "L10 logreg_C1": 87.56,
+        "L11 logreg_C1": 89.01,
+        "L12 knn_1": 50.16,
+        "L12 knn_5": 42.34,
+        "L12 knn_5_cosine": 45.58,
+        "L12 lda_shrinkage": 91.76,
+        "L12 linear_svm": 91.6,
+        "L12 logreg_C0.01": 83.82,
+        "L12 logreg_C0.1": 88.41,
+        "L12 logreg_C1 (pre-specified)": 89.41,
+        "L12 logreg_C10": 86.43,
+        "L12 nearest_centroid": 39.78,
+        "L13 logreg_C1": 88.23,
+        "L14 logreg_C1": 88.38
+      },
+      "n_variants": 14,
+      "n_variants_above_whisper": 0,
+      "variants_min": 39.776873580421906,
+      "variants_max": 91.7552718413293,
+      "prespecified_check_vs_s08b": 89.40638369166794
+    },
+    "dysarthric": {
+      "whisper_scoring": "whisper_forced_mean",
+      "n_speakers": 6,
+      "mean_diff_points": 5.173160173160171,
+      "per_speaker_diff_points": {
+        "F03": 12.3,
+        "F04": 6.11,
+        "M02": -3.03,
+        "M03": 4.55,
+        "M04": 0.0,
+        "M05": 11.11
+      },
+      "n_shared_better": 4,
+      "signflip_exact_p_two_sided": 0.125,
+      "n_sign_patterns": 64,
+      "hier_bootstrap_ci95": [
+        -1.4949798080006438,
+        11.31430434007188
+      ],
+      "hier_bootstrap_ci90": [
+        -0.4883523443047257,
+        10.295823086956933
+      ],
+      "hier_bootstrap_p_le0": 0.0705,
+      "gee": {
+        "log_odds_ratio": 0.26176934168900046,
+        "odds_ratio": 1.29922683039887,
+        "or_ci95": [
+          0.9504587023782103,
+          1.7759744348751332
+        ],
+        "p": 0.10071490848503518,
+        "n_recordings": 234,
+        "accuracy_shared": 0.7777777777777778,
+        "accuracy_whisper": 0.7307692307692307
+      },
+      "loo_mean_diff_points": {
+        "F03": 3.747474747474744,
+        "F04": 4.985569985569983,
+        "M02": 6.813852813852813,
+        "M03": 5.298701298701296,
+        "M04": 6.207792207792205,
+        "M05": 3.9855699855699838
+      },
+      "loo_min": 3.747474747474744,
+      "loo_max": 6.813852813852813,
+      "whisper_mean_uar": 75.28880941924422,
+      "variants_mean_uar": {
+        "L10 logreg_C1": 77.9,
+        "L11 logreg_C1": 80.38,
+        "L12 knn_1": 58.42,
+        "L12 knn_5": 56.17,
+        "L12 knn_5_cosine": 54.02,
+        "L12 lda_shrinkage": 83.2,
+        "L12 linear_svm": 80.48,
+        "L12 logreg_C0.01": 80.44,
+        "L12 logreg_C0.1": 80.41,
+        "L12 logreg_C1 (pre-specified)": 80.46,
+        "L12 logreg_C10": 79.11,
+        "L12 nearest_centroid": 55.02,
+        "L13 logreg_C1": 81.17,
+        "L14 logreg_C1": 81.81
+      },
+      "n_variants": 14,
+      "n_variants_above_whisper": 10,
+      "variants_min": 54.01729510425163,
+      "variants_max": 83.20330635548027,
+      "prespecified_check_vs_s08b": 80.46196959240439
+    }
+  }
+}

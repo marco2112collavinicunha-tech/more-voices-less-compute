@@ -1,0 +1,156 @@
+{
+  "control": {
+    "base": {
+      "n_speakers": 6,
+      "uar": 0.9175157051029518,
+      "gflop_encoder": 59.71967999999999,
+      "ratio_encoder_to_L12_mean": 1.8038526721373485,
+      "xlsr_minus_whisper_encoder": {
+        "n": 6,
+        "mean_diff": -2.3451868186272224,
+        "sd_diff": 2.5063713176945206,
+        "margin": 5.0,
+        "ci_90_low": -4.40702825379503,
+        "ci_90_high": -0.2833453834594155,
+        "p_tost": 0.024283935889437225,
+        "verdict": "equivalent"
+      },
+      "n_xlsr_better": 0,
+      "per_speaker_diff": {
+        "FC02": -6.65,
+        "FC03": -0.66,
+        "MC01": -4.07,
+        "MC02": -1.52,
+        "MC03": -0.26,
+        "MC04": -0.91
+      }
+    },
+    "medium": {
+      "n_speakers": 6,
+      "uar": 0.9407397697387596,
+      "gflop_encoder": 916.8814080000001,
+      "ratio_encoder_to_L12_mean": 27.694705963827243,
+      "xlsr_minus_whisper_encoder": {
+        "n": 6,
+        "mean_diff": -4.66759328220802,
+        "sd_diff": 3.943886700073979,
+        "margin": 5.0,
+        "ci_90_low": -7.911992448609132,
+        "ci_90_high": -1.4231941158069081,
+        "p_tost": 0.42229041015173363,
+        "verdict": "equivalence not shown"
+      },
+      "n_xlsr_better": 1,
+      "per_speaker_diff": {
+        "FC02": -10.88,
+        "FC03": 0.66,
+        "MC01": -6.4,
+        "MC02": -2.53,
+        "MC03": -3.17,
+        "MC04": -5.69
+      }
+    },
+    "tiny": {
+      "n_speakers": 6,
+      "uar": 0.9107364514356683,
+      "gflop_encoder": 23.113728,
+      "ratio_encoder_to_L12_mean": 0.6981577934753811,
+      "xlsr_minus_whisper_encoder": {
+        "n": 6,
+        "mean_diff": -1.6672614518988809,
+        "sd_diff": 3.142762653475656,
+        "margin": 5.0,
+        "ci_90_low": -4.252623889653927,
+        "ci_90_high": 0.9181009858561651,
+        "p_tost": 0.02419608348459379,
+        "verdict": "equivalent"
+      },
+      "n_xlsr_better": 1,
+      "per_speaker_diff": {
+        "FC02": -6.56,
+        "FC03": -0.66,
+        "MC01": 2.36,
+        "MC02": -4.04,
+        "MC03": -0.4,
+        "MC04": -0.71
+      }
+    }
+  },
+  "dysarthric": {
+    "base": {
+      "n_speakers": 6,
+      "uar": 0.8569441830311394,
+      "gflop_encoder": 59.71967999999999,
+      "ratio_encoder_to_L12_mean": 1.9836338878591393,
+      "xlsr_minus_whisper_encoder": {
+        "n": 6,
+        "mean_diff": -5.232448710709577,
+        "sd_diff": 7.90954149463264,
+        "margin": 5.0,
+        "ci_90_low": -11.73915434992578,
+        "ci_90_high": 1.2742569285066256,
+        "p_tost": 0.5272982956672643,
+        "verdict": "equivalence not shown"
+      },
+      "n_xlsr_better": 1,
+      "per_speaker_diff": {
+        "F03": -9.52,
+        "F04": -3.33,
+        "M02": -3.03,
+        "M03": 0.0,
+        "M04": -18.84,
+        "M05": 3.33
+      }
+    },
+    "medium": {
+      "n_speakers": 6,
+      "uar": 0.856590752242926,
+      "gflop_encoder": 916.8814080000001,
+      "ratio_encoder_to_L12_mean": 30.454902505452168,
+      "xlsr_minus_whisper_encoder": {
+        "n": 6,
+        "mean_diff": -5.197105631888237,
+        "sd_diff": 6.813096358844204,
+        "margin": 5.0,
+        "ci_90_low": -10.801831585813321,
+        "ci_90_high": 0.4076203220368475,
+        "p_tost": 0.52687373946184,
+        "verdict": "equivalence not shown"
+      },
+      "n_xlsr_better": 1,
+      "per_speaker_diff": {
+        "F03": -4.76,
+        "F04": -5.56,
+        "M02": -12.12,
+        "M03": 0.0,
+        "M04": -13.19,
+        "M05": 4.44
+      }
+    },
+    "tiny": {
+      "n_speakers": 6,
+      "uar": 0.883333856159943,
+      "gflop_encoder": 23.113728,
+      "ratio_encoder_to_L12_mean": 0.7677397825232596,
+      "xlsr_minus_whisper_encoder": {
+        "n": 6,
+        "mean_diff": -7.871416023589936,
+        "sd_diff": 8.399051101307613,
+        "margin": 5.0,
+        "ci_90_low": -14.780811871886392,
+        "ci_90_high": -0.96202017529348,
+        "p_tost": 0.7797314535042954,
+        "verdict": "equivalence not shown"
+      },
+      "n_xlsr_better": 1,
+      "per_speaker_diff": {
+        "F03": -7.14,
+        "F04": -5.56,
+        "M02": -9.09,
+        "M03": -4.55,
+        "M04": -23.12,
+        "M05": 2.22
+      }
+    }
+  }
+}

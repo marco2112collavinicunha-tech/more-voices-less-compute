@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+data/torgo/
+data/speech_commands_v0.02/
+data/embeddings/
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+.DS_Store
+publicar_no_github.command

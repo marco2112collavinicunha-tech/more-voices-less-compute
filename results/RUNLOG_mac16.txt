@@ -1,0 +1,67 @@
+### run 16 (MFCC baseline) started qui 22 out 2026 17:14:59 -03
+features 0/6215
+features 500/6215
+features 1000/6215
+features 1500/6215
+features 2000/6215
+features 2500/6215
+features 3000/6215
+features 3500/6215
+features 4000/6215
+features 4500/6215
+features 5000/6215
+features 5500/6215
+features 6000/6215
+{'speaker': 'F03', 'group': 'dysarthric', 'uar_mfcc_shared': 0.36507936507936506, 'uar_mfcc_own_1nn': 0.2698412698412699, 'uar_xlsr_shared': 0.8571428571428571, 'n_train_other': 684, 'n_test': 51}
+{'speaker': 'F04', 'group': 'dysarthric', 'uar_mfcc_shared': 0.6444444444444444, 'uar_mfcc_own_1nn': 0.3555555555555555, 'uar_xlsr_shared': 0.9444444444444444, 'n_train_other': 551, 'n_test': 36}
+{'speaker': 'FC02', 'group': 'control', 'uar_mfcc_shared': 0.2970175438596491, 'uar_mfcc_own_1nn': 0.33614035087719296, 'uar_xlsr_shared': 0.8508771929824562, 'n_train_other': 2082, 'n_test': 238}
+{'speaker': 'FC03', 'group': 'control', 'uar_mfcc_shared': 0.2537280701754386, 'uar_mfcc_own_1nn': 0.33706140350877195, 'uar_xlsr_shared': 0.9671052631578948, 'n_train_other': 1838, 'n_test': 184}
+{'speaker': 'M02', 'group': 'dysarthric', 'uar_mfcc_shared': 0.4393939393939394, 'uar_mfcc_own_1nn': 0.2727272727272727, 'uar_xlsr_shared': 0.6818181818181818, 'n_train_other': 433, 'n_test': 25}
+{'speaker': 'M03', 'group': 'dysarthric', 'uar_mfcc_shared': 0.9090909090909091, 'uar_mfcc_own_1nn': 0.6515151515151515, 'uar_xlsr_shared': 0.8636363636363636, 'n_train_other': 438, 'n_test': 23}
+{'speaker': 'M04', 'group': 'dysarthric', 'uar_mfcc_shared': 0.2652173913043478, 'uar_mfcc_own_1nn': 0.15144927536231884, 'uar_xlsr_shared': 0.5695652173913043, 'n_train_other': 695, 'n_test': 62}
+{'speaker': 'M05', 'group': 'dysarthric', 'uar_mfcc_shared': 0.4777777777777778, 'uar_mfcc_own_1nn': 0.4666666666666667, 'uar_xlsr_shared': 0.9111111111111112, 'n_train_other': 529, 'n_test': 37}
+{'speaker': 'MC01', 'group': 'control', 'uar_mfcc_shared': 0.2600775193798449, 'uar_mfcc_own_1nn': 0.20135658914728682, 'uar_xlsr_shared': 0.8445736434108526, 'n_train_other': 1919, 'n_test': 216}
+{'speaker': 'MC02', 'group': 'control', 'uar_mfcc_shared': 0.22727272727272727, 'uar_mfcc_own_1nn': 0.2398989898989899, 'uar_xlsr_shared': 0.914141414141414, 'n_train_other': 1008, 'n_test': 74}
+{'speaker': 'MC03', 'group': 'control', 'uar_mfcc_shared': 0.3531746031746032, 'uar_mfcc_own_1nn': 0.11825396825396824, 'uar_xlsr_shared': 0.9187830687830688, 'n_train_other': 1626, 'n_test': 155}
+{'speaker': 'MC04', 'group': 'control', 'uar_mfcc_shared': 0.299390243902439, 'uar_mfcc_own_1nn': 0.27784552845528454, 'uar_xlsr_shared': 0.8689024390243902, 'n_train_other': 1886, 'n_test': 199}
+{
+ "control": {
+  "n": 6,
+  "uar_mfcc_shared": 0.2817767846274503,
+  "uar_mfcc_own_1nn": 0.2517594716902491,
+  "uar_xlsr_shared": 0.8940638369166795,
+  "xlsr_minus_mfcc": {
+   "mean_diff": 61.228705228922905,
+   "n_xlsr_better": 6,
+   "sign_p": 0.03125,
+   "per_speaker": {
+    "FC02": 55.39,
+    "FC03": 71.34,
+    "MC01": 58.45,
+    "MC02": 68.69,
+    "MC03": 56.56,
+    "MC04": 56.95
+   }
+  }
+ },
+ "dysarthric": {
+  "n": 6,
+  "uar_mfcc_shared": 0.5168339711817973,
+  "uar_mfcc_own_1nn": 0.36129253194470584,
+  "uar_xlsr_shared": 0.8046196959240438,
+  "xlsr_minus_mfcc": {
+   "mean_diff": 28.778572474224646,
+   "n_xlsr_better": 5,
+   "sign_p": 0.0625,
+   "per_speaker": {
+    "F03": 49.21,
+    "F04": 30.0,
+    "M02": 24.24,
+    "M03": -4.55,
+    "M04": 30.43,
+    "M05": 43.33
+   }
+  }
+ }
+}
+### run 16 finished qui 22 out 2026 17:15:16 -03

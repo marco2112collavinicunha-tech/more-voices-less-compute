@@ -1,0 +1,53 @@
+{
+  "env": {
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13",
+    "torch": "2.14.1",
+    "threads": 4,
+    "pretrained": true,
+    "energy_meter": "none",
+    "timestamp": "2026-10-14T14:44:29"
+  },
+  "rows": [
+    {
+      "system": "whisper_encoder_only",
+      "audio_s": 2.2,
+      "flops": 916977888000,
+      "params": 763857920,
+      "decoder_tokens": 14,
+      "reps": 3,
+      "median_s": 1.6739339170162566,
+      "mean_s": 1.6802308753249235,
+      "stdev_s": 0.02354601895082009,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "whisper_free",
+      "audio_s": 2.2,
+      "flops": 1078514045696,
+      "params": 763857920,
+      "decoder_tokens": 14,
+      "reps": 2,
+      "median_s": 11.013849145994755,
+      "mean_s": 11.013849145994755,
+      "stdev_s": 1.0827656549285825,
+      "joules_per_call": null,
+      "energy_source": "none"
+    },
+    {
+      "system": "whisper_forced12",
+      "audio_s": 2.2,
+      "flops": 1205008610048,
+      "params": 763857920,
+      "decoder_tokens": 14,
+      "reps": 2,
+      "median_s": 11.850808229501126,
+      "mean_s": 11.850808229501126,
+      "stdev_s": 2.1192892677086346,
+      "joules_per_call": null,
+      "energy_source": "none"
+    }
+  ]
+}

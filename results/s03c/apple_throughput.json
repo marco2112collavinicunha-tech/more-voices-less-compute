@@ -1,0 +1,5 @@
+{
+  "gflop_per_s": 192.92832227531022,
+  "threads": 4,
+  "source": "results/s03/compute_xlsr.json, xlsr_L24, 2.2 s"
+}

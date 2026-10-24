@@ -1,0 +1,8 @@
+corpus,speaker,group,item,utt_id,path,session,samples_after_trim
+speech_commands,00970ce1,typical,cat,cat/00970ce1_nohash_0.wav,data/speech_commands_v0.02/cat/00970ce1_nohash_0.wav,,951
+speech_commands,00761705,typical,learn,learn/00761705_nohash_0.wav,data/speech_commands_v0.02/learn/00761705_nohash_0.wav,,1457
+speech_commands,b5cf6ea8,typical,happy,happy/b5cf6ea8_nohash_0.wav,data/speech_commands_v0.02/happy/b5cf6ea8_nohash_0.wav,,1566
+speech_commands,03431e13,typical,three,three/03431e13_nohash_0.wav,data/speech_commands_v0.02/three/03431e13_nohash_0.wav,,1567
+speech_commands,02e42bed,typical,bird,bird/02e42bed_nohash_0.wav,data/speech_commands_v0.02/bird/02e42bed_nohash_0.wav,,1169
+speech_commands,02ade946,typical,up,up/02ade946_nohash_2.wav,data/speech_commands_v0.02/up/02ade946_nohash_2.wav,,1464
+speech_commands,02e42bed,typical,marvin,marvin/02e42bed_nohash_0.wav,data/speech_commands_v0.02/marvin/02e42bed_nohash_0.wav,,1174

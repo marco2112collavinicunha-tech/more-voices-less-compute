@@ -1,0 +1,617 @@
+{
+  "corpus": "speech_commands",
+  "n_recordings": 3522,
+  "n_speakers": 50,
+  "groups": {
+    "typical": 3529
+  },
+  "per_speaker": {
+    "00176480": {
+      "group": "typical",
+      "n_recordings": 7,
+      "n_items": 6,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "004ae714": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "00761705": {
+      "group": "typical",
+      "n_recordings": 3,
+      "n_items": 3,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "00970ce1": {
+      "group": "typical",
+      "n_recordings": 19,
+      "n_items": 15,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "00b01445": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 3,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "00f0204f": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 14,
+      "eligible_items_by_k": {
+        "1": 4,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "012187a4": {
+      "group": "typical",
+      "n_recordings": 28,
+      "n_items": 20,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "012c8314": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0132a06d": {
+      "group": "typical",
+      "n_recordings": 98,
+      "n_items": 26,
+      "eligible_items_by_k": {
+        "1": 19,
+        "2": 18,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0135f3f2": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0137b3f4": {
+      "group": "typical",
+      "n_recordings": 96,
+      "n_items": 28,
+      "eligible_items_by_k": {
+        "1": 19,
+        "2": 19,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "014f9f65": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 20,
+      "eligible_items_by_k": {
+        "1": 3,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "01648c51": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0165e0e8": {
+      "group": "typical",
+      "n_recordings": 18,
+      "n_items": 15,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "016e2c6d": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 3,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "017c4098": {
+      "group": "typical",
+      "n_recordings": 122,
+      "n_items": 33,
+      "eligible_items_by_k": {
+        "1": 25,
+        "2": 24,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "019fa366": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 20,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "01b4757a": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 17,
+      "eligible_items_by_k": {
+        "1": 4,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "01bb6a2a": {
+      "group": "typical",
+      "n_recordings": 69,
+      "n_items": 26,
+      "eligible_items_by_k": {
+        "1": 14,
+        "2": 8,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "01bcfc0c": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 18,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "01d22d03": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 18,
+      "eligible_items_by_k": {
+        "1": 4,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0227998e": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 16,
+      "eligible_items_by_k": {
+        "1": 4,
+        "2": 3,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "022cd682": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 18,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "023808be": {
+      "group": "typical",
+      "n_recordings": 8,
+      "n_items": 8,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "023a61ad": {
+      "group": "typical",
+      "n_recordings": 24,
+      "n_items": 16,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "02583d36": {
+      "group": "typical",
+      "n_recordings": 2,
+      "n_items": 2,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "026290a7": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 22,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "02746d24": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "02ade946": {
+      "group": "typical",
+      "n_recordings": 127,
+      "n_items": 34,
+      "eligible_items_by_k": {
+        "1": 25,
+        "2": 25,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "02e42bed": {
+      "group": "typical",
+      "n_recordings": 4,
+      "n_items": 4,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "02e85b60": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 16,
+      "eligible_items_by_k": {
+        "1": 3,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "02fcd241": {
+      "group": "typical",
+      "n_recordings": 7,
+      "n_items": 7,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "030ec18b": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 18,
+      "eligible_items_by_k": {
+        "1": 3,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "03401e93": {
+      "group": "typical",
+      "n_recordings": 35,
+      "n_items": 22,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "03431e13": {
+      "group": "typical",
+      "n_recordings": 16,
+      "n_items": 13,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "035de8fe": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 22,
+      "eligible_items_by_k": {
+        "1": 1,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0362539c": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 15,
+      "eligible_items_by_k": {
+        "1": 3,
+        "2": 2,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "037c445a": {
+      "group": "typical",
+      "n_recordings": 29,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "038da7ee": {
+      "group": "typical",
+      "n_recordings": 8,
+      "n_items": 7,
+      "eligible_items_by_k": {
+        "1": 0,
+        "2": 0,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "0397ecda": {
+      "group": "typical",
+      "n_recordings": 30,
+      "n_items": 19,
+      "eligible_items_by_k": {
+        "1": 2,
+        "2": 1,
+        "4": 0,
+        "8": 0
+      }
+    },
+    "2aca1e72": {
+      "group": "typical",
+      "n_recordings": 236,
+      "n_items": 33,
+      "eligible_items_by_k": {
+        "1": 27,
+        "2": 25,
+        "4": 24,
+        "8": 10
+      }
+    },
+    "3589bc72": {
+      "group": "typical",
+      "n_recordings": 129,
+      "n_items": 33,
+      "eligible_items_by_k": {
+        "1": 25,
+        "2": 22,
+        "4": 2,
+        "8": 1
+      }
+    },
+    "893705bb": {
+      "group": "typical",
+      "n_recordings": 263,
+      "n_items": 32,
+      "eligible_items_by_k": {
+        "1": 30,
+        "2": 28,
+        "4": 22,
+        "8": 10
+      }
+    },
+    "b5cf6ea8": {
+      "group": "typical",
+      "n_recordings": 221,
+      "n_items": 31,
+      "eligible_items_by_k": {
+        "1": 26,
+        "2": 25,
+        "4": 25,
+        "8": 7
+      }
+    },
+    "b66f4f93": {
+      "group": "typical",
+      "n_recordings": 180,
+      "n_items": 29,
+      "eligible_items_by_k": {
+        "1": 20,
+        "2": 20,
+        "4": 20,
+        "8": 2
+      }
+    },
+    "c120e80e": {
+      "group": "typical",
+      "n_recordings": 155,
+      "n_items": 29,
+      "eligible_items_by_k": {
+        "1": 22,
+        "2": 20,
+        "4": 14,
+        "8": 2
+      }
+    },
+    "c1d39ce8": {
+      "group": "typical",
+      "n_recordings": 205,
+      "n_items": 30,
+      "eligible_items_by_k": {
+        "1": 20,
+        "2": 20,
+        "4": 20,
+        "8": 13
+      }
+    },
+    "c50f55b8": {
+      "group": "typical",
+      "n_recordings": 316,
+      "n_items": 27,
+      "eligible_items_by_k": {
+        "1": 26,
+        "2": 25,
+        "4": 24,
+        "8": 15
+      }
+    },
+    "cce7416f": {
+      "group": "typical",
+      "n_recordings": 250,
+      "n_items": 30,
+      "eligible_items_by_k": {
+        "1": 23,
+        "2": 21,
+        "4": 20,
+        "8": 17
+      }
+    },
+    "ddedba85": {
+      "group": "typical",
+      "n_recordings": 226,
+      "n_items": 29,
+      "eligible_items_by_k": {
+        "1": 26,
+        "2": 24,
+        "4": 20,
+        "8": 10
+      }
+    }
+  },
+  "primary_k": 1,
+  "speakers_included": [
+    "0132a06d",
+    "0137b3f4",
+    "017c4098",
+    "01bb6a2a",
+    "02ade946",
+    "2aca1e72",
+    "3589bc72",
+    "893705bb",
+    "b5cf6ea8",
+    "b66f4f93",
+    "c120e80e",
+    "c1d39ce8",
+    "c50f55b8",
+    "cce7416f",
+    "ddedba85"
+  ],
+  "speakers_excluded": [
+    "00176480",
+    "004ae714",
+    "00761705",
+    "00970ce1",
+    "00b01445",
+    "00f0204f",
+    "012187a4",
+    "012c8314",
+    "0135f3f2",
+    "014f9f65",
+    "01648c51",
+    "0165e0e8",
+    "016e2c6d",
+    "019fa366",
+    "01b4757a",
+    "01bcfc0c",
+    "01d22d03",
+    "0227998e",
+    "022cd682",
+    "023808be",
+    "023a61ad",
+    "02583d36",
+    "026290a7",
+    "02746d24",
+    "02e42bed",
+    "02e85b60",
+    "02fcd241",
+    "030ec18b",
+    "03401e93",
+    "03431e13",
+    "035de8fe",
+    "0362539c",
+    "037c445a",
+    "038da7ee",
+    "0397ecda"
+  ],
+  "rule": "largest k in k_values such that every speaker of the corpus keeps >= min_items_per_speaker items with >= k + min_test_per_item productions; decided by s01 from counts only, before any model runs",
+  "dropped_quality": 7
+}

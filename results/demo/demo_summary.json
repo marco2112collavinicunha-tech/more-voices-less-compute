@@ -1,0 +1,32 @@
+[
+ {
+  "file": "demo_torgo_20261021_083027.jsonl",
+  "speaker": "M04",
+  "int8": false,
+  "n": 62,
+  "uar": 56.95652173913044,
+  "latency_ms_median": 46.141104481648654,
+  "latency_ms_max": 140.9013750962913,
+  "gflop_ratio_whisper_medium": 36.23510210350262
+ },
+ {
+  "file": "demo_torgo_20261021_083036.jsonl",
+  "speaker": "F03",
+  "int8": false,
+  "n": 51,
+  "uar": 85.71428571428571,
+  "latency_ms_median": 47.930208034813404,
+  "latency_ms_max": 125.49812509678304,
+  "gflop_ratio_whisper_medium": 30.850803806398083
+ },
+ {
+  "file": "demo_torgo_20261021_083045.jsonl",
+  "speaker": "M04",
+  "int8": true,
+  "n": 62,
+  "uar": 59.27536231884057,
+  "latency_ms_median": 75.21329150767997,
+  "latency_ms_max": 250.49654103349894,
+  "gflop_ratio_whisper_medium": 36.23510210350262
+ }
+]

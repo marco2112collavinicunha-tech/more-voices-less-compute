@@ -1,0 +1,34 @@
+{
+  "J_per_GFLOP": {
+    "low_cost_arm_board": 0.2849866580093485
+  },
+  "derivation": {
+    "low_cost_arm_board": {
+      "reported_J": 39.6,
+      "workload_GFLOP": 138.953873408,
+      "J_per_GFLOP": 0.2849866580093485
+    }
+  },
+  "year_ratio_vs_frozen_L12_at_100_per_day": {
+    "Whisper-medium, free transcription": {
+      "flop_ratio": 23.55481103155562,
+      "time_ratio": 24.749583129958044
+    },
+    "Fine-tuning, all layers (10 ep)": {
+      "flop_ratio": 1.8634213874945864,
+      "time_ratio": 1.9826138426953692
+    },
+    "LoRA (10 ep)": {
+      "flop_ratio": 1.8088731774968063,
+      "time_ratio": 1.849433423504671
+    },
+    "Fine-tuning, model cut at layer 12 (10 ep)": {
+      "flop_ratio": 1.08678331387945,
+      "time_ratio": 1.1337596595923154
+    },
+    "Frozen, layer 12, nearest neighbour": {
+      "flop_ratio": 1.0,
+      "time_ratio": 1.0
+    }
+  }
+}

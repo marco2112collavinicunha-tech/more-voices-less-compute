@@ -1,0 +1,177 @@
+{
+  "encoder_formula_check_vs_measured_medium": 0.9998947848129572,
+  "groups": {
+    "control": {
+      "base": {
+        "n_speakers": 6,
+        "forced_scoring": "forced_mean",
+        "uar_forced": 0.8931743234393968,
+        "uar_free": 0.6933628581655893,
+        "gflop_forced_mean": 104.47087155199999,
+        "gflop_encoder": 59.71967999999999,
+        "ratio_forced_to_L12_mean": 3.1612956303078086,
+        "shared_minus_whisper": {
+          "n": 6,
+          "mean_diff": 0.08895134772825182,
+          "sd_diff": 2.1568899329351687,
+          "margin": 5.0,
+          "ci_90_low": -1.6853927023436095,
+          "ci_90_high": 1.863295397800113,
+          "p_tost": 0.001276776137214114,
+          "verdict": "equivalent"
+        },
+        "n_shared_better": 4,
+        "per_speaker_diff": {
+          "FC02": -3.84,
+          "FC03": 1.75,
+          "MC01": -0.68,
+          "MC02": 2.02,
+          "MC03": 0.87,
+          "MC04": 0.41
+        }
+      },
+      "medium": {
+        "n_speakers": 6,
+        "forced_scoring": "forced_mean",
+        "uar_forced": 0.9182962026579365,
+        "uar_free": 0.7830789358999596,
+        "gflop_forced_mean": 1362.624904192,
+        "gflop_encoder": 916.8814080000001,
+        "ratio_forced_to_L12_mean": 41.20626446703312,
+        "shared_minus_whisper": {
+          "n": 6,
+          "mean_diff": -2.423236574125703,
+          "sd_diff": 4.806697619442081,
+          "margin": 5.0,
+          "ci_90_low": -6.377418561495567,
+          "ci_90_high": 1.5309454132441602,
+          "p_tost": 0.12308744371140357,
+          "verdict": "equivalence not shown"
+        },
+        "n_shared_better": 2,
+        "per_speaker_diff": {
+          "FC02": -7.91,
+          "FC03": 2.63,
+          "MC01": -8.37,
+          "MC02": 2.02,
+          "MC03": -0.26,
+          "MC04": -2.64
+        }
+      },
+      "tiny": {
+        "n_speakers": 6,
+        "forced_scoring": "forced_mean",
+        "uar_forced": 0.8776572002846496,
+        "uar_free": 0.6527876061678094,
+        "gflop_forced_mean": 47.134948992000005,
+        "gflop_encoder": 23.113728,
+        "ratio_forced_to_L12_mean": 1.4270434249550574,
+        "shared_minus_whisper": {
+          "n": 6,
+          "mean_diff": 1.6406636632029938,
+          "sd_diff": 2.9083918611116704,
+          "margin": 5.0,
+          "ci_90_low": -0.7518959733559067,
+          "ci_90_high": 4.033223299761895,
+          "p_tost": 0.018352851939652852,
+          "verdict": "equivalent"
+        },
+        "n_shared_better": 4,
+        "per_speaker_diff": {
+          "FC02": -1.21,
+          "FC03": 4.17,
+          "MC01": -2.67,
+          "MC02": 3.54,
+          "MC03": 2.06,
+          "MC04": 3.96
+        }
+      }
+    },
+    "dysarthric": {
+      "base": {
+        "n_speakers": 6,
+        "forced_scoring": "forced_mean",
+        "uar_forced": 0.7543159336637597,
+        "uar_free": 0.6418951418951419,
+        "gflop_forced_mean": 77.02601011200001,
+        "gflop_encoder": 59.71967999999999,
+        "ratio_forced_to_L12_mean": 2.5457046098130256,
+        "shared_minus_whisper": {
+          "n": 6,
+          "mean_diff": 5.030376226028397,
+          "sd_diff": 10.686274250600059,
+          "margin": 5.0,
+          "ci_90_low": -3.7605809964319112,
+          "ci_90_high": 13.821333448488705,
+          "p_tost": 0.5026430949915486,
+          "verdict": "equivalence not shown"
+        },
+        "n_shared_better": 4,
+        "per_speaker_diff": {
+          "F03": 11.11,
+          "F04": 3.33,
+          "M02": 1.52,
+          "M03": -4.55,
+          "M04": -4.57,
+          "M05": 23.33
+        }
+      },
+      "medium": {
+        "n_speakers": 6,
+        "forced_scoring": "forced_mean",
+        "uar_forced": 0.7528880941924422,
+        "uar_free": 0.6645188949536776,
+        "gflop_forced_mean": 1133.556221952,
+        "gflop_encoder": 916.8814080000001,
+        "ratio_forced_to_L12_mean": 37.54531719848668,
+        "shared_minus_whisper": {
+          "n": 6,
+          "mean_diff": 5.173160173160173,
+          "sd_diff": 6.0233860193683455,
+          "margin": 5.0,
+          "ci_90_low": 0.2180815752419818,
+          "ci_90_high": 10.128238771078363,
+          "p_tost": 0.5267046192921492,
+          "verdict": "equivalence not shown"
+        },
+        "n_shared_better": 4,
+        "per_speaker_diff": {
+          "F03": 12.3,
+          "F04": 6.11,
+          "M02": -3.03,
+          "M03": 4.55,
+          "M04": 0.0,
+          "M05": 11.11
+        }
+      },
+      "tiny": {
+        "n_speakers": 6,
+        "forced_scoring": "forced_sum",
+        "uar_forced": 0.7340475144822971,
+        "uar_free": 0.575983436853002,
+        "gflop_forced_mean": 31.216810752,
+        "gflop_encoder": 23.113728,
+        "ratio_forced_to_L12_mean": 1.029481933387065,
+        "shared_minus_whisper": {
+          "n": 6,
+          "mean_diff": 7.057218144174667,
+          "sd_diff": 14.486746213925453,
+          "margin": 5.0,
+          "ci_90_low": -4.8601595379586895,
+          "ci_90_high": 18.974595826308022,
+          "p_tost": 0.6289389271349413,
+          "verdict": "equivalence not shown"
+        },
+        "n_shared_better": 3,
+        "per_speaker_diff": {
+          "F03": 6.75,
+          "F04": -2.22,
+          "M02": 22.73,
+          "M03": -4.55,
+          "M04": -7.03,
+          "M05": 26.67
+        }
+      }
+    }
+  }
+}

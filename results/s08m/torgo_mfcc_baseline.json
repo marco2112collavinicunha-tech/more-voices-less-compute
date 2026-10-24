@@ -1,0 +1,40 @@
+{
+  "control": {
+    "n": 6,
+    "uar_mfcc_shared": 0.2817767846274503,
+    "uar_mfcc_own_1nn": 0.2517594716902491,
+    "uar_xlsr_shared": 0.8940638369166795,
+    "xlsr_minus_mfcc": {
+      "mean_diff": 61.228705228922905,
+      "n_xlsr_better": 6,
+      "sign_p": 0.03125,
+      "per_speaker": {
+        "FC02": 55.39,
+        "FC03": 71.34,
+        "MC01": 58.45,
+        "MC02": 68.69,
+        "MC03": 56.56,
+        "MC04": 56.95
+      }
+    }
+  },
+  "dysarthric": {
+    "n": 6,
+    "uar_mfcc_shared": 0.5168339711817973,
+    "uar_mfcc_own_1nn": 0.36129253194470584,
+    "uar_xlsr_shared": 0.8046196959240438,
+    "xlsr_minus_mfcc": {
+      "mean_diff": 28.778572474224646,
+      "n_xlsr_better": 5,
+      "sign_p": 0.0625,
+      "per_speaker": {
+        "F03": 49.21,
+        "F04": 30.0,
+        "M02": 24.24,
+        "M03": -4.55,
+        "M04": 30.43,
+        "M05": 43.33
+      }
+    }
+  }
+}

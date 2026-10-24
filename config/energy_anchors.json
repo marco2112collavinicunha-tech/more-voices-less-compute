@@ -1,0 +1,29 @@
+{
+  "_comment": "Published measurements used to turn computation (FLOPs) into energy until a hardware meter is used. Each anchor gives joules per GFLOP for a class of device. Values marked derived are computed in pipeline/s03c_energy.py from the cited figures; the derivation is printed in results.",
+  "anchors": {
+    "low_cost_arm_board": {
+      "label": "low-cost ARM board (Raspberry Pi 4, 4 x Cortex-A72)",
+      "source": "Gondi (2022), Wav2Vec2.0 on the Edge: Performance Evaluation, arXiv:2202.05993",
+      "reported": {
+        "energy_mWh_per_10s_utterance_unquantised": 11,
+        "added_power_W_4_cores": 2.9,
+        "idle_power_W": 3.1,
+        "model": "wav2vec 2.0 Base (95 M parameters), PyTorch, CPU"
+      },
+      "flops_reference": "wav2vec 2.0 Base on 10 s of audio, counted with the same FLOP counter as this study (results/s03c/energy_anchors.json)",
+      "note": "11 mWh matches added power x inference time (2.9 W x RTF 1.36 x 10 s = 39 J), so it is the energy caused by the workload, idle excluded."
+    },
+    "apple_laptop_cpu": {
+      "label": "Apple Silicon laptop CPU (M1 to M2, all performance cores)",
+      "source": "Notebookcheck (2022), Apple M2 SoC analysis: Cinebench R23 multi-core package power",
+      "reported": {
+        "package_power_W_multi_core_low": 13.2,
+        "package_power_W_multi_core_high": 21.2,
+        "low_device": "MacBook Air M1 (2020)",
+        "high_device": "MacBook Air M2 (2022)"
+      },
+      "throughput_reference": "XLSR-53 forward pass measured on the author's MacBook Pro, Apple Silicon cores, 4 threads (results/s03c/apple_throughput.json)",
+      "note": "Package power under an all-core benchmark is an upper-range figure for a 4-thread inference load; the resulting energy is a bracket, not a measurement."
+    }
+  }
+}

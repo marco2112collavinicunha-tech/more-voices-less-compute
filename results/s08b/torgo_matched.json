@@ -1,0 +1,3645 @@
+{
+  "corpus": "torgo",
+  "primary_k": 1,
+  "margin_points": 5,
+  "alpha": 0.05,
+  "reproduces_s05": false,
+  "n_reproduction_checks": 96,
+  "reproduction_mismatches": [
+    {
+      "speaker": "FC02",
+      "draw": 0,
+      "system": "shared_L12_logreg",
+      "s05": 0.8618,
+      "recomputed": 0.8509
+    },
+    {
+      "speaker": "MC01",
+      "draw": 0,
+      "system": "shared_L12_logreg",
+      "s05": 0.8517,
+      "recomputed": 0.8446
+    },
+    {
+      "speaker": "MC04",
+      "draw": 0,
+      "system": "shared_L24_logreg",
+      "s05": 0.3,
+      "recomputed": 0.3061
+    }
+  ],
+  "speakers": [
+    {
+      "speaker": "F03",
+      "group": "dysarthric",
+      "n_items": 21,
+      "chance_uar": 0.047619047619047616,
+      "n_train": 21,
+      "n_test": 51,
+      "n_test_whisper": 5,
+      "n_other_train": 684
+    },
+    {
+      "speaker": "F04",
+      "group": "dysarthric",
+      "n_items": 15,
+      "chance_uar": 0.06666666666666667,
+      "n_train": 15,
+      "n_test": 36,
+      "n_test_whisper": 8,
+      "n_other_train": 551
+    },
+    {
+      "speaker": "FC02",
+      "group": "control",
+      "n_items": 95,
+      "chance_uar": 0.010526315789473684,
+      "n_train": 95,
+      "n_test": 238,
+      "n_test_whisper": 15,
+      "n_other_train": 2082
+    },
+    {
+      "speaker": "FC03",
+      "group": "control",
+      "n_items": 76,
+      "chance_uar": 0.013157894736842105,
+      "n_train": 76,
+      "n_test": 184,
+      "n_test_whisper": 13,
+      "n_other_train": 1838
+    },
+    {
+      "speaker": "M02",
+      "group": "dysarthric",
+      "n_items": 11,
+      "chance_uar": 0.09090909090909091,
+      "n_train": 11,
+      "n_test": 25,
+      "n_test_whisper": 6,
+      "n_other_train": 433
+    },
+    {
+      "speaker": "M03",
+      "group": "dysarthric",
+      "n_items": 11,
+      "chance_uar": 0.09090909090909091,
+      "n_train": 11,
+      "n_test": 23,
+      "n_test_whisper": 3,
+      "n_other_train": 438
+    },
+    {
+      "speaker": "M04",
+      "group": "dysarthric",
+      "n_items": 23,
+      "chance_uar": 0.043478260869565216,
+      "n_train": 23,
+      "n_test": 62,
+      "n_test_whisper": 12,
+      "n_other_train": 695
+    },
+    {
+      "speaker": "M05",
+      "group": "dysarthric",
+      "n_items": 15,
+      "chance_uar": 0.06666666666666667,
+      "n_train": 15,
+      "n_test": 37,
+      "n_test_whisper": 5,
+      "n_other_train": 529
+    },
+    {
+      "speaker": "MC01",
+      "group": "control",
+      "n_items": 86,
+      "chance_uar": 0.011627906976744186,
+      "n_train": 86,
+      "n_test": 216,
+      "n_test_whisper": 18,
+      "n_other_train": 1919
+    },
+    {
+      "speaker": "MC02",
+      "group": "control",
+      "n_items": 33,
+      "chance_uar": 0.030303030303030304,
+      "n_train": 33,
+      "n_test": 74,
+      "n_test_whisper": 7,
+      "n_other_train": 1008
+    },
+    {
+      "speaker": "MC03",
+      "group": "control",
+      "n_items": 63,
+      "chance_uar": 0.015873015873015872,
+      "n_train": 63,
+      "n_test": 155,
+      "n_test_whisper": 14,
+      "n_other_train": 1626
+    },
+    {
+      "speaker": "MC04",
+      "group": "control",
+      "n_items": 82,
+      "chance_uar": 0.012195121951219513,
+      "n_train": 82,
+      "n_test": 199,
+      "n_test_whisper": 14,
+      "n_other_train": 1886
+    }
+  ],
+  "systems": {
+    "A_finetune_split": {
+      "control": {
+        "finetune_full_L12_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.43455,
+          "ci95": [
+            0.23448021314140277,
+            0.6346197868585972
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_full_L12_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.6061833333333334,
+          "ci95": [
+            0.4763509761867434,
+            0.7360156904799234
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_full_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.0341,
+          "ci95": [
+            0.016448005885037868,
+            0.05175199411496213
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_full_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.15386666666666668,
+          "ci95": [
+            0.0481146739541026,
+            0.2596186593792308
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_lora_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.0213,
+          "ci95": [
+            0.007953752996173496,
+            0.0346462470038265
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_lora_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.0347,
+          "ci95": [
+            0.0179569787252198,
+            0.051443021274780204
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_top4_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.025366666666666666,
+          "ci95": [
+            0.007032252142789113,
+            0.04370108119054422
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_top4_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.056900000000000006,
+          "ci95": [
+            0.03314572814656011,
+            0.0806542718534399
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "frozen_L12_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.3476780435730118,
+          "ci95": [
+            0.23927731665665528,
+            0.4560787704893683
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "frozen_L24_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.07214322967639185,
+          "ci95": [
+            0.04756622515526403,
+            0.09672023419751967
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "shared_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8940638369166795,
+          "ci95": [
+            0.8441816077735996,
+            0.9439460660597593
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "shared_L24_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.3483990879253764,
+          "ci95": [
+            0.3099967882817131,
+            0.38680138756903965
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "xpl_shared_own_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.9346004988761553,
+          "ci95": [
+            0.9049173951629489,
+            0.9642836025893616
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        }
+      },
+      "dysarthric": {
+        "finetune_full_L12_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.38903333333333334,
+          "ci95": [
+            0.15053964482066098,
+            0.6275270218460057
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_full_L12_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.39045,
+          "ci95": [
+            0.1614998741632495,
+            0.6194001258367505
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_full_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.07225,
+          "ci95": [
+            0.04032067274196981,
+            0.10417932725803018
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_full_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.12436666666666667,
+          "ci95": [
+            0.051906690931107224,
+            0.1968266424022261
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_lora_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.06771666666666666,
+          "ci95": [
+            0.046373465917721256,
+            0.08905986741561206
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_lora_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.07855,
+          "ci95": [
+            0.04537855288616545,
+            0.11172144711383454
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_top4_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.07326666666666666,
+          "ci95": [
+            0.047886403271665545,
+            0.09864693006166778
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_top4_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.11295,
+          "ci95": [
+            0.06629927471269664,
+            0.15960072528730335
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "frozen_L12_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.4404819415688981,
+          "ci95": [
+            0.2030720955537332,
+            0.677891787584063
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "frozen_L24_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.19166771231988622,
+          "ci95": [
+            0.10063809990004188,
+            0.2826973247397305
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "shared_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8046196959240438,
+          "ci95": [
+            0.650768099509251,
+            0.9584712923388367
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "shared_L24_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.4811186398142919,
+          "ci95": [
+            0.3068281783741448,
+            0.6554091012544391
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "xpl_shared_own_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8305194805194805,
+          "ci95": [
+            0.7276306519242027,
+            0.9334083091147584
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        }
+      }
+    },
+    "B_whisper_subset": {
+      "control": {
+        "frozen_L12_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.33059461550947616,
+          "ci95": [
+            0.18286256191433453,
+            0.4783266691046178
+          ],
+          "mean_n_test": 14.266666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "shared_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8946501724778299,
+          "ci95": [
+            0.8612651129004798,
+            0.9280352320551799
+          ],
+          "mean_n_test": 14.266666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "whisper_forced_mean": {
+          "n_speakers": 6,
+          "mean_uar": 0.8925773804798572,
+          "ci95": [
+            0.8205673081289142,
+            0.9645874528308003
+          ],
+          "mean_n_test": 14.266666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "whisper_forced_sum": {
+          "n_speakers": 6,
+          "mean_uar": 0.8925773804798572,
+          "ci95": [
+            0.8205673081289142,
+            0.9645874528308003
+          ],
+          "mean_n_test": 14.266666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "whisper_free": {
+          "n_speakers": 6,
+          "mean_uar": 0.7640382318633092,
+          "ci95": [
+            0.626257193808288,
+            0.9018192699183304
+          ],
+          "mean_n_test": 14.266666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "xpl_shared_own_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.9085076910438108,
+          "ci95": [
+            0.8680304931428179,
+            0.9489848889448037
+          ],
+          "mean_n_test": 14.266666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        }
+      },
+      "dysarthric": {
+        "frozen_L12_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.41964105339105345,
+          "ci95": [
+            0.12065646045593609,
+            0.7186256463261709
+          ],
+          "mean_n_test": 6.466666666666668,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "shared_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.7626028138528138,
+          "ci95": [
+            0.5618047521915678,
+            0.9634008755140598
+          ],
+          "mean_n_test": 6.466666666666668,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "whisper_forced_mean": {
+          "n_speakers": 6,
+          "mean_uar": 0.702732683982684,
+          "ci95": [
+            0.44395883817367543,
+            0.9615065297916925
+          ],
+          "mean_n_test": 6.466666666666668,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "whisper_forced_sum": {
+          "n_speakers": 6,
+          "mean_uar": 0.6891720779220779,
+          "ci95": [
+            0.4178255140046987,
+            0.9605186418394571
+          ],
+          "mean_n_test": 6.466666666666668,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "whisper_free": {
+          "n_speakers": 6,
+          "mean_uar": 0.6309914622414622,
+          "ci95": [
+            0.38694618585390694,
+            0.8750367386290174
+          ],
+          "mean_n_test": 6.466666666666668,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "xpl_shared_own_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.7928541366041365,
+          "ci95": [
+            0.627859231854111,
+            0.957849041354162
+          ],
+          "mean_n_test": 6.466666666666668,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        }
+      }
+    },
+    "C_full_split_whisper": {
+      "control": {
+        "finetune_full_L12_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.43455,
+          "ci95": [
+            0.23448021314140277,
+            0.6346197868585972
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_full_L12_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.6061833333333334,
+          "ci95": [
+            0.4763509761867434,
+            0.7360156904799234
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_full_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.0341,
+          "ci95": [
+            0.016448005885037868,
+            0.05175199411496213
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_full_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.15386666666666668,
+          "ci95": [
+            0.0481146739541026,
+            0.2596186593792308
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_lora_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.0213,
+          "ci95": [
+            0.007953752996173496,
+            0.0346462470038265
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_lora_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.0347,
+          "ci95": [
+            0.0179569787252198,
+            0.051443021274780204
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_top4_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.025366666666666666,
+          "ci95": [
+            0.007032252142789113,
+            0.04370108119054422
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "finetune_top4_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.056900000000000006,
+          "ci95": [
+            0.03314572814656011,
+            0.0806542718534399
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "frozen_L12_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.3476780435730118,
+          "ci95": [
+            0.23927731665665528,
+            0.4560787704893683
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "shared_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8940638369166795,
+          "ci95": [
+            0.8441816077735996,
+            0.9439460660597593
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "whisper_forced_mean": {
+          "n_speakers": 6,
+          "mean_uar": 0.9182962026579365,
+          "ci95": [
+            0.8979814151432434,
+            0.9386109901726297
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "whisper_forced_sum": {
+          "n_speakers": 6,
+          "mean_uar": 0.9161834512672646,
+          "ci95": [
+            0.8956644925889821,
+            0.9367024099455472
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "whisper_free": {
+          "n_speakers": 6,
+          "mean_uar": 0.7830789358999596,
+          "ci95": [
+            0.7316806983032016,
+            0.8344771734967176
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        },
+        "xpl_shared_own_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.9346004988761553,
+          "ci95": [
+            0.9049173951629489,
+            0.9642836025893616
+          ],
+          "mean_n_test": 177.66666666666666,
+          "speakers": [
+            "FC02",
+            "FC03",
+            "MC01",
+            "MC02",
+            "MC03",
+            "MC04"
+          ]
+        }
+      },
+      "dysarthric": {
+        "finetune_full_L12_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.38903333333333334,
+          "ci95": [
+            0.15053964482066098,
+            0.6275270218460057
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_full_L12_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.39045,
+          "ci95": [
+            0.1614998741632495,
+            0.6194001258367505
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_full_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.07225,
+          "ci95": [
+            0.04032067274196981,
+            0.10417932725803018
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_full_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.12436666666666667,
+          "ci95": [
+            0.051906690931107224,
+            0.1968266424022261
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_lora_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.06771666666666666,
+          "ci95": [
+            0.046373465917721256,
+            0.08905986741561206
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_lora_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.07855,
+          "ci95": [
+            0.04537855288616545,
+            0.11172144711383454
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_top4_ep10": {
+          "n_speakers": 6,
+          "mean_uar": 0.07326666666666666,
+          "ci95": [
+            0.047886403271665545,
+            0.09864693006166778
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "finetune_top4_ep30": {
+          "n_speakers": 6,
+          "mean_uar": 0.11295,
+          "ci95": [
+            0.06629927471269664,
+            0.15960072528730335
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "frozen_L12_1nn": {
+          "n_speakers": 6,
+          "mean_uar": 0.4404819415688981,
+          "ci95": [
+            0.2030720955537332,
+            0.677891787584063
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "shared_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8046196959240438,
+          "ci95": [
+            0.650768099509251,
+            0.9584712923388367
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "whisper_forced_mean": {
+          "n_speakers": 6,
+          "mean_uar": 0.7528880941924422,
+          "ci95": [
+            0.6387743740240029,
+            0.8670018143608814
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "whisper_forced_sum": {
+          "n_speakers": 6,
+          "mean_uar": 0.7521634565112826,
+          "ci95": [
+            0.6500928290780932,
+            0.854234083944472
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "whisper_free": {
+          "n_speakers": 6,
+          "mean_uar": 0.6645188949536776,
+          "ci95": [
+            0.46843450628500083,
+            0.8606032836223543
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        },
+        "xpl_shared_own_L12_logreg": {
+          "n_speakers": 6,
+          "mean_uar": 0.8305194805194805,
+          "ci95": [
+            0.7276306519242027,
+            0.9334083091147584
+          ],
+          "mean_n_test": 39.0,
+          "speakers": [
+            "F03",
+            "F04",
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ]
+        }
+      }
+    }
+  },
+  "paired": {
+    "A_finetune_split": {
+      "control": {
+        "frozen_L12_1nn - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": -8.687195642698823,
+          "sd_diff": 11.239995713578114,
+          "margin": 5,
+          "ci_90_low": -17.933666319151286,
+          "ci_90_high": 0.5592750337536376,
+          "p_tost": 0.7709269474012201,
+          "verdict": "equivalence not shown",
+          "reading": "primary not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.15625,
+          "per_speaker_diff_points": {
+            "FC02": -18.89,
+            "FC03": -16.27,
+            "MC01": -16.71,
+            "MC02": 10.36,
+            "MC03": -2.12,
+            "MC04": -8.49
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_L12_ep30": {
+          "n": 6,
+          "mean_diff": -25.850528976032155,
+          "sd_diff": 6.497730361282473,
+          "margin": 5,
+          "ci_90_low": -31.19582222881465,
+          "ci_90_high": -20.505235723249662,
+          "p_tost": 0.9997323262644066,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -32.17,
+            "FC03": -26.51,
+            "MC01": -34.58,
+            "MC02": -23.48,
+            "MC03": -19.05,
+            "MC04": -19.31
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 31.357804357301177,
+          "sd_diff": 11.097487720631596,
+          "margin": 5,
+          "ci_90_low": 22.228566463806835,
+          "ci_90_high": 40.48704225079552,
+          "p_tost": 0.998940825901741,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 34.83,
+            "FC03": 49.43,
+            "MC01": 25.5,
+            "MC02": 19.45,
+            "MC03": 22.62,
+            "MC04": 36.32
+          },
+          "is_preregistered_primary": true
+        },
+        "frozen_L12_1nn - finetune_full_ep30": {
+          "n": 6,
+          "mean_diff": 19.381137690634514,
+          "sd_diff": 13.941452407853564,
+          "margin": 5,
+          "ci_90_low": 7.912340534364171,
+          "ci_90_high": 30.84993484690486,
+          "p_tost": 0.973630456130887,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 11.58,
+            "FC03": 42.41,
+            "MC01": 0.29,
+            "MC02": 19.45,
+            "MC03": 23.41,
+            "MC04": 19.15
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep10": {
+          "n": 6,
+          "mean_diff": 32.63780435730117,
+          "sd_diff": 11.163640291267342,
+          "margin": 5,
+          "ci_90_low": 23.454146709552255,
+          "ci_90_high": 41.82146200505009,
+          "p_tost": 0.9991199101553399,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 36.14,
+            "FC03": 51.07,
+            "MC01": 24.53,
+            "MC02": 20.96,
+            "MC03": 25.79,
+            "MC04": 37.34
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep30": {
+          "n": 6,
+          "mean_diff": 31.297804357301175,
+          "sd_diff": 9.153388127606423,
+          "margin": 5,
+          "ci_90_low": 23.767860657246338,
+          "ci_90_high": 38.82774805735601,
+          "p_tost": 0.9995527391464217,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 35.42,
+            "FC03": 46.8,
+            "MC01": 24.92,
+            "MC02": 22.48,
+            "MC03": 25.0,
+            "MC04": 33.17
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep10": {
+          "n": 6,
+          "mean_diff": 32.231137690634505,
+          "sd_diff": 11.21683734688437,
+          "margin": 5,
+          "ci_90_low": 23.003718014200626,
+          "ci_90_high": 41.45855736706838,
+          "p_tost": 0.9990393107452119,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 36.32,
+            "FC03": 50.42,
+            "MC01": 25.31,
+            "MC02": 19.45,
+            "MC03": 25.16,
+            "MC04": 36.73
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep30": {
+          "n": 6,
+          "mean_diff": 29.077804357301176,
+          "sd_diff": 11.598020734968348,
+          "margin": 5,
+          "ci_90_low": 19.536807958056674,
+          "ci_90_high": 38.61880075654568,
+          "p_tost": 0.9980912081511732,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 30.05,
+            "FC03": 49.32,
+            "MC01": 20.27,
+            "MC02": 17.18,
+            "MC03": 24.21,
+            "MC04": 33.44
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - frozen_L24_1nn": {
+          "n": 6,
+          "mean_diff": 27.553481389661993,
+          "sd_diff": 11.439982274803286,
+          "margin": 5,
+          "ci_90_low": 18.14249375776094,
+          "ci_90_high": 36.96446902156305,
+          "p_tost": 0.9976198268396153,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 31.11,
+            "FC03": 47.13,
+            "MC01": 22.89,
+            "MC02": 14.9,
+            "MC03": 19.18,
+            "MC04": 30.12
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": -54.63857933436676,
+          "sd_diff": 9.283784198250242,
+          "margin": 5,
+          "ci_90_low": -62.275792064967234,
+          "ci_90_high": -47.001366603766286,
+          "p_tost": 0.9999768435236579,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -47.37,
+            "FC03": -44.32,
+            "MC01": -57.4,
+            "MC02": -65.91,
+            "MC03": -64.5,
+            "MC04": -48.33
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - shared_L24_logreg": {
+          "n": 6,
+          "mean_diff": -0.07210443523645853,
+          "sd_diff": 12.659948972823248,
+          "margin": 5,
+          "ci_90_low": -10.486685537005407,
+          "ci_90_high": 10.342476666532491,
+          "p_tost": 0.1920703368358443,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.84375,
+          "per_speaker_diff_points": {
+            "FC02": 5.98,
+            "FC03": 18.29,
+            "MC01": -8.53,
+            "MC02": -10.61,
+            "MC03": -13.52,
+            "MC04": 7.95
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - xpl_shared_own_L12_logreg": {
+          "n": 6,
+          "mean_diff": -58.69224553031436,
+          "sd_diff": 9.252407753781823,
+          "margin": 5,
+          "ci_90_low": -66.30364674095509,
+          "ci_90_high": -51.08084431967364,
+          "p_tost": 0.9999844813547335,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -54.47,
+            "FC03": -45.86,
+            "MC01": -64.22,
+            "MC02": -68.43,
+            "MC03": -67.28,
+            "MC04": -51.89
+          },
+          "is_preregistered_primary": false
+        }
+      },
+      "dysarthric": {
+        "frozen_L12_1nn - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": 5.144860823556475,
+          "sd_diff": 4.97797279292673,
+          "margin": 5,
+          "ci_90_low": 1.0497810182882485,
+          "ci_90_high": 9.239940628824701,
+          "p_tost": 0.5270312978913648,
+          "verdict": "equivalence not shown",
+          "reading": "primary not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.0625,
+          "per_speaker_diff_points": {
+            "F03": 5.55,
+            "F04": 3.34,
+            "M02": -3.03,
+            "M03": 4.54,
+            "M04": 9.35,
+            "M05": 11.12
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_L12_ep30": {
+          "n": 6,
+          "mean_diff": 5.003194156889806,
+          "sd_diff": 7.931401274232534,
+          "margin": 5,
+          "ci_90_low": -1.521494212588471,
+          "ci_90_high": 11.527882526368082,
+          "p_tost": 0.500374468869193,
+          "verdict": "equivalence not shown",
+          "reading": "primary not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.3125,
+          "per_speaker_diff_points": {
+            "F03": -0.79,
+            "F04": 9.45,
+            "M02": -1.52,
+            "M03": 0.0,
+            "M04": 3.99,
+            "M05": 18.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 36.82319415688981,
+          "sd_diff": 20.959189055680312,
+          "margin": 5,
+          "ci_90_low": 19.581325748393954,
+          "ci_90_high": 54.065062565385674,
+          "p_tost": 0.9931379837520791,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 25.79,
+            "F04": 26.67,
+            "M02": 30.3,
+            "M03": 68.18,
+            "M04": 13.33,
+            "M05": 56.67
+          },
+          "is_preregistered_primary": true
+        },
+        "frozen_L12_1nn - finetune_full_ep30": {
+          "n": 6,
+          "mean_diff": 31.611527490223143,
+          "sd_diff": 17.635949723163822,
+          "margin": 5,
+          "ci_90_low": 17.103488864404774,
+          "ci_90_high": 46.11956611604151,
+          "p_tost": 0.9929720634473137,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 20.24,
+            "F04": 25.56,
+            "M02": 21.21,
+            "M03": 54.54,
+            "M04": 14.78,
+            "M05": 53.34
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep10": {
+          "n": 6,
+          "mean_diff": 37.27652749022314,
+          "sd_diff": 21.269831887376355,
+          "margin": 5,
+          "ci_90_low": 19.779111846005673,
+          "ci_90_high": 54.7739431344406,
+          "p_tost": 0.9931229688365775,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 22.62,
+            "F04": 28.89,
+            "M02": 30.3,
+            "M03": 68.18,
+            "M04": 14.78,
+            "M05": 58.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep30": {
+          "n": 6,
+          "mean_diff": 36.19319415688981,
+          "sd_diff": 20.297304123926256,
+          "margin": 5,
+          "ci_90_low": 19.495818804139198,
+          "ci_90_high": 52.89056950964042,
+          "p_tost": 0.9934510271675379,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 21.03,
+            "F04": 28.89,
+            "M02": 30.3,
+            "M03": 63.63,
+            "M04": 14.42,
+            "M05": 58.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep10": {
+          "n": 6,
+          "mean_diff": 36.721527490223146,
+          "sd_diff": 21.57384233589903,
+          "margin": 5,
+          "ci_90_low": 18.974020674333406,
+          "ci_90_high": 54.46903430611289,
+          "p_tost": 0.9922419210174658,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 22.62,
+            "F04": 25.56,
+            "M02": 30.3,
+            "M03": 68.18,
+            "M04": 14.78,
+            "M05": 58.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep30": {
+          "n": 6,
+          "mean_diff": 32.75319415688981,
+          "sd_diff": 21.04466995979405,
+          "margin": 5,
+          "ci_90_low": 15.441005732850751,
+          "ci_90_high": 50.06538258092887,
+          "p_tost": 0.9884013045982607,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 17.06,
+            "F04": 25.56,
+            "M02": 24.24,
+            "M03": 68.18,
+            "M04": 13.7,
+            "M05": 47.78
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - frozen_L24_1nn": {
+          "n": 6,
+          "mean_diff": 24.881422924901184,
+          "sd_diff": 16.87298567891086,
+          "margin": 5,
+          "ci_90_low": 11.001029081353536,
+          "ci_90_high": 38.76181676844883,
+          "p_tost": 0.9828312889678787,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 19.44,
+            "F04": 13.33,
+            "M02": 13.64,
+            "M03": 50.0,
+            "M04": 10.65,
+            "M05": 42.22
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": -36.413775435514566,
+          "sd_diff": 19.545775149312345,
+          "margin": 5,
+          "ci_90_low": -52.49291295229541,
+          "ci_90_high": -20.334637918733716,
+          "p_tost": 0.9945024329065331,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -58.33,
+            "F04": -58.89,
+            "M02": -28.79,
+            "M03": -9.09,
+            "M04": -37.83,
+            "M05": -25.56
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - shared_L24_logreg": {
+          "n": 6,
+          "mean_diff": -4.063669824539388,
+          "sd_diff": 12.900527479399566,
+          "margin": 5,
+          "ci_90_low": -14.67616044185694,
+          "ci_90_high": 6.548820792778165,
+          "p_tost": 0.43293472612700845,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.625,
+          "per_speaker_diff_points": {
+            "F03": -24.21,
+            "F04": 0.0,
+            "M02": 1.52,
+            "M03": 0.0,
+            "M04": -13.91,
+            "M05": 12.22
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - xpl_shared_own_L12_logreg": {
+          "n": 6,
+          "mean_diff": -39.00375389505824,
+          "sd_diff": 19.322959266710534,
+          "margin": 5,
+          "ci_90_low": -54.89959414222922,
+          "ci_90_high": -23.10791364788726,
+          "p_tost": 0.9961805379725107,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -59.92,
+            "F04": -55.56,
+            "M02": -36.36,
+            "M03": -9.09,
+            "M04": -47.54,
+            "M05": -25.56
+          },
+          "is_preregistered_primary": false
+        }
+      }
+    },
+    "B_whisper_subset": {
+      "control": {
+        "frozen_L12_1nn - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": -56.40555569683537,
+          "sd_diff": 14.680709195192962,
+          "margin": 5,
+          "ci_90_low": -68.482495096278,
+          "ci_90_high": -44.32861629739275,
+          "p_tost": 0.9998224495136794,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -42.77,
+            "FC03": -37.12,
+            "MC01": -54.28,
+            "MC02": -76.07,
+            "MC03": -61.84,
+            "MC04": -66.36
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": -56.19827649703811,
+          "sd_diff": 11.355229478262865,
+          "margin": 5,
+          "ci_90_low": -65.53954308384911,
+          "ci_90_high": -46.857009910227106,
+          "p_tost": 0.9999470107990052,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -43.95,
+            "FC03": -45.76,
+            "MC01": -58.63,
+            "MC02": -67.86,
+            "MC03": -50.33,
+            "MC04": -70.67
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": -56.19827649703811,
+          "sd_diff": 11.355229478262865,
+          "margin": 5,
+          "ci_90_low": -65.53954308384911,
+          "ci_90_high": -46.857009910227106,
+          "p_tost": 0.9999470107990052,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -43.95,
+            "FC03": -45.76,
+            "MC01": -58.63,
+            "MC02": -67.86,
+            "MC03": -50.33,
+            "MC04": -70.67
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_free": {
+          "n": 6,
+          "mean_diff": -43.34436163538331,
+          "sd_diff": 14.447863200258755,
+          "margin": 5,
+          "ci_90_low": -55.22975259306917,
+          "ci_90_high": -31.458970677697444,
+          "p_tost": 0.9993570783437709,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -37.91,
+            "FC03": -28.48,
+            "MC01": -36.12,
+            "MC02": -38.1,
+            "MC03": -50.33,
+            "MC04": -69.13
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - xpl_shared_own_L12_logreg": {
+          "n": 6,
+          "mean_diff": -57.791307553433455,
+          "sd_diff": 12.925449147334108,
+          "margin": 5,
+          "ci_90_low": -68.42429973299686,
+          "ci_90_high": -47.15831537387005,
+          "p_tost": 0.9999147076153192,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -46.24,
+            "FC03": -37.12,
+            "MC01": -66.52,
+            "MC02": -67.86,
+            "MC03": -62.66,
+            "MC04": -66.36
+          },
+          "is_preregistered_primary": false
+        }
+      },
+      "dysarthric": {
+        "frozen_L12_1nn - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": -34.29617604617605,
+          "sd_diff": 41.0009436859537,
+          "margin": 5,
+          "ci_90_low": -68.0251945582626,
+          "ci_90_high": -0.5671575340895103,
+          "p_tost": 0.9297587606239599,
+          "verdict": "equivalence not shown",
+          "reading": "primary not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.09375,
+          "per_speaker_diff_points": {
+            "F03": -75.0,
+            "F04": -81.98,
+            "M02": -0.95,
+            "M03": 23.33,
+            "M04": -31.18,
+            "M05": -40.0
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": -28.30916305916306,
+          "sd_diff": 28.55192553615023,
+          "margin": 5,
+          "ci_90_low": -51.79712061303873,
+          "ci_90_high": -4.821205505287384,
+          "p_tost": 0.949011346108363,
+          "verdict": "equivalence not shown",
+          "reading": "primary not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -31.67,
+            "F04": -81.98,
+            "M02": -15.0,
+            "M03": -13.33,
+            "M04": -27.55,
+            "M05": -0.33
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": -26.953102453102456,
+          "sd_diff": 28.787694907679075,
+          "margin": 5,
+          "ci_90_low": -50.63501333541345,
+          "ci_90_high": -3.271191570791469,
+          "p_tost": 0.9396342539128906,
+          "verdict": "equivalence not shown",
+          "reading": "primary not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -31.67,
+            "F04": -81.98,
+            "M02": -15.0,
+            "M03": -13.33,
+            "M04": -19.41,
+            "M05": -0.33
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_free": {
+          "n": 6,
+          "mean_diff": -21.135040885040883,
+          "sd_diff": 20.849267185766134,
+          "margin": 5,
+          "ci_90_low": -38.28648316057706,
+          "ci_90_high": -3.983598609504707,
+          "p_tost": 0.9417429649112748,
+          "verdict": "equivalence not shown",
+          "reading": "primary not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -32.5,
+            "F04": -58.37,
+            "M02": -2.62,
+            "M03": -13.33,
+            "M04": -8.32,
+            "M05": -11.67
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - xpl_shared_own_L12_logreg": {
+          "n": 6,
+          "mean_diff": -37.32130832130832,
+          "sd_diff": 36.05477799357416,
+          "margin": 5,
+          "ci_90_low": -66.98141282302612,
+          "ci_90_high": -7.661203819590522,
+          "p_tost": 0.9602455531652745,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.0625,
+          "per_speaker_diff_points": {
+            "F03": -75.0,
+            "F04": -70.53,
+            "M02": -24.05,
+            "M03": 23.33,
+            "M04": -31.18,
+            "M05": -46.5
+          },
+          "is_preregistered_primary": false
+        }
+      }
+    },
+    "C_full_split_whisper": {
+      "control": {
+        "frozen_L12_1nn - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": -8.687195642698823,
+          "sd_diff": 11.239995713578114,
+          "margin": 5,
+          "ci_90_low": -17.933666319151286,
+          "ci_90_high": 0.5592750337536376,
+          "p_tost": 0.7709269474012201,
+          "verdict": "equivalence not shown",
+          "reading": "primary not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.15625,
+          "per_speaker_diff_points": {
+            "FC02": -18.89,
+            "FC03": -16.27,
+            "MC01": -16.71,
+            "MC02": 10.36,
+            "MC03": -2.12,
+            "MC04": -8.49
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_L12_ep30": {
+          "n": 6,
+          "mean_diff": -25.850528976032155,
+          "sd_diff": 6.497730361282473,
+          "margin": 5,
+          "ci_90_low": -31.19582222881465,
+          "ci_90_high": -20.505235723249662,
+          "p_tost": 0.9997323262644066,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -32.17,
+            "FC03": -26.51,
+            "MC01": -34.58,
+            "MC02": -23.48,
+            "MC03": -19.05,
+            "MC04": -19.31
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 31.357804357301177,
+          "sd_diff": 11.097487720631596,
+          "margin": 5,
+          "ci_90_low": 22.228566463806835,
+          "ci_90_high": 40.48704225079552,
+          "p_tost": 0.998940825901741,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 34.83,
+            "FC03": 49.43,
+            "MC01": 25.5,
+            "MC02": 19.45,
+            "MC03": 22.62,
+            "MC04": 36.32
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_ep30": {
+          "n": 6,
+          "mean_diff": 19.381137690634514,
+          "sd_diff": 13.941452407853564,
+          "margin": 5,
+          "ci_90_low": 7.912340534364171,
+          "ci_90_high": 30.84993484690486,
+          "p_tost": 0.973630456130887,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 11.58,
+            "FC03": 42.41,
+            "MC01": 0.29,
+            "MC02": 19.45,
+            "MC03": 23.41,
+            "MC04": 19.15
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep10": {
+          "n": 6,
+          "mean_diff": 32.63780435730117,
+          "sd_diff": 11.163640291267342,
+          "margin": 5,
+          "ci_90_low": 23.454146709552255,
+          "ci_90_high": 41.82146200505009,
+          "p_tost": 0.9991199101553399,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 36.14,
+            "FC03": 51.07,
+            "MC01": 24.53,
+            "MC02": 20.96,
+            "MC03": 25.79,
+            "MC04": 37.34
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep30": {
+          "n": 6,
+          "mean_diff": 31.297804357301175,
+          "sd_diff": 9.153388127606423,
+          "margin": 5,
+          "ci_90_low": 23.767860657246338,
+          "ci_90_high": 38.82774805735601,
+          "p_tost": 0.9995527391464217,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 35.42,
+            "FC03": 46.8,
+            "MC01": 24.92,
+            "MC02": 22.48,
+            "MC03": 25.0,
+            "MC04": 33.17
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep10": {
+          "n": 6,
+          "mean_diff": 32.231137690634505,
+          "sd_diff": 11.21683734688437,
+          "margin": 5,
+          "ci_90_low": 23.003718014200626,
+          "ci_90_high": 41.45855736706838,
+          "p_tost": 0.9990393107452119,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 36.32,
+            "FC03": 50.42,
+            "MC01": 25.31,
+            "MC02": 19.45,
+            "MC03": 25.16,
+            "MC04": 36.73
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep30": {
+          "n": 6,
+          "mean_diff": 29.077804357301176,
+          "sd_diff": 11.598020734968348,
+          "margin": 5,
+          "ci_90_low": 19.536807958056674,
+          "ci_90_high": 38.61880075654568,
+          "p_tost": 0.9980912081511732,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": 30.05,
+            "FC03": 49.32,
+            "MC01": 20.27,
+            "MC02": 17.18,
+            "MC03": 24.21,
+            "MC04": 33.44
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": -54.63857933436676,
+          "sd_diff": 9.283784198250242,
+          "margin": 5,
+          "ci_90_low": -62.275792064967234,
+          "ci_90_high": -47.001366603766286,
+          "p_tost": 0.9999768435236579,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -47.37,
+            "FC03": -44.32,
+            "MC01": -57.4,
+            "MC02": -65.91,
+            "MC03": -64.5,
+            "MC04": -48.33
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": -57.06181590849247,
+          "sd_diff": 9.574689512397368,
+          "margin": 5,
+          "ci_90_low": -64.93833900231988,
+          "ci_90_high": -49.185292814665054,
+          "p_tost": 0.9999786674105577,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -55.28,
+            "FC03": -41.69,
+            "MC01": -65.78,
+            "MC02": -63.89,
+            "MC03": -64.76,
+            "MC04": -50.98
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": -56.8505407694253,
+          "sd_diff": 9.864687770849686,
+          "margin": 5,
+          "ci_90_low": -64.96562804613424,
+          "ci_90_high": -48.73545349271636,
+          "p_tost": 0.9999748303564555,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -55.28,
+            "FC03": -41.03,
+            "MC01": -65.78,
+            "MC02": -63.89,
+            "MC03": -64.76,
+            "MC04": -50.37
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_free": {
+          "n": 6,
+          "mean_diff": -43.54008923269478,
+          "sd_diff": 8.671399676196325,
+          "margin": 5,
+          "ci_90_low": -50.67352992723971,
+          "ci_90_high": -36.40664853814985,
+          "p_tost": 0.9999432065144036,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -44.74,
+            "FC03": -28.53,
+            "MC01": -51.59,
+            "MC02": -43.18,
+            "MC03": -52.33,
+            "MC04": -40.87
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - xpl_shared_own_L12_logreg": {
+          "n": 6,
+          "mean_diff": -58.69224553031436,
+          "sd_diff": 9.252407753781823,
+          "margin": 5,
+          "ci_90_low": -66.30364674095509,
+          "ci_90_high": -51.08084431967364,
+          "p_tost": 0.9999844813547335,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "FC02": -54.47,
+            "FC03": -45.86,
+            "MC01": -64.22,
+            "MC02": -68.43,
+            "MC03": -67.28,
+            "MC04": -51.89
+          },
+          "is_preregistered_primary": false
+        }
+      },
+      "dysarthric": {
+        "frozen_L12_1nn - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": 5.144860823556475,
+          "sd_diff": 4.97797279292673,
+          "margin": 5,
+          "ci_90_low": 1.0497810182882485,
+          "ci_90_high": 9.239940628824701,
+          "p_tost": 0.5270312978913648,
+          "verdict": "equivalence not shown",
+          "reading": "primary not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.0625,
+          "per_speaker_diff_points": {
+            "F03": 5.55,
+            "F04": 3.34,
+            "M02": -3.03,
+            "M03": 4.54,
+            "M04": 9.35,
+            "M05": 11.12
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_L12_ep30": {
+          "n": 6,
+          "mean_diff": 5.003194156889806,
+          "sd_diff": 7.931401274232534,
+          "margin": 5,
+          "ci_90_low": -1.521494212588471,
+          "ci_90_high": 11.527882526368082,
+          "p_tost": 0.500374468869193,
+          "verdict": "equivalence not shown",
+          "reading": "primary not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.3125,
+          "per_speaker_diff_points": {
+            "F03": -0.79,
+            "F04": 9.45,
+            "M02": -1.52,
+            "M03": 0.0,
+            "M04": 3.99,
+            "M05": 18.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 36.82319415688981,
+          "sd_diff": 20.959189055680312,
+          "margin": 5,
+          "ci_90_low": 19.581325748393954,
+          "ci_90_high": 54.065062565385674,
+          "p_tost": 0.9931379837520791,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 25.79,
+            "F04": 26.67,
+            "M02": 30.3,
+            "M03": 68.18,
+            "M04": 13.33,
+            "M05": 56.67
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_full_ep30": {
+          "n": 6,
+          "mean_diff": 31.611527490223143,
+          "sd_diff": 17.635949723163822,
+          "margin": 5,
+          "ci_90_low": 17.103488864404774,
+          "ci_90_high": 46.11956611604151,
+          "p_tost": 0.9929720634473137,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 20.24,
+            "F04": 25.56,
+            "M02": 21.21,
+            "M03": 54.54,
+            "M04": 14.78,
+            "M05": 53.34
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep10": {
+          "n": 6,
+          "mean_diff": 37.27652749022314,
+          "sd_diff": 21.269831887376355,
+          "margin": 5,
+          "ci_90_low": 19.779111846005673,
+          "ci_90_high": 54.7739431344406,
+          "p_tost": 0.9931229688365775,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 22.62,
+            "F04": 28.89,
+            "M02": 30.3,
+            "M03": 68.18,
+            "M04": 14.78,
+            "M05": 58.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_lora_ep30": {
+          "n": 6,
+          "mean_diff": 36.19319415688981,
+          "sd_diff": 20.297304123926256,
+          "margin": 5,
+          "ci_90_low": 19.495818804139198,
+          "ci_90_high": 52.89056950964042,
+          "p_tost": 0.9934510271675379,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 21.03,
+            "F04": 28.89,
+            "M02": 30.3,
+            "M03": 63.63,
+            "M04": 14.42,
+            "M05": 58.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep10": {
+          "n": 6,
+          "mean_diff": 36.721527490223146,
+          "sd_diff": 21.57384233589903,
+          "margin": 5,
+          "ci_90_low": 18.974020674333406,
+          "ci_90_high": 54.46903430611289,
+          "p_tost": 0.9922419210174658,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 22.62,
+            "F04": 25.56,
+            "M02": 30.3,
+            "M03": 68.18,
+            "M04": 14.78,
+            "M05": 58.89
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - finetune_top4_ep30": {
+          "n": 6,
+          "mean_diff": 32.75319415688981,
+          "sd_diff": 21.04466995979405,
+          "margin": 5,
+          "ci_90_low": 15.441005732850751,
+          "ci_90_high": 50.06538258092887,
+          "p_tost": 0.9884013045982607,
+          "verdict": "equivalence not shown",
+          "reading": "primary better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": 17.06,
+            "F04": 25.56,
+            "M02": 24.24,
+            "M03": 68.18,
+            "M04": 13.7,
+            "M05": 47.78
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": -36.413775435514566,
+          "sd_diff": 19.545775149312345,
+          "margin": 5,
+          "ci_90_low": -52.49291295229541,
+          "ci_90_high": -20.334637918733716,
+          "p_tost": 0.9945024329065331,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -58.33,
+            "F04": -58.89,
+            "M02": -28.79,
+            "M03": -9.09,
+            "M04": -37.83,
+            "M05": -25.56
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": -31.240615262354396,
+          "sd_diff": 18.55301538327187,
+          "margin": 5,
+          "ci_90_low": -46.5030688319727,
+          "ci_90_high": -15.97816169273609,
+          "p_tost": 0.9910219861677836,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -46.03,
+            "F04": -52.78,
+            "M02": -31.82,
+            "M03": -4.55,
+            "M04": -37.83,
+            "M05": -14.44
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": -31.168151494238455,
+          "sd_diff": 19.445843875284528,
+          "margin": 5,
+          "ci_90_low": -47.16508154239523,
+          "ci_90_high": -15.171221446081683,
+          "p_tost": 0.9892179513541935,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -46.03,
+            "F04": -52.78,
+            "M02": -31.82,
+            "M03": -4.55,
+            "M04": -40.72,
+            "M05": -11.11
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - whisper_free": {
+          "n": 6,
+          "mean_diff": -22.403695338477945,
+          "sd_diff": 18.902828740770435,
+          "margin": 5,
+          "ci_90_low": -37.95391938726418,
+          "ci_90_high": -6.853471289691708,
+          "p_tost": 0.9631041263063248,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.0625,
+          "per_speaker_diff_points": {
+            "F03": -43.25,
+            "F04": -46.11,
+            "M02": -12.12,
+            "M03": -13.64,
+            "M04": -21.52,
+            "M05": 2.22
+          },
+          "is_preregistered_primary": false
+        },
+        "frozen_L12_1nn - xpl_shared_own_L12_logreg": {
+          "n": 6,
+          "mean_diff": -39.00375389505824,
+          "sd_diff": 19.322959266710534,
+          "margin": 5,
+          "ci_90_low": -54.89959414222922,
+          "ci_90_high": -23.10791364788726,
+          "p_tost": 0.9961805379725107,
+          "verdict": "equivalence not shown",
+          "reading": "primary worse by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "per_speaker_diff_points": {
+            "F03": -59.92,
+            "F04": -55.56,
+            "M02": -36.36,
+            "M03": -9.09,
+            "M04": -47.54,
+            "M05": -25.56
+          },
+          "is_preregistered_primary": false
+        }
+      }
+    }
+  },
+  "paired_extra": {
+    "A_finetune_split": {
+      "control": {
+        "shared_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 54.63857933436676,
+          "sd_diff": 9.283784198250242,
+          "margin": 5,
+          "ci_90_low": 47.001366603766286,
+          "ci_90_high": 62.275792064967234,
+          "p_tost": 0.9999768435236579,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 47.37,
+            "FC03": 44.32,
+            "MC01": 57.4,
+            "MC02": 65.91,
+            "MC03": 64.5,
+            "MC04": 48.33
+          }
+        },
+        "xpl_shared_own_L12_logreg - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": 4.053666195947588,
+          "sd_diff": 2.346411238443764,
+          "margin": 5,
+          "ci_90_low": 2.123414328950914,
+          "ci_90_high": 5.983918062944261,
+          "p_tost": 0.1842815140300223,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 7.11,
+            "FC03": 1.54,
+            "MC01": 6.82,
+            "MC02": 2.53,
+            "MC03": 2.78,
+            "MC04": 3.56
+          }
+        },
+        "shared_L12_logreg - shared_L24_logreg": {
+          "n": 6,
+          "mean_diff": 54.566474899130306,
+          "sd_diff": 4.793822983347758,
+          "margin": 5,
+          "ci_90_low": 50.62288410308735,
+          "ci_90_high": 58.51006569517326,
+          "p_tost": 0.9999991043493146,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 53.35,
+            "FC03": 62.61,
+            "MC01": 48.88,
+            "MC02": 55.3,
+            "MC03": 50.98,
+            "MC04": 56.28
+          }
+        },
+        "frozen_L12_1nn - frozen_L24_1nn": {
+          "n": 6,
+          "mean_diff": 27.553481389661993,
+          "sd_diff": 11.439982274803286,
+          "margin": 5,
+          "ci_90_low": 18.14249375776094,
+          "ci_90_high": 36.96446902156305,
+          "p_tost": 0.9976198268396153,
+          "verdict": "equivalence not shown",
+          "reading": "frozen_L12_1nn better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 31.11,
+            "FC03": 47.13,
+            "MC01": 22.89,
+            "MC02": 14.9,
+            "MC03": 19.18,
+            "MC04": 30.12
+          }
+        },
+        "shared_L12_logreg - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": 45.951383691667935,
+          "sd_diff": 19.387766643460523,
+          "margin": 5,
+          "ci_90_low": 30.00223030061268,
+          "ci_90_high": 61.90053708272319,
+          "p_tost": 0.9982283135031143,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 28.48,
+            "FC03": 28.05,
+            "MC01": 40.7,
+            "MC02": 76.26,
+            "MC03": 62.38,
+            "MC04": 39.84
+          }
+        },
+        "shared_L12_logreg - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 85.99638369166796,
+          "sd_diff": 4.185257427429116,
+          "margin": 5,
+          "ci_90_low": 82.55342329717428,
+          "ci_90_high": 89.43934408616164,
+          "p_tost": 0.9999999605442741,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 82.2,
+            "FC03": 93.75,
+            "MC01": 82.91,
+            "MC02": 85.35,
+            "MC03": 87.12,
+            "MC04": 84.65
+          }
+        },
+        "xpl_shared_own_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 58.69224553031436,
+          "sd_diff": 9.252407753781823,
+          "margin": 5,
+          "ci_90_low": 51.08084431967364,
+          "ci_90_high": 66.30364674095509,
+          "p_tost": 0.9999844813547335,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 54.47,
+            "FC03": 45.86,
+            "MC01": 64.22,
+            "MC02": 68.43,
+            "MC03": 67.28,
+            "MC04": 51.89
+          }
+        }
+      },
+      "dysarthric": {
+        "shared_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 36.413775435514566,
+          "sd_diff": 19.545775149312345,
+          "margin": 5,
+          "ci_90_low": 20.334637918733716,
+          "ci_90_high": 52.49291295229541,
+          "p_tost": 0.9945024329065331,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 58.33,
+            "F04": 58.89,
+            "M02": 28.79,
+            "M03": 9.09,
+            "M04": 37.83,
+            "M05": 25.56
+          }
+        },
+        "xpl_shared_own_L12_logreg - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": 2.5899784595436754,
+          "sd_diff": 5.001234333145483,
+          "margin": 5,
+          "ci_90_low": -1.5242372204172776,
+          "ci_90_high": 6.7041941395046285,
+          "p_tost": 0.145470815446828,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.375,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "F03": 1.59,
+            "F04": -3.33,
+            "M02": 7.58,
+            "M03": 0.0,
+            "M04": 9.71,
+            "M05": 0.0
+          }
+        },
+        "shared_L12_logreg - shared_L24_logreg": {
+          "n": 6,
+          "mean_diff": 32.35010561097518,
+          "sd_diff": 16.451678928241606,
+          "margin": 5,
+          "ci_90_low": 18.816295575386533,
+          "ci_90_high": 45.88391564656382,
+          "p_tost": 0.9951932117883641,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 34.13,
+            "F04": 58.89,
+            "M02": 30.3,
+            "M03": 9.09,
+            "M04": 23.91,
+            "M05": 37.78
+          }
+        },
+        "frozen_L12_1nn - frozen_L24_1nn": {
+          "n": 6,
+          "mean_diff": 24.881422924901184,
+          "sd_diff": 16.87298567891086,
+          "margin": 5,
+          "ci_90_low": 11.001029081353536,
+          "ci_90_high": 38.76181676844883,
+          "p_tost": 0.9828312889678787,
+          "verdict": "equivalence not shown",
+          "reading": "frozen_L12_1nn better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 19.44,
+            "F04": 13.33,
+            "M02": 13.64,
+            "M03": 50.0,
+            "M04": 10.65,
+            "M05": 42.22
+          }
+        },
+        "shared_L12_logreg - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": 41.558636259071044,
+          "sd_diff": 20.051453171362045,
+          "margin": 5,
+          "ci_90_low": 25.063507747119203,
+          "ci_90_high": 58.053764771022884,
+          "p_tost": 0.9966982013041223,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 63.88,
+            "F04": 62.22,
+            "M02": 25.76,
+            "M03": 13.63,
+            "M04": 47.18,
+            "M05": 36.67
+          }
+        },
+        "shared_L12_logreg - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 73.23696959240438,
+          "sd_diff": 14.525114817777478,
+          "margin": 5,
+          "ci_90_low": 61.28802835994105,
+          "ci_90_high": 85.1859108248677,
+          "p_tost": 0.9999565607564946,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 84.12,
+            "F04": 85.55,
+            "M02": 59.09,
+            "M03": 77.27,
+            "M04": 51.16,
+            "M05": 82.22
+          }
+        },
+        "xpl_shared_own_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 39.00375389505824,
+          "sd_diff": 19.322959266710534,
+          "margin": 5,
+          "ci_90_low": 23.10791364788726,
+          "ci_90_high": 54.89959414222922,
+          "p_tost": 0.9961805379725107,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 59.92,
+            "F04": 55.56,
+            "M02": 36.36,
+            "M03": 9.09,
+            "M04": 47.54,
+            "M05": 25.56
+          }
+        }
+      }
+    },
+    "B_whisper_subset": {
+      "control": {
+        "shared_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 0.20727919979726148,
+          "sd_diff": 7.913169308252953,
+          "margin": 5,
+          "ci_90_low": -6.302410824210063,
+          "ci_90_high": 6.716969223804585,
+          "p_tost": 0.09901895981863261,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 1.0,
+          "n_better": 2,
+          "per_speaker_diff_points": {
+            "FC02": -1.18,
+            "FC03": -8.64,
+            "MC01": -4.36,
+            "MC02": 8.21,
+            "MC03": 11.51,
+            "MC04": -4.31
+          }
+        },
+        "shared_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 0.20727919979726148,
+          "sd_diff": 7.913169308252953,
+          "margin": 5,
+          "ci_90_low": -6.302410824210063,
+          "ci_90_high": 6.716969223804585,
+          "p_tost": 0.09901895981863261,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 1.0,
+          "n_better": 2,
+          "per_speaker_diff_points": {
+            "FC02": -1.18,
+            "FC03": -8.64,
+            "MC01": -4.36,
+            "MC02": 8.21,
+            "MC03": 11.51,
+            "MC04": -4.31
+          }
+        },
+        "shared_L12_logreg - whisper_free": {
+          "n": 6,
+          "mean_diff": 13.061194061452063,
+          "sd_diff": 14.046538889170794,
+          "margin": 5,
+          "ci_90_low": 1.5059485565566817,
+          "ci_90_high": 24.616439566347445,
+          "p_tost": 0.8906034160044475,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.0625,
+          "n_better": 5,
+          "per_speaker_diff_points": {
+            "FC02": 4.86,
+            "FC03": 8.64,
+            "MC01": 18.16,
+            "MC02": 37.98,
+            "MC03": 11.51,
+            "MC04": -2.77
+          }
+        },
+        "shared_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 56.40555569683537,
+          "sd_diff": 14.680709195192962,
+          "margin": 5,
+          "ci_90_low": 44.32861629739275,
+          "ci_90_high": 68.482495096278,
+          "p_tost": 0.9998224495136794,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 42.77,
+            "FC03": 37.12,
+            "MC01": 54.28,
+            "MC02": 76.07,
+            "MC03": 61.84,
+            "MC04": 66.36
+          }
+        },
+        "xpl_shared_own_L12_logreg - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": 1.3857518565980902,
+          "sd_diff": 6.610039148420665,
+          "margin": 5,
+          "ci_90_low": -4.051931102857222,
+          "ci_90_high": 6.823434816053402,
+          "p_tost": 0.1190579361529358,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.625,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "FC02": 3.46,
+            "FC03": 0.0,
+            "MC01": 12.24,
+            "MC02": -8.21,
+            "MC03": 0.82,
+            "MC04": 0.0
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 1.5930310563953516,
+          "sd_diff": 7.711593531344143,
+          "margin": 5,
+          "ci_90_low": -4.750834659688183,
+          "ci_90_high": 7.936896772478886,
+          "p_tost": 0.1642896916645344,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.8125,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "FC02": 2.29,
+            "FC03": -8.64,
+            "MC01": 7.88,
+            "MC02": 0.0,
+            "MC03": 12.33,
+            "MC04": -4.31
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 1.5930310563953516,
+          "sd_diff": 7.711593531344143,
+          "margin": 5,
+          "ci_90_low": -4.750834659688183,
+          "ci_90_high": 7.936896772478886,
+          "p_tost": 0.1642896916645344,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.8125,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "FC02": 2.29,
+            "FC03": -8.64,
+            "MC01": 7.88,
+            "MC02": 0.0,
+            "MC03": 12.33,
+            "MC04": -4.31
+          }
+        },
+        "xpl_shared_own_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 57.791307553433455,
+          "sd_diff": 12.925449147334108,
+          "margin": 5,
+          "ci_90_low": 47.15831537387005,
+          "ci_90_high": 68.42429973299686,
+          "p_tost": 0.9999147076153192,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 46.24,
+            "FC03": 37.12,
+            "MC01": 66.52,
+            "MC02": 67.86,
+            "MC03": 62.66,
+            "MC04": 66.36
+          }
+        }
+      },
+      "dysarthric": {
+        "shared_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 5.987012987012989,
+          "sd_diff": 30.955320902971085,
+          "margin": 5,
+          "ci_90_low": -19.478073860282706,
+          "ci_90_high": 31.452099834308683,
+          "p_tost": 0.5296119942349753,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.625,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "F03": 43.33,
+            "F04": 0.0,
+            "M02": -14.05,
+            "M03": -36.67,
+            "M04": 3.64,
+            "M05": 39.67
+          }
+        },
+        "shared_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 7.343073593073593,
+          "sd_diff": 31.009917756266123,
+          "margin": 5,
+          "ci_90_low": -18.166926812543952,
+          "ci_90_high": 32.85307399869114,
+          "p_tost": 0.5697804315902335,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.625,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "F03": 43.33,
+            "F04": 0.0,
+            "M02": -14.05,
+            "M03": -36.67,
+            "M04": 11.77,
+            "M05": 39.67
+          }
+        },
+        "shared_L12_logreg - whisper_free": {
+          "n": 6,
+          "mean_diff": 13.161135161135162,
+          "sd_diff": 28.27300071353776,
+          "margin": 5,
+          "ci_90_low": -10.097367661711983,
+          "ci_90_high": 36.419637983982305,
+          "p_tost": 0.7444436991792316,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.4375,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "F03": 42.5,
+            "F04": 23.6,
+            "M02": -1.67,
+            "M03": -36.67,
+            "M04": 22.86,
+            "M05": 28.33
+          }
+        },
+        "shared_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 34.29617604617605,
+          "sd_diff": 41.0009436859537,
+          "margin": 5,
+          "ci_90_low": 0.5671575340895103,
+          "ci_90_high": 68.0251945582626,
+          "p_tost": 0.9297587606239599,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.09375,
+          "n_better": 5,
+          "per_speaker_diff_points": {
+            "F03": 75.0,
+            "F04": 81.98,
+            "M02": 0.95,
+            "M03": -23.33,
+            "M04": 31.18,
+            "M05": 40.0
+          }
+        },
+        "xpl_shared_own_L12_logreg - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": 3.0251322751322753,
+          "sd_diff": 11.41671388469932,
+          "margin": 5,
+          "ci_90_low": -6.366713847086112,
+          "ci_90_high": 12.416978397350663,
+          "p_tost": 0.3446921904198682,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.75,
+          "n_better": 2,
+          "per_speaker_diff_points": {
+            "F03": 0.0,
+            "F04": -11.44,
+            "M02": 23.1,
+            "M03": 0.0,
+            "M04": 0.0,
+            "M05": 6.5
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 9.012145262145262,
+          "sd_diff": 31.91340978192701,
+          "margin": 5,
+          "ci_90_low": -17.241103871902858,
+          "ci_90_high": 35.26539439619338,
+          "p_tost": 0.6147317398097392,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.5625,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "F03": 43.33,
+            "F04": -11.44,
+            "M02": 9.05,
+            "M03": -36.67,
+            "M04": 3.64,
+            "M05": 46.17
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 10.368205868205868,
+          "sd_diff": 31.812000887373227,
+          "margin": 5,
+          "ci_90_low": -15.80162024738947,
+          "ci_90_high": 36.538031983801204,
+          "p_tost": 0.6517584537070765,
+          "verdict": "equivalence not shown",
+          "reading": "inconclusive",
+          "wilcoxon_p": 0.4375,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "F03": 43.33,
+            "F04": -11.44,
+            "M02": 9.05,
+            "M03": -36.67,
+            "M04": 11.77,
+            "M05": 46.17
+          }
+        },
+        "xpl_shared_own_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 37.32130832130832,
+          "sd_diff": 36.05477799357416,
+          "margin": 5,
+          "ci_90_low": 7.661203819590522,
+          "ci_90_high": 66.98141282302612,
+          "p_tost": 0.9602455531652745,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.0625,
+          "n_better": 5,
+          "per_speaker_diff_points": {
+            "F03": 75.0,
+            "F04": 70.53,
+            "M02": 24.05,
+            "M03": -23.33,
+            "M04": 31.18,
+            "M05": 46.5
+          }
+        }
+      }
+    },
+    "C_full_split_whisper": {
+      "control": {
+        "shared_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": -2.423236574125705,
+          "sd_diff": 4.80669761944208,
+          "margin": 5,
+          "ci_90_low": -6.377418561495567,
+          "ci_90_high": 1.5309454132441571,
+          "p_tost": 0.12308744371140368,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.3125,
+          "n_better": 2,
+          "per_speaker_diff_points": {
+            "FC02": -7.91,
+            "FC03": 2.63,
+            "MC01": -8.37,
+            "MC02": 2.02,
+            "MC03": -0.26,
+            "MC04": -2.64
+          }
+        },
+        "shared_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": -2.211961435058527,
+          "sd_diff": 4.948584973276019,
+          "margin": 5,
+          "ci_90_low": -6.282865642793659,
+          "ci_90_high": 1.8589427726766048,
+          "p_tost": 0.11304436174596755,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg not better by more than the margin; equivalence not shown",
+          "wilcoxon_p": 0.4375,
+          "n_better": 2,
+          "per_speaker_diff_points": {
+            "FC02": -7.91,
+            "FC03": 3.29,
+            "MC01": -8.37,
+            "MC02": 2.02,
+            "MC03": -0.26,
+            "MC04": -2.03
+          }
+        },
+        "shared_L12_logreg - whisper_free": {
+          "n": 6,
+          "mean_diff": 11.098490101671983,
+          "sd_diff": 7.365308243055268,
+          "margin": 5,
+          "ci_90_low": 5.0394925337125605,
+          "ci_90_high": 17.157487669631404,
+          "p_tost": 0.9508306107235999,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 2.63,
+            "FC03": 15.79,
+            "MC01": 5.81,
+            "MC02": 22.73,
+            "MC03": 12.17,
+            "MC04": 7.46
+          }
+        },
+        "shared_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 54.63857933436676,
+          "sd_diff": 9.283784198250242,
+          "margin": 5,
+          "ci_90_low": 47.001366603766286,
+          "ci_90_high": 62.275792064967234,
+          "p_tost": 0.9999768435236579,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 47.37,
+            "FC03": 44.32,
+            "MC01": 57.4,
+            "MC02": 65.91,
+            "MC03": 64.5,
+            "MC04": 48.33
+          }
+        },
+        "xpl_shared_own_L12_logreg - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": 4.053666195947588,
+          "sd_diff": 2.346411238443764,
+          "margin": 5,
+          "ci_90_low": 2.123414328950914,
+          "ci_90_high": 5.983918062944261,
+          "p_tost": 0.1842815140300223,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 7.11,
+            "FC03": 1.54,
+            "MC01": 6.82,
+            "MC02": 2.53,
+            "MC03": 2.78,
+            "MC04": 3.56
+          }
+        },
+        "shared_L12_logreg - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": 45.951383691667935,
+          "sd_diff": 19.387766643460523,
+          "margin": 5,
+          "ci_90_low": 30.00223030061268,
+          "ci_90_high": 61.90053708272319,
+          "p_tost": 0.9982283135031143,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 28.48,
+            "FC03": 28.05,
+            "MC01": 40.7,
+            "MC02": 76.26,
+            "MC03": 62.38,
+            "MC04": 39.84
+          }
+        },
+        "shared_L12_logreg - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 85.99638369166796,
+          "sd_diff": 4.185257427429116,
+          "margin": 5,
+          "ci_90_low": 82.55342329717428,
+          "ci_90_high": 89.43934408616164,
+          "p_tost": 0.9999999605442741,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 82.2,
+            "FC03": 93.75,
+            "MC01": 82.91,
+            "MC02": 85.35,
+            "MC03": 87.12,
+            "MC04": 84.65
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 1.630429621821883,
+          "sd_diff": 2.5408782260168543,
+          "margin": 5,
+          "ci_90_low": -0.4597985782583034,
+          "ci_90_high": 3.720657821902069,
+          "p_tost": 0.01136840779889121,
+          "verdict": "equivalent",
+          "reading": "equivalent within the margin",
+          "wilcoxon_p": 0.21875,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "FC02": -0.81,
+            "FC03": 4.17,
+            "MC01": -1.55,
+            "MC02": 4.55,
+            "MC03": 2.51,
+            "MC04": 0.91
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 1.8417047608890604,
+          "sd_diff": 2.6563639949749422,
+          "margin": 5,
+          "ci_90_low": -0.34352665835859963,
+          "ci_90_high": 4.026936180136721,
+          "p_tost": 0.01665464163219481,
+          "verdict": "equivalent",
+          "reading": "equivalent within the margin",
+          "wilcoxon_p": 0.21875,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "FC02": -0.81,
+            "FC03": 4.82,
+            "MC01": -1.55,
+            "MC02": 4.55,
+            "MC03": 2.51,
+            "MC04": 1.52
+          }
+        },
+        "xpl_shared_own_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 58.69224553031436,
+          "sd_diff": 9.252407753781823,
+          "margin": 5,
+          "ci_90_low": 51.08084431967364,
+          "ci_90_high": 66.30364674095509,
+          "p_tost": 0.9999844813547335,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "FC02": 54.47,
+            "FC03": 45.86,
+            "MC01": 64.22,
+            "MC02": 68.43,
+            "MC03": 67.28,
+            "MC04": 51.89
+          }
+        }
+      },
+      "dysarthric": {
+        "shared_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 5.173160173160171,
+          "sd_diff": 6.023386019368343,
+          "margin": 5,
+          "ci_90_low": 0.2180815752419818,
+          "ci_90_high": 10.12823877107836,
+          "p_tost": 0.5267046192921488,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.125,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "F03": 12.3,
+            "F04": 6.11,
+            "M02": -3.03,
+            "M03": 4.55,
+            "M04": 0.0,
+            "M05": 11.11
+          }
+        },
+        "shared_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 5.245623941276112,
+          "sd_diff": 7.354764048470643,
+          "margin": 5,
+          "ci_90_low": -0.8046995498848855,
+          "ci_90_high": 11.29594743243711,
+          "p_tost": 0.5310120673999743,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.15625,
+          "n_better": 4,
+          "per_speaker_diff_points": {
+            "F03": 12.3,
+            "F04": 6.11,
+            "M02": -3.03,
+            "M03": 4.55,
+            "M04": -2.9,
+            "M05": 14.44
+          }
+        },
+        "shared_L12_logreg - whisper_free": {
+          "n": 6,
+          "mean_diff": 14.010080097036615,
+          "sd_diff": 10.477026498878004,
+          "margin": 5,
+          "ci_90_low": 5.391258456271796,
+          "ci_90_high": 22.628901737801435,
+          "p_tost": 0.9554932342538754,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.0625,
+          "n_better": 5,
+          "per_speaker_diff_points": {
+            "F03": 15.08,
+            "F04": 12.78,
+            "M02": 16.67,
+            "M03": -4.55,
+            "M04": 16.3,
+            "M05": 27.78
+          }
+        },
+        "shared_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 36.413775435514566,
+          "sd_diff": 19.545775149312345,
+          "margin": 5,
+          "ci_90_low": 20.334637918733716,
+          "ci_90_high": 52.49291295229541,
+          "p_tost": 0.9945024329065331,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 58.33,
+            "F04": 58.89,
+            "M02": 28.79,
+            "M03": 9.09,
+            "M04": 37.83,
+            "M05": 25.56
+          }
+        },
+        "xpl_shared_own_L12_logreg - shared_L12_logreg": {
+          "n": 6,
+          "mean_diff": 2.5899784595436754,
+          "sd_diff": 5.001234333145483,
+          "margin": 5,
+          "ci_90_low": -1.5242372204172776,
+          "ci_90_high": 6.7041941395046285,
+          "p_tost": 0.145470815446828,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.375,
+          "n_better": 3,
+          "per_speaker_diff_points": {
+            "F03": 1.59,
+            "F04": -3.33,
+            "M02": 7.58,
+            "M03": 0.0,
+            "M04": 9.71,
+            "M05": 0.0
+          }
+        },
+        "shared_L12_logreg - finetune_full_L12_ep10": {
+          "n": 6,
+          "mean_diff": 41.558636259071044,
+          "sd_diff": 20.051453171362045,
+          "margin": 5,
+          "ci_90_low": 25.063507747119203,
+          "ci_90_high": 58.053764771022884,
+          "p_tost": 0.9966982013041223,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 63.88,
+            "F04": 62.22,
+            "M02": 25.76,
+            "M03": 13.63,
+            "M04": 47.18,
+            "M05": 36.67
+          }
+        },
+        "shared_L12_logreg - finetune_full_ep10": {
+          "n": 6,
+          "mean_diff": 73.23696959240438,
+          "sd_diff": 14.525114817777478,
+          "margin": 5,
+          "ci_90_low": 61.28802835994105,
+          "ci_90_high": 85.1859108248677,
+          "p_tost": 0.9999565607564946,
+          "verdict": "equivalence not shown",
+          "reading": "shared_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 84.12,
+            "F04": 85.55,
+            "M02": 59.09,
+            "M03": 77.27,
+            "M04": 51.16,
+            "M05": 82.22
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_mean": {
+          "n": 6,
+          "mean_diff": 7.763138632703846,
+          "sd_diff": 4.429116707740822,
+          "margin": 5,
+          "ci_90_low": 4.119569826779982,
+          "ci_90_high": 11.406707438627711,
+          "p_tost": 0.9064906122710145,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 13.89,
+            "F04": 2.78,
+            "M02": 4.55,
+            "M03": 4.55,
+            "M04": 9.71,
+            "M05": 11.11
+          }
+        },
+        "xpl_shared_own_L12_logreg - whisper_forced_sum": {
+          "n": 6,
+          "mean_diff": 7.835602400819788,
+          "sd_diff": 5.071477082495982,
+          "margin": 5,
+          "ci_90_low": 3.6636022217670607,
+          "ci_90_high": 12.007602579872515,
+          "p_tost": 0.8854370400312643,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg not worse by more than the margin (non-inferior); equivalence not shown",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 13.89,
+            "F04": 2.78,
+            "M02": 4.55,
+            "M03": 4.55,
+            "M04": 6.81,
+            "M05": 14.44
+          }
+        },
+        "xpl_shared_own_L12_logreg - frozen_L12_1nn": {
+          "n": 6,
+          "mean_diff": 39.00375389505824,
+          "sd_diff": 19.322959266710534,
+          "margin": 5,
+          "ci_90_low": 23.10791364788726,
+          "ci_90_high": 54.89959414222922,
+          "p_tost": 0.9961805379725107,
+          "verdict": "equivalence not shown",
+          "reading": "xpl_shared_own_L12_logreg better by more than the margin",
+          "wilcoxon_p": 0.03125,
+          "n_better": 6,
+          "per_speaker_diff_points": {
+            "F03": 59.92,
+            "F04": 55.56,
+            "M02": 36.36,
+            "M03": 9.09,
+            "M04": 47.54,
+            "M05": 25.56
+          }
+        }
+      }
+    }
+  }
+}

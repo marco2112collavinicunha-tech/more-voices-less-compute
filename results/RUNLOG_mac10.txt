@@ -1,0 +1,393 @@
+### run 10 started qui 15 out 2026 10:25:00 -03; waiting for Whisper on the controls
+run 9 stopped
+run 8 stopped
+fine-tuning stopped (resumes)
+
+=== 2026-10-15 11:08:06 START ft-MC02-full
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 54493.28it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  MC02 full epoch 1/10 24.4s
+  MC02 full epoch 2/10 21.8s
+  MC02 full epoch 3/10 29.6s
+  MC02 full epoch 4/10 24.9s
+  MC02 full epoch 5/10 22.7s
+  MC02 full epoch 6/10 41.7s
+  MC02 full epoch 7/10 38.2s
+  MC02 full epoch 8/10 26.2s
+  MC02 full epoch 9/10 25.7s
+  MC02 full epoch 10/10 21.4s
+MC02 full 10 uar=0.061 277s
+=== 2026-10-15 11:12:59 END ft-MC02-full (exit 0)
+
+=== 2026-10-15 11:12:59 START ft-MC03-full
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 45662.00it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  MC03 full epoch 1/10 28.4s
+  MC03 full epoch 2/10 23.0s
+  MC03 full epoch 3/10 25.6s
+  MC03 full epoch 4/10 54.0s
+  MC03 full epoch 5/10 69.6s
+  MC03 full epoch 6/10 34.0s
+  MC03 full epoch 7/10 22.6s
+  MC03 full epoch 8/10 25.1s
+  MC03 full epoch 9/10 21.8s
+  MC03 full epoch 10/10 26.0s
+MC03 full 10 uar=0.048 330s
+=== 2026-10-15 11:18:46 END ft-MC03-full (exit 0)
+
+=== 2026-10-15 11:18:46 START ft-FC03-full
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 52664.35it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  FC03 full epoch 1/10 43.2s
+  FC03 full epoch 2/10 33.4s
+  FC03 full epoch 3/10 30.6s
+  FC03 full epoch 4/10 28.5s
+  FC03 full epoch 5/10 48.8s
+  FC03 full epoch 6/10 42.9s
+  FC03 full epoch 7/10 38.5s
+  FC03 full epoch 8/10 30.4s
+  FC03 full epoch 9/10 32.6s
+  FC03 full epoch 10/10 33.5s
+FC03 full 10 uar=0.030 362s
+=== 2026-10-15 11:25:17 END ft-FC03-full (exit 0)
+
+=== 2026-10-15 11:25:17 START ft-MC04-full
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 51538.78it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.bias             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  MC04 full epoch 1/10 33.1s
+  MC04 full epoch 2/10 29.3s
+  MC04 full epoch 3/10 26.1s
+  MC04 full epoch 4/10 26.0s
+  MC04 full epoch 5/10 24.0s
+  MC04 full epoch 6/10 29.6s
+  MC04 full epoch 7/10 24.3s
+  MC04 full epoch 8/10 21.8s
+  MC04 full epoch 9/10 24.3s
+  MC04 full epoch 10/10 23.4s
+MC04 full 10 uar=0.022 262s
+=== 2026-10-15 11:29:57 END ft-MC04-full (exit 0)
+
+=== 2026-10-15 11:29:57 START ft-MC01-full
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 55388.54it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  MC01 full epoch 1/10 52.6s
+  MC01 full epoch 2/10 53.9s
+  MC01 full epoch 3/10 50.9s
+  MC01 full epoch 4/10 59.2s
+  MC01 full epoch 5/10 50.3s
+  MC01 full epoch 6/10 51.5s
+  MC01 full epoch 7/10 55.3s
+  MC01 full epoch 8/10 55.1s
+  MC01 full epoch 9/10 56.1s
+  MC01 full epoch 10/10 45.0s
+MC01 full 10 uar=0.016 530s
+=== 2026-10-15 11:39:17 END ft-MC01-full (exit 0)
+
+=== 2026-10-15 11:39:17 START ft-FC02-full
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 48527.62it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.weight             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  FC02 full epoch 1/10 50.9s
+  FC02 full epoch 2/10 44.0s
+  FC02 full epoch 3/10 38.0s
+  FC02 full epoch 4/10 54.0s
+  FC02 full epoch 5/10 50.9s
+  FC02 full epoch 6/10 42.9s
+  FC02 full epoch 7/10 49.1s
+  FC02 full epoch 8/10 41.4s
+  FC02 full epoch 9/10 49.2s
+  FC02 full epoch 10/10 47.7s
+FC02 full 10 uar=0.029 468s
+=== 2026-10-15 11:47:33 END ft-FC02-full (exit 0)
+
+=== 2026-10-15 11:47:33 START stats-1
+{
+  "control": {
+    "finetune_full_ep10": 0.034,
+    "frozen_L10_1nn": 0.326,
+    "frozen_L11_1nn": 0.34,
+    "frozen_L12_1nn": 0.341,
+    "frozen_L12_int8_1nn": 0.347,
+    "frozen_L13_1nn": 0.345,
+    "frozen_L14_1nn": 0.34,
+    "frozen_L15_1nn": 0.344,
+    "frozen_L16_1nn": 0.349,
+    "frozen_L17_1nn": 0.35,
+    "frozen_L18_1nn": 0.317,
+    "frozen_L19_1nn": 0.282,
+    "frozen_L1_1nn": 0.25,
+    "frozen_L20_1nn": 0.234,
+    "frozen_L21_1nn": 0.232,
+    "frozen_L22_1nn": 0.059,
+    "frozen_L23_1nn": 0.06,
+    "frozen_L24_1nn": 0.059,
+    "frozen_L2_1nn": 0.239,
+    "frozen_L3_1nn": 0.243,
+    "frozen_L4_1nn": 0.259,
+    "frozen_L5_1nn": 0.274,
+    "frozen_L6_1nn": 0.296,
+    "frozen_L7_1nn": 0.31,
+    "frozen_L8_1nn": 0.312,
+    "frozen_L9_1nn": 0.323,
+    "shared_L12_logreg": 0.897,
+    "shared_L18_logreg": 0.828,
+    "shared_L24_logreg": 0.347,
+    "whisper_forced_mean": 0.893,
+    "whisper_forced_sum": 0.893,
+    "whisper_free": 0.764
+  },
+  "dysarthric": {
+    "finetune_full_L12_ep10": 0.389,
+    "finetune_full_L12_ep30": 0.39,
+    "finetune_full_ep10": 0.072,
+    "finetune_full_ep30": 0.086,
+    "finetune_lora_ep10": 0.068,
+    "finetune_lora_ep30": 0.079,
+    "finetune_top4_ep10": 0.073,
+    "finetune_top4_ep30": 0.113,
+    "frozen_L10_1nn": 0.405,
+    "frozen_L11_1nn": 0.419,
+    "frozen_L12_1nn": 0.412,
+    "frozen_L12_int8_1nn": 0.408,
+    "frozen_L13_1nn": 0.419,
+    "frozen_L14_1nn": 0.407,
+    "frozen_L15_1nn": 0.423,
+    "frozen_L16_1nn": 0.426,
+    "frozen_L17_1nn": 0.437,
+    "frozen_L18_1nn": 0.405,
+    "frozen_L19_1nn": 0.4,
+    "frozen_L1_1nn": 0.365,
+    "frozen_L20_1nn": 0.354,
+    "frozen_L21_1nn": 0.368,
+    "frozen_L22_1nn": 0.154,
+    "frozen_L23_1nn": 0.152,
+    "frozen_L24_1nn": 0.152,
+    "frozen_L2_1nn": 0.356,
+    "frozen_L3_1nn": 0.351,
+    "frozen_L4_1nn": 0.367,
+    "frozen_L5_1nn": 0.374,
+    "frozen_L6_1nn": 0.389,
+    "frozen_L7_1nn": 0.389,
+    "frozen_L8_1nn": 0.383,
+    "frozen_L9_1nn": 0.402,
+    "shared_L12_logreg": 0.805,
+    "shared_L18_logreg": 0.751,
+    "shared_L24_logreg": 0.481,
+    "whisper_forced_mean": 0.703,
+    "whisper_forced_sum": 0.689,
+    "whisper_free": 0.631
+  }
+}
+=== 2026-10-15 11:47:34 END stats-1 (exit 0)
+
+=== 2026-10-15 11:47:34 START ft-MC02-full_L12
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 57705.35it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  MC02 full_L12 epoch 1/30 9.5s
+  MC02 full_L12 epoch 2/30 9.5s
+  MC02 full_L12 epoch 3/30 12.6s
+  MC02 full_L12 epoch 4/30 11.6s
+  MC02 full_L12 epoch 5/30 10.4s
+  MC02 full_L12 epoch 6/30 10.6s
+  MC02 full_L12 epoch 7/30 9.8s
+  MC02 full_L12 epoch 8/30 11.1s
+  MC02 full_L12 epoch 9/30 11.7s
+  MC02 full_L12 epoch 10/30 9.6s
+MC02 full_L12 10 uar=0.152 107s
+  MC02 full_L12 epoch 11/30 11.6s
+  MC02 full_L12 epoch 12/30 10.4s
+  MC02 full_L12 epoch 13/30 10.5s
+  MC02 full_L12 epoch 14/30 12.2s
+  MC02 full_L12 epoch 15/30 10.6s
+  MC02 full_L12 epoch 16/30 15.5s
+  MC02 full_L12 epoch 17/30 11.2s
+  MC02 full_L12 epoch 18/30 10.8s
+  MC02 full_L12 epoch 19/30 10.3s
+  MC02 full_L12 epoch 20/30 9.1s
+  MC02 full_L12 epoch 21/30 9.5s
+  MC02 full_L12 epoch 22/30 10.4s
+  MC02 full_L12 epoch 23/30 9.8s
+  MC02 full_L12 epoch 24/30 9.8s
+  MC02 full_L12 epoch 25/30 10.3s
+  MC02 full_L12 epoch 26/30 10.4s
+  MC02 full_L12 epoch 27/30 11.0s
+  MC02 full_L12 epoch 28/30 10.5s
+  MC02 full_L12 epoch 29/30 10.4s
+  MC02 full_L12 epoch 30/30 10.8s
+MC02 full_L12 30 uar=0.490 322s
+=== 2026-10-15 11:53:15 END ft-MC02-full_L12 (exit 0)
+
+=== 2026-10-15 11:53:15 START ft-MC03-full_L12
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 48025.95it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  MC03 full_L12 epoch 1/30 11.4s
+  MC03 full_L12 epoch 2/30 10.8s
+  MC03 full_L12 epoch 3/30 11.3s
+  MC03 full_L12 epoch 4/30 11.2s
+  MC03 full_L12 epoch 5/30 11.8s
+  MC03 full_L12 epoch 6/30 11.4s
+  MC03 full_L12 epoch 7/30 13.5s
+  MC03 full_L12 epoch 8/30 10.9s
+  MC03 full_L12 epoch 9/30 11.4s
+  MC03 full_L12 epoch 10/30 12.1s
+MC03 full_L12 10 uar=0.295 116s
+  MC03 full_L12 epoch 11/30 12.2s
+  MC03 full_L12 epoch 12/30 11.7s
+  MC03 full_L12 epoch 13/30 11.1s
+  MC03 full_L12 epoch 14/30 12.5s
+  MC03 full_L12 epoch 15/30 11.6s
+  MC03 full_L12 epoch 16/30 12.4s
+  MC03 full_L12 epoch 17/30 11.8s
+  MC03 full_L12 epoch 18/30 10.8s
+  MC03 full_L12 epoch 19/30 11.9s
+  MC03 full_L12 epoch 20/30 11.1s
+  MC03 full_L12 epoch 21/30 10.8s
+  MC03 full_L12 epoch 22/30 12.0s
+  MC03 full_L12 epoch 23/30 14.3s
+  MC03 full_L12 epoch 24/30 17.5s
+  MC03 full_L12 epoch 25/30 11.9s
+  MC03 full_L12 epoch 26/30 13.1s
+  MC03 full_L12 epoch 27/30 11.1s
+  MC03 full_L12 epoch 28/30 11.3s
+  MC03 full_L12 epoch 29/30 12.6s
+  MC03 full_L12 epoch 30/30 16.4s
+MC03 full_L12 30 uar=0.464 364s
+=== 2026-10-15 11:59:41 END ft-MC03-full_L12 (exit 0)
+
+=== 2026-10-15 11:59:41 START ft-FC03-full_L12
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 49531.17it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-large-xlsr-53
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  FC03 full_L12 epoch 1/30 21.1s
+  FC03 full_L12 epoch 2/30 17.0s
+  FC03 full_L12 epoch 3/30 16.6s
+  FC03 full_L12 epoch 4/30 20.6s
+  FC03 full_L12 epoch 5/30 26.5s
+  FC03 full_L12 epoch 6/30 19.9s
+  FC03 full_L12 epoch 7/30 18.0s
+  FC03 full_L12 epoch 8/30 17.2s
+  FC03 full_L12 epoch 9/30 19.0s

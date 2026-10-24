@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "More Voices, Less Compute: Speech Recognition for People Who Are Hard to Understand, Compared by Accuracy and Carbon Footprint"
+authors:
+  - family-names: "Collavini Cunha"
+    given-names: "Marco Antonio"
+    affiliation: "Colégio Arena, Goiânia, Brazil"
+date-released: 2026-10-22
+version: "1.0"
+license: MIT
+keywords: [atypical speech, dysarthria, speech recognition, green AI, energy, carbon footprint, self-supervised models]
+repository-code: "https://github.com/marco2112collavinicunha-tech/more-voices-less-compute"
